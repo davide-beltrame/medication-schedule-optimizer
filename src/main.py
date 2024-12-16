@@ -1,5 +1,5 @@
-import sys
 from pathlib import Path
+import sys
 from parser import parse_prescriptions
 from utils import (
     load_data,
@@ -7,7 +7,6 @@ from utils import (
     create_schedule,
     print_schedule
 )
-
 
 class MedicationScheduleOptimizer:
     def __init__(self, data_dir="data", input_dir="inputs"):
@@ -17,9 +16,10 @@ class MedicationScheduleOptimizer:
         self.prescriptions = []
         self.schedule = {}
         self.drug_data = None
+        self.diet = {}
 
     def load_and_prepare_data(self):
-        interactions_xlsx = Path(self.data_dir, "interactions.xlsx")
+        interactions_xlsx = Path(self.data_dir, "interactions.csv")
         db_interactions_csv = Path(self.data_dir, "db_drug_interactions.csv")
         drug_data_csv = Path(self.data_dir, "drug_data.csv")
         df_interactions, df_db_interactions, df_drug_data = load_data(
@@ -31,23 +31,21 @@ class MedicationScheduleOptimizer:
         self.drug_data = df_drug_data
 
     def parse_input_prescriptions(self, input_str=None):
-        if input_str is not None:
-            self.prescriptions = parse_prescriptions(input_str)
-        else:
+        if input_str is None:
             input_path = Path(self.input_dir, "input.txt")
             if not input_path.exists():
                 print(f"Input file {input_path} not found.")
                 sys.exit(1)
             with open(input_path, 'r') as f:
                 input_str = f.read()
-            self.prescriptions = parse_prescriptions(input_str)
 
+        self.prescriptions, self.diet = parse_prescriptions(input_str)
         if not self.prescriptions:
             print("No prescriptions found in input. Please check the format.")
             sys.exit(1)
 
     def optimize_schedule(self):
-        self.schedule = create_schedule(self.prescriptions, self.interactions)
+        self.schedule = create_schedule(self.prescriptions, self.interactions, self.drug_data, self.diet)
         if self.schedule is None:
             print("Unable to find a feasible schedule. Please adjust constraints or inputs.")
         else:
@@ -60,46 +58,44 @@ class MedicationScheduleOptimizer:
             print("No schedule available to display.")
 
     def run(self):
-      while True:
+        while True:
             choice = input("Do you want to enter prescriptions now? (y/n/quit): ").strip().lower()
             if choice in ['y', 'yes']:
-                  print("\nEnter prescriptions in the format:")
-                  print('"DrugName: once/twice/thrice daily (optional_times)"')
-                  print("Times are optional. Examples:")
-                  print('  "Warfarin: once daily (morning)"')
-                  print('  "Ibuprofen: thrice daily"')
-                  print('  "Metformin: twice daily (morning, evening)"')
-                  print("\nAvailable frequencies: once, twice, thrice daily")
-                  print("Preferred times: morning, noon, evening, night (comma-separated if multiple)")
-                  print("\nExample drugs: Aspirin, Ibuprofen, Metformin, Warfarin, Lisinopril, Amoxicillin, Paracetamol, Atorvastatin, Omeprazole, Alprazolam")
-                  print("Press Enter on an empty line to finish.\n")
+                print("\nEnter prescriptions in the format:")
+                print('"DrugName: once/twice/thrice daily (optional_times)"')
+                print("For example:")
+                print('  "Aspirin: once daily (morning)"')
+                print('  "Ibuprofen: twice daily"')
+                print('  "Metformin: twice daily (morning, evening)"')
+                print("\nInclude a 'Diet:' line if desired, e.g.:")
+                print('  "Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm"')
+                print("Press Enter on an empty line to finish.\n")
 
-                  lines = []
-                  while True:
-                        line = input("> ").strip()
-                        if line == "":
-                              break
-                        lines.append(line)
-                  input_str = "\n".join(lines)
-                  if not lines:
-                        print("No input given. Exiting.")
-                        sys.exit(0)
-                  self.load_and_prepare_data()
-                  self.parse_input_prescriptions(input_str=input_str)
-                  break
+                lines = []
+                while True:
+                    line = input("> ").strip()
+                    if line == "":
+                        break
+                    lines.append(line)
+                if not lines:
+                    print("No input given. Exiting.")
+                    sys.exit(0)
+                input_str = "\n".join(lines)
+                self.load_and_prepare_data()
+                self.parse_input_prescriptions(input_str=input_str)
+                break
             elif choice in ['n', 'no']:
-                  self.load_and_prepare_data()
-                  self.parse_input_prescriptions()
-                  break
+                self.load_and_prepare_data()
+                self.parse_input_prescriptions()
+                break
             elif choice in ['quit', 'q']:
-                  print("Exiting.")
-                  sys.exit(0)
+                print("Exiting.")
+                sys.exit(0)
             else:
-                  print("Invalid input. Please type 'y', 'n', or 'quit'.")
+                print("Invalid input. Please type 'y', 'n', or 'quit'.")
 
-      self.optimize_schedule()
-      self.display_schedule()
-
+        self.optimize_schedule()
+        self.display_schedule()
 
 if __name__ == "__main__":
     optimizer = MedicationScheduleOptimizer()

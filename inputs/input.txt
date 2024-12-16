@@ -1,2 +1,3 @@
 Aspirin: once daily (morning)
 Ibuprofen: twice daily
+Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm
