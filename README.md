@@ -1,5 +1,4 @@
 # Medication Schedule Optimizer
-
 ## 20875 – Software Engineering 2024
 ### MSc in Artificial Intelligence Bocconi
 
