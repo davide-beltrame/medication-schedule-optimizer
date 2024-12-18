@@ -10,19 +10,19 @@ def parse_prescriptions(input_str: str):
 
     for line in lines:
         line = line.strip()
+        # Ignore comment lines
+        if line.startswith('#'):
+            continue
+
         if line.lower().startswith("diet:"):
             # Parse diet line: e.g. "Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm"
             diet_line = line[len("Diet:"):].strip()
-            # split by ';'
             meal_entries = [m.strip() for m in diet_line.split(';')]
             for m in meal_entries:
                 # Format: "breakfast 8 am"
                 parts = m.split()
                 meal_name = parts[0].lower()
-                # Join the rest as time
                 meal_time = " ".join(parts[1:]).strip()
-                # Convert to HH:MM if needed (assume "8 am" -> "08:00")
-                # Simple conversion:
                 diet[meal_name] = convert_time_to_24h(meal_time)
         else:
             # Drug line

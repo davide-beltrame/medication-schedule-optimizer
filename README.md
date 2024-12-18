@@ -1,5 +1,9 @@
 # Medication Schedule Optimizer
 
+### Soft
+
+
+
 This project optimizes medication schedules based on input prescriptions and interaction data.
 
 ## Directory Structure
@@ -73,3 +77,34 @@ swe-project/
 **tests/**  
 - Directory for test files.
 
+## Database information
+
+### drug_data_1.csv: Comprehensive Drug Information Dataset (https://www.kaggle.com/datasets/anoopjohny/comprehensive-drug-information-dataset)
+
+The "Pharmaceutical Product Data Repository" is a comprehensive dataset containing detailed information about a wide range of pharmaceutical drugs. This dataset encompasses various attributes related to each drug, including drug names, generic names, drug classes, indications, dosage forms, strengths, routes of administration, mechanisms of action, side effects, contraindications, interactions, warnings, precautions, pregnancy categories, storage conditions, manufacturers, approval dates, availability status (prescription or over-the-counter), National Drug Code (NDC) numbers, and prices.
+
+sample:
+```
+Drug ID,Drug Name,Generic Name,Drug Class,Indications,Dosage Form,Strength,Route of Administration,Mechanism of Action,Side Effects,Contraindications,Interactions,Warnings and Precautions,Pregnancy Category,Storage Conditions,Manufacturer,Approval Date,Availability,NDC,Price
+1,Aspirin,Acetylsalicylic Acid,Analgesic,Headache,Tablet,325 mg,Oral,Inhibits prostaglandin synthesis,Stomach irritation,Allergy to NSAIDs,Anticoagulants: increased bleeding risk,Gastric ulcers: risk of bleeding,Category C,Room temperature,PharmaCorp,15-01-2022,OTC,12345678901,5.99
+2,Amoxicillin,Amoxicillin,Antibiotic,Bacterial Infections,Capsule,500 mg,Oral,Inhibits bacterial cell wall synthesis,Nausea, Allergic reactions,Penicillin: reduced efficacy,Take with food to reduce stomach upset,Category B,Room temperature,MediPharm,20-11-2021,Prescription,23456789012,12.49
+```
+
+
+### interactions_text.csv: Drug-Drug Interactions (https://www.kaggle.com/datasets/mghobashy/drug-drug-interactions)
+
+This dataset provides a comprehensive collection of drug-drug interactions (DDIs) intended for research in predicting and understanding complex interaction relationships between drugs. It is sourced from the Drug Bank database and is designed to support multi-task learning approaches in the domain of bioinformatics and pharmacology.
+
+Feature Details:
+Drug 1: Name of the first drug in the interaction.
+Drug 2: Name of the second drug in the interaction.
+Interaction Description: Detailed description of the interaction between the two drugs.
+
+Source: The dataset is derived from the datasets provided by the team at TDCommons
+
+sample:
+```
+Drug 1,Drug 2,Interaction Description
+Trioxsalen,Verteporfin,Trioxsalen may increase the photosensitizing activities of Verteporfin.
+Aminolevulinic acid,Verteporfin,Aminolevulinic acid may increase the photosensitizing activities of Verteporfin.
+```

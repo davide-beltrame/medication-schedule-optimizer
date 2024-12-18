@@ -1,4 +1,3 @@
-from pathlib import Path
 import sys
 from parser import parse_prescriptions
 from utils import (
@@ -7,6 +6,10 @@ from utils import (
     create_schedule,
     print_schedule
 )
+
+drug_data_1 = "data/drug_data_1.csv"
+interactions_text = "data/interactions_text.csv"
+interactions_effects = "data/interactions_effects.csv"
 
 class MedicationScheduleOptimizer:
     def __init__(self, data_dir="data", input_dir="inputs"):
@@ -19,30 +22,47 @@ class MedicationScheduleOptimizer:
         self.diet = {}
 
     def load_and_prepare_data(self):
-        interactions_xlsx = Path(self.data_dir, "interactions.csv")
-        db_interactions_csv = Path(self.data_dir, "db_drug_interactions.csv")
-        drug_data_csv = Path(self.data_dir, "drug_data.csv")
-        df_interactions, df_db_interactions, df_drug_data = load_data(
-            interactions_xlsx,
-            db_interactions_csv,
-            drug_data_csv
-        )
-        self.interactions = build_interaction_dict(df_interactions, df_db_interactions)
+        # Only two datasets now
+        db_interactions_csv = "data/interactions_text.csv"
+        drug_data_csv = "data/drug_data_1.csv"
+        df_db_interactions, df_drug_data = load_data(db_interactions_csv, drug_data_csv)
+        self.interactions = build_interaction_dict(df_db_interactions)
         self.drug_data = df_drug_data
 
     def parse_input_prescriptions(self, input_str=None):
         if input_str is None:
-            input_path = Path(self.input_dir, "input.txt")
-            if not input_path.exists():
-                print(f"Input file {input_path} not found.")
+            input_file = f"{self.input_dir}/input.txt"
+            try:
+                with open(input_file, 'r') as f:
+                    input_str = f.read()
+            except FileNotFoundError:
+                print(f"Input file {input_file} not found.")
                 sys.exit(1)
-            with open(input_path, 'r') as f:
-                input_str = f.read()
 
         self.prescriptions, self.diet = parse_prescriptions(input_str)
+
+        # Normalize drug names
+        for pres in self.prescriptions:
+            pres['name'] = pres['name'].title()
+
         if not self.prescriptions:
             print("No prescriptions found in input. Please check the format.")
             sys.exit(1)
+
+        # After parsing, validate drug names against known drugs
+        self.validate_drug_names()
+
+    def validate_drug_names(self):
+        if self.drug_data is not None and 'Drug Name' in self.drug_data.columns:
+            known_drugs = set(self.drug_data['Drug Name'].str.title())
+            for pres in self.prescriptions:
+                if pres['name'] not in known_drugs:
+                    print(f"Unknown drug: {pres['name']}. Please correct the name or update your datasets.")
+                    sys.exit(1)
+        else:
+            # If we have no drug_data or no 'Drug Name' column, can't validate
+            print("Warning: Drug data not available or missing 'Drug Name' column, cannot validate drug names.")
+            # Not exiting here, but we could if desired.
 
     def optimize_schedule(self):
         self.schedule = create_schedule(self.prescriptions, self.interactions, self.drug_data, self.diet)
@@ -85,6 +105,12 @@ class MedicationScheduleOptimizer:
                 self.parse_input_prescriptions(input_str=input_str)
                 break
             elif choice in ['n', 'no']:
+                # we give the user the input that they entered
+                # which is input.txt
+                print("Using input from file: \n")
+                with open(f"{self.input_dir}/input.txt", "r") as f:
+                    print(f.read())
+                print("\n")
                 self.load_and_prepare_data()
                 self.parse_input_prescriptions()
                 break
