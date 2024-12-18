@@ -3,7 +3,6 @@
 ## 20875 – Software Engineering 2024
 ### MSc in Artificial Intelligence Bocconi
 
-
 This project optimizes medication schedules based on input prescriptions and interaction data.
 
 ## Directory Structure
