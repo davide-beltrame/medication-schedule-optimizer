@@ -10,11 +10,11 @@ def main():
     df_interactions = pd.read_csv(interactions_path)
 
     # Basic info
-    # print("\n--- DRUG DATASET INFO ---")
-    # print("Number of rows:", len(df_drug))
+    #print("\n--- DRUG DATASET INFO ---")
+    #print("Number of rows:", len(df_drug))
     # print("Number of columns:", len(df_drug.columns))
-    # print("Columns:", df_drug.columns.tolist())
-    # print(df_drug.head(3))
+    #print("Columns:", df_drug.columns.tolist())
+    #print(df_drug.head(3))
 
     # print("\n--- INTERACTIONS DATASET INFO ---")
     # print("Number of rows:", len(df_interactions))
@@ -123,6 +123,11 @@ def main():
         print("\nAvailability distribution in merged dataset:")
         print(availability_counts)
 
+    # Number of unique interactions in the drug_data dataset 
+    num_unique_interactions = df_drug['Interactions'].nunique()
+    print(f"Number of unique descriptions in  drug_data_1.csv under 'Interactions': {num_unique_interactions}") 
+    
+    
     # This EDA is just a starting point. You can add more descriptive statistics, 
     # plot histograms or value counts, and perform other exploration to understand the data better.
 
