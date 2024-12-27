@@ -1,11 +1,6 @@
 import sys
 from parser import parse_prescriptions
-from utils import (
-    load_data,
-    build_interaction_dict,
-    create_schedule,
-    print_schedule
-)
+from utils import (load_data, build_interaction_dict, create_schedule, print_schedule)
 
 drug_data_1 = "data/drug_data_1.csv"
 interactions_text = "data/interactions_text.csv"
@@ -22,7 +17,6 @@ class MedicationScheduleOptimizer:
         self.diet = {}
 
     def load_and_prepare_data(self):
-        # Only two datasets now
         db_interactions_csv = "data/interactions_text.csv"
         drug_data_csv = "data/drug_data_1.csv"
         df_db_interactions, df_drug_data = load_data(db_interactions_csv, drug_data_csv)
@@ -40,17 +34,12 @@ class MedicationScheduleOptimizer:
                 sys.exit(1)
 
         self.prescriptions, self.diet = parse_prescriptions(input_str)
-
-        # Normalize drug names
         for pres in self.prescriptions:
-            pres['name'] = pres['name'].title()
-
+            pres['name'] = pres['name'].title() # normalising drug names by capitalising the first letter
         if not self.prescriptions:
             print("No prescriptions found in input. Please check the format.")
             sys.exit(1)
-
-        # After parsing, validate drug names against known drugs
-        self.validate_drug_names()
+        self.validate_drug_names() # validate drug names against known drugs
 
     def validate_drug_names(self):
         if self.drug_data is not None and 'Drug Name' in self.drug_data.columns:
@@ -60,7 +49,6 @@ class MedicationScheduleOptimizer:
                     print(f"Unknown drug: {pres['name']}. Please correct the name or update your datasets.")
                     sys.exit(1)
         else:
-            # If we have no drug_data or no 'Drug Name' column, can't validate
             print("Warning: Drug data not available or missing 'Drug Name' column, cannot validate drug names.")
             # Not exiting here, but we could if desired.
 
@@ -69,7 +57,7 @@ class MedicationScheduleOptimizer:
         if self.schedule is None:
             print("Unable to find a feasible schedule. Please adjust constraints or inputs.")
         else:
-            print("Schedule optimized successfully.")
+            print("Schedule optimised successfully.")
 
     def display_schedule(self):
         if self.schedule:
@@ -90,7 +78,6 @@ class MedicationScheduleOptimizer:
                 print("\nInclude a 'Diet:' line if desired, e.g.:")
                 print('  "Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm"')
                 print("Press Enter on an empty line to finish.\n")
-
                 lines = []
                 while True:
                     line = input("> ").strip()
@@ -105,8 +92,6 @@ class MedicationScheduleOptimizer:
                 self.parse_input_prescriptions(input_str=input_str)
                 break
             elif choice in ['n', 'no']:
-                # we give the user the input that they entered
-                # which is input.txt
                 print("Using input from file: \n")
                 with open(f"{self.input_dir}/input.txt", "r") as f:
                     print(f.read())
