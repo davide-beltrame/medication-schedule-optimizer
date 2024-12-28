@@ -12,19 +12,18 @@ This project optimizes medication schedules based on input prescriptions and int
   - `main.py`: Contains the `MedicationScheduleOptimizer` class which orchestrates the solution.
   - `parser.py`: Parsing functions.
   - `utils.py`: Helper functions for data loading, interaction modeling, scheduling, and output.
-- `tests/`: Contains unit tests.
+- `tests/`: Contains unit tests and test files such as eda.py
 
 
 ```text
 swe-project/
 ├─ data/
-│  ├─ interactions.xlsx
-│  ├─ db_drug_interactions.csv
-│  └─ drug_data.csv
+│  ├─ interactions_text.csv
+│  └─ drug_data_1.csv
 ├─ inputs/
 │  └─ input.txt
 ├─ src/
-│  ├─ main.py      # Contains the main class orchestrating the solution
+│  ├─ main.py      # Contains the main class
 │  ├─ parser.py    # Parsing functions
 │  ├─ utils.py     # Helper functions (data loading, interaction building, scheduling, output formatting)
 ├─ tests/

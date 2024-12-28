@@ -1,10 +1,6 @@
 import sys
 from parser import parse_prescriptions
-from utils import (load_data, build_interaction_dict, create_schedule, print_schedule)
-
-drug_data_1 = "data/drug_data_1.csv"
-interactions_text = "data/interactions_text.csv"
-interactions_effects = "data/interactions_effects.csv"
+from utils import load_data, build_interaction_dict, create_schedule, print_schedule
 
 class MedicationScheduleOptimizer:
     def __init__(self, data_dir="data", input_dir="inputs"):
@@ -19,6 +15,7 @@ class MedicationScheduleOptimizer:
     def load_and_prepare_data(self):
         db_interactions_csv = "data/interactions_text.csv"
         drug_data_csv = "data/drug_data_1.csv"
+        #interactions_effects = "data/interactions_effects.csv"
         df_db_interactions, df_drug_data = load_data(db_interactions_csv, drug_data_csv)
         self.interactions = build_interaction_dict(df_db_interactions)
         self.drug_data = df_drug_data
@@ -95,7 +92,6 @@ class MedicationScheduleOptimizer:
                 print("Using input from file: \n")
                 with open(f"{self.input_dir}/input.txt", "r") as f:
                     print(f.read())
-                print("\n")
                 self.load_and_prepare_data()
                 self.parse_input_prescriptions()
                 break

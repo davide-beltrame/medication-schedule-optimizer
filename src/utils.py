@@ -24,7 +24,7 @@ def get_warnings_map(drug_data):
     warnings_map = {}
     if drug_data is not None and 'Drug Name' in drug_data.columns and 'Warnings and Precautions' in drug_data.columns:
         for _, row in drug_data.iterrows():
-            drug_name = rozw['Drug Name'].title()
+            drug_name = row['Drug Name'].title()
             w = row['Warnings and Precautions']
             warnings_map[drug_name] = w if isinstance(w, str) else "None"
     return warnings_map

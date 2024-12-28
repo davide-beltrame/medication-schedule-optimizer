@@ -4,28 +4,22 @@ def parse_prescriptions(input_str: str):
     lines = input_str.strip().split('\n')
     prescriptions = []
     diet = {}
-
     freq_map = {"once":1, "twice":2, "thrice":3}
     pattern = r"^(.*?):\s*(once|twice|thrice)\s+daily(?:\s*\((.*?)\))?$"
 
     for line in lines:
         line = line.strip()
-        # Ignore comment lines
         if line.startswith('#'):
-            continue
-
+            continue # Ignore comment lines
         if line.lower().startswith("diet:"):
-            # Parse diet line: e.g. "Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm"
             diet_line = line[len("Diet:"):].strip()
             meal_entries = [m.strip() for m in diet_line.split(';')]
-            for m in meal_entries:
-                # Format: "breakfast 8 am"
+            for m in meal_entries: # Format: "breakfast 8 am"
                 parts = m.split()
                 meal_name = parts[0].lower()
                 meal_time = " ".join(parts[1:]).strip()
                 diet[meal_name] = convert_time_to_24h(meal_time)
-        else:
-            # Drug line
+        else: # Drug line
             match = re.match(pattern, line, re.IGNORECASE)
             if match:
                 drug = match.group(1).strip()
@@ -38,11 +32,9 @@ def parse_prescriptions(input_str: str):
                     "frequency": frequency,
                     "preferred_times": preferred_times
                 })
-
     return prescriptions, diet
 
-def convert_time_to_24h(time_str):
-    # Simple conversion assuming format like "8 am", "1 pm"
+def convert_time_to_24h(time_str): # Simple conversion assuming format like "8 am", "1 pm"
     parts = time_str.split()
     hour = int(parts[0])
     ampm = parts[1].lower()
