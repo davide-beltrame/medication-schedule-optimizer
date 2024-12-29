@@ -1,138 +1,212 @@
 import pandas as pd
+import re
 
-def main():
-    # Paths to the datasets (adjust if needed)
-    drug_data_path = "data/drug_data_1.csv"
-    interactions_path = "data/interactions_text.csv"
+def normalize_text(txt: str) -> str:
+    """
+    Convert to lower case, remove parentheses and their contents,
+    remove punctuation except spaces, and collapse multiple spaces.
+    This helps unify variations like 'Fluciclovine (18F)' vs 'Fluciclovine (18f)'.
+    """
+    # Lower case
+    txt = txt.lower()
+    # Remove any parentheses and their contents
+    txt = re.sub(r"\(.*?\)", "", txt)
+    # Remove punctuation except spaces (keep alphanumeric, space)
+    txt = re.sub(r"[^a-z0-9\s]", " ", txt)
+    # Collapse multiple spaces
+    txt = re.sub(r"\s+", " ", txt).strip()
+    return txt
 
-    # Load datasets
+def clean_interaction_desc(description: str, drug_a: str, drug_b: str) -> str:
+    """
+    Remove references to drug_a and drug_b (in any normalized form) from description.
+    We do the actual removal on normalized strings, but return a 'cleaned' version
+    that's good enough for pattern analysis.
+    """
+    # Normalize drug names
+    norm_drug_a = normalize_text(drug_a)
+    norm_drug_b = normalize_text(drug_b)
+    
+    # Also normalize the description for searching
+    norm_desc = normalize_text(description)
+
+    # Build regex patterns for the normalized drug names
+    # \b ensures we match whole words
+    pattern_a = re.compile(r"\b" + re.escape(norm_drug_a) + r"\b", re.IGNORECASE)
+    pattern_b = re.compile(r"\b" + re.escape(norm_drug_b) + r"\b", re.IGNORECASE)
+
+    # Remove them from the normalized description
+    cleaned_desc = pattern_a.sub("", norm_desc)
+    cleaned_desc = pattern_b.sub("", cleaned_desc)
+    
+    # Collapse extra spaces again
+    cleaned_desc = re.sub(r"\s+", " ", cleaned_desc).strip()
+
+    return cleaned_desc
+
+def load_data(drug_data_path: str, interactions_path: str):
+    """
+    Load and return the drug and interactions datasets with normalized drug names.
+    """
     df_drug = pd.read_csv(drug_data_path)
     df_interactions = pd.read_csv(interactions_path)
 
-    # Basic info
-    #print("\n--- DRUG DATASET INFO ---")
-    #print("Number of rows:", len(df_drug))
-    # print("Number of columns:", len(df_drug.columns))
-    #print("Columns:", df_drug.columns.tolist())
-    #print(df_drug.head(3))
-
-    # print("\n--- INTERACTIONS DATASET INFO ---")
-    # print("Number of rows:", len(df_interactions))
-    # print("Number of columns:", len(df_interactions.columns))
-    # print("Columns:", df_interactions.columns.tolist())
-    # print(df_interactions.head(3))
-
-    # Normalize drug names to a consistent case for analysis
-    # Assume 'Drug Name' in df_drug, and 'Drug 1', 'Drug 2' in df_interactions
+    # Normalize drug names
     df_drug['Drug Name'] = df_drug['Drug Name'].str.title()
     df_interactions['Drug 1'] = df_interactions['Drug 1'].str.title()
     df_interactions['Drug 2'] = df_interactions['Drug 2'].str.title()
 
-    # Unique drugs in drug_data_1
-    drug_data_drugs = set(df_drug['Drug Name'].unique())
-    print("\nUnique drugs in drug_data_1.csv:", len(drug_data_drugs))
+    return df_drug, df_interactions
 
-    # Unique drugs in interactions_text
-    interaction_drugs = set(df_interactions['Drug 1'].unique()).union(set(df_interactions['Drug 2'].unique()))
+def basic_dataset_info(df_drug: pd.DataFrame, df_interactions: pd.DataFrame) -> None:
+    """
+    Print basic overview of both datasets: size, unique drug counts, overlap, etc.
+    """
+    print("\n--- BASIC DATASET STATS ---")
+    print(f"drug_data_1.csv -> rows: {len(df_drug)}, columns: {len(df_drug.columns)}")
+    print(f"interactions_text.csv -> rows: {len(df_interactions)}, columns: {len(df_interactions.columns)}")
+
+    # Unique drug counts and overlap
+    drug_data_drugs = set(df_drug['Drug Name'].unique())
+    interaction_drugs = set(df_interactions['Drug 1']).union(set(df_interactions['Drug 2']))
+
+    print("\nUnique drugs in drug_data_1.csv:", len(drug_data_drugs))
     print("Unique drugs in interactions_text.csv:", len(interaction_drugs))
 
-    # Intersection of drugs in both datasets
     common_drugs = drug_data_drugs.intersection(interaction_drugs)
     print("Number of drugs present in both datasets:", len(common_drugs))
 
-    # Count unique interaction descriptions
-    unique_interactions = df_interactions['Interaction Description'].unique()
-    print("\nNumber of unique interaction descriptions in interactions_text.csv:", len(unique_interactions))
+    # Number of unique interaction descriptions
+    unique_descriptions = df_interactions['Interaction Description'].unique()
+    print("\nNumber of unique interaction descriptions in interactions_text.csv:", len(unique_descriptions))
 
-    # Assuming df_interactions is your large DataFrame
-    processed_interactions = set()  # Use a set to store unique interactions
+def analyze_interactions(df_interactions: pd.DataFrame) -> None:
+    all_interaction_counts = {}
+    for _, row in df_interactions.iterrows():
+        desc = row['Interaction Description']
+        d1, d2 = row['Drug 1'], row['Drug 2']
+        cleaned = clean_interaction_desc(desc, d1, d2)
+        all_interaction_counts[cleaned] = all_interaction_counts.get(cleaned, 0) + 1
 
-    # Loop through the first 100 rows
-    for index, row in df_interactions.head(100).iterrows():
-        description = row['Interaction Description']
-        drug_1 = row['Drug 1']
-        drug_2 = row['Drug 2']
-        
-        # Remove drug names from the Interaction Description
-        cleaned_interaction = description.replace(drug_1, "").replace(drug_2, "").strip()
-        
-        # Add the cleaned interaction to the set
-        processed_interactions.add(cleaned_interaction)
-
-    # Convert set to list or print the unique interactions
-    unique_interactions = list(processed_interactions)
-    for i in unique_interactions:
-        print(i)
+    print("\nNumber of unique interactions (ignoring drug names):", len(all_interaction_counts))
     
-    print("Number of unique interactions (ignoring drug names) in interactions_text.csv:", len(unique_interactions))
+    # Sort and print top interactions
+    sorted_all = dict(sorted(all_interaction_counts.items(), key=lambda x: x[1], reverse=True))
+    print("\nTop unique cleaned interactions in all rows:")
+    for interaction, count in sorted_all.items():
+        print(f'  "{interaction}" -> {count} occurrences')
 
-    # Dizionario per contare le interazioni pulite
-    interaction_counts = {}
+def interaction_description_stats(df_interactions: pd.DataFrame) -> None:
+    """
+    Print some basic length statistics of the 'Interaction Description' column.
+    """
+    desc_lengths = df_interactions['Interaction Description'].astype(str).apply(len)
+    print("\nInteraction Description Length Stats:")
+    print("  Average length:", desc_lengths.mean())
+    print("  Max length:", desc_lengths.max())
+    print("  Min length:", desc_lengths.min())
 
-    # Itera sulle prime 100 righe
-    for _, row in df_interactions.head(100).iterrows():
-        description = row['Interaction Description']
-        drug_1 = row['Drug 1']
-        drug_2 = row['Drug 2']
-        
-        # Pulizia: rimuove i nomi dei farmaci dalla descrizione
-        cleaned_interaction = description.replace(drug_1, "").replace(drug_2, "").strip()
-        
-        # Conta le occorrenze delle interazioni pulite
-        if cleaned_interaction in interaction_counts:
-            interaction_counts[cleaned_interaction] += 1
-        else:
-            interaction_counts[cleaned_interaction] = 1
-
-    # Stampa il numero totale di interazioni uniche
-    print("\nNumber of unique interactions (ignoring drug names):", len(interaction_counts))
-
-
-    # Some basic stats about interaction descriptions (optional)
-    # e.g., average length of interaction descriptions
-    desc_lengths = df_interactions['Interaction Description'].apply(lambda x: len(str(x)))
-    print("Average length of interaction descriptions:", desc_lengths.mean())
-    print("Max length of interaction descriptions:", desc_lengths.max())
-    print("Min length of interaction descriptions:", desc_lengths.min())
-
-    # Create a merged dataset containing only common drugs
-    # For simplicity, let's assume we just want to see the common drugs from df_drug that appear in df_interactions.
-    # We know df_interactions doesn't have a single 'Drug Name' column, but we have 'Drug 1' and 'Drug 2'.
-    # To merge, we can create a dataframe of all unique drugs from df_interactions and merge with df_drug on 'Drug Name'.
-
+def merged_drug_info(df_drug: pd.DataFrame, df_interactions: pd.DataFrame) -> None:
+    """
+    Merge info to see which drugs appear in both dataframes, and print distribution of columns.
+    """
+    interaction_drugs = set(df_interactions['Drug 1']).union(set(df_interactions['Drug 2']))
     interaction_unique_drugs = pd.DataFrame(list(interaction_drugs), columns=['Drug Name'])
     merged_df = pd.merge(df_drug, interaction_unique_drugs, on='Drug Name', how='inner')
 
     print("\n--- MERGED DATA INFO ---")
-    print("Number of rows in merged dataset:", len(merged_df))
-    print("Number of columns in merged dataset:", len(merged_df.columns))
-    print("Merged dataframe columns:", merged_df.columns.tolist())
+    print("  Number of rows:", len(merged_df))
+    print("  Number of columns:", len(merged_df.columns))
+    print("  Columns:", merged_df.columns.tolist())
     print(merged_df.head(3))
 
-    # Print some stats about the merged dataset
-    # For example, distribution of Drug Classes among common drugs
+    # Distribution of Drug Class (top 10)
     if 'Drug Class' in merged_df.columns:
-        class_counts = merged_df['Drug Class'].value_counts()
-        print("\nDistribution of Drug Classes in merged dataset:")
-        print(class_counts.head(10))
+        print("\nDistribution of Drug Classes in merged dataset (top 10):")
+        print(merged_df['Drug Class'].value_counts().head(10))
 
-    # You can add more insights as needed, for example:
-    # - How many drugs in merged_df are OTC vs Prescription?
+    # Availability distribution
     if 'Availability' in merged_df.columns:
-        availability_counts = merged_df['Availability'].value_counts()
         print("\nAvailability distribution in merged dataset:")
-        print(availability_counts)
+        print(merged_df['Availability'].value_counts())
 
-    # Number of unique interactions in the drug_data dataset 
-    num_unique_interactions = df_drug['Interactions'].nunique()
-    print(f"Number of unique descriptions in  drug_data_1.csv under 'Interactions': {num_unique_interactions}") 
-    
-    
-    # This EDA is just a starting point. You can add more descriptive statistics, 
-    # plot histograms or value counts, and perform other exploration to understand the data better.
+    # Check unique 'Interactions' field in df_drug
+    if 'Interactions' in df_drug.columns:
+        num_unique = df_drug['Interactions'].nunique()
+        print(f"\nNumber of unique descriptions in 'Interactions' column (drug_data_1.csv): {num_unique}")
 
-    print("\nEDA complete. Insights above are meant to help understand our tool and data alignment.")
+
+import pandas as pd
+
+def build_merged_csv(
+    drug_data_path: str,
+    interactions_path: str,
+    output_drug_csv: str,
+    output_interactions_csv: str
+):
+    """
+    Builds two CSV files:
+      1) A filtered 'drug_data' CSV for only the common drugs
+      2) A filtered 'interactions' CSV for interactions among those common drugs
+
+    :param drug_data_path: path to the drug_data_1.csv file
+    :param interactions_path: path to the interactions_text.csv file
+    :param output_drug_csv: path to write the filtered drug data
+    :param output_interactions_csv: path to write the filtered interactions
+    """
+
+    # 1. Load data
+    df_drug = pd.read_csv(drug_data_path)
+    df_interactions = pd.read_csv(interactions_path)
+
+    # 2. Normalize columns for consistency (title case)
+    df_drug["Drug Name"] = df_drug["Drug Name"].str.title()
+    df_interactions["Drug 1"] = df_interactions["Drug 1"].str.title()
+    df_interactions["Drug 2"] = df_interactions["Drug 2"].str.title()
+
+    # 3. Identify the set of common drugs
+    drug_data_drugs = set(df_drug["Drug Name"].unique())
+    interaction_drugs = set(df_interactions["Drug 1"]).union(df_interactions["Drug 2"])
+    common_drugs = drug_data_drugs.intersection(interaction_drugs)
+
+    print(f"Found {len(common_drugs)} common drugs between the two datasets.")
+
+    # 4. Subset 'df_drug' to only these common drugs
+    df_merged_drug = df_drug[df_drug["Drug Name"].isin(common_drugs)]
+
+    # 5. Subset 'df_interactions' to only pairs that are both in 'common_drugs'
+    df_merged_interactions = df_interactions[
+        df_interactions["Drug 1"].isin(common_drugs)
+        & df_interactions["Drug 2"].isin(common_drugs)
+    ]
+
+    print(f"Merged drug data has {len(df_merged_drug)} rows.")
+    print(f"Merged interactions data has {len(df_merged_interactions)} rows.")
+
+    # 6. Write to CSV
+    df_merged_drug.to_csv(output_drug_csv, index=False)
+    df_merged_interactions.to_csv(output_interactions_csv, index=False)
+
+    print(f"Wrote merged drug data to '{output_drug_csv}'.")
+    print(f"Wrote merged interaction data to '{output_interactions_csv}'.")
 
 
 if __name__ == "__main__":
-    main()
+    # Adjust paths as needed
+    drug_data_path = "data/drug_data_1.csv"
+    interactions_path = "data/interactions_text.csv"
+
+    df_drug, df_interactions = load_data(drug_data_path, interactions_path)
+    #basic_dataset_info(df_drug, df_interactions)
+    #analyze_interactions(df_interactions)
+    #interaction_description_stats(df_interactions)
+    #merged_drug_info(df_drug, df_interactions)
+
+    build_merged_csv(
+    drug_data_path="data/drug_data_1.csv",
+    interactions_path="data/interactions_text.csv",
+    output_drug_csv="data/common_drugs.csv",
+    output_interactions_csv="data/common_interactions.csv"
+)
+
+    print("\n--- EDA COMPLETE ---\n")

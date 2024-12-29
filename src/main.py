@@ -13,8 +13,8 @@ class MedicationScheduleOptimizer:
         self.diet = {}
 
     def load_and_prepare_data(self):
-        db_interactions_csv = "data/interactions_text.csv"
-        drug_data_csv = "data/drug_data_1.csv"
+        db_interactions_csv = "data/common_interactions.csv"
+        drug_data_csv = "data/common_drugs.csv"
         #interactions_effects = "data/interactions_effects.csv"
         df_db_interactions, df_drug_data = load_data(db_interactions_csv, drug_data_csv)
         self.interactions = build_interaction_dict(df_db_interactions)

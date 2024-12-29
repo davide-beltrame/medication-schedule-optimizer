@@ -1,0 +1,1390 @@
+Drug 1,Drug 2,Interaction Description
+Prednisone,Levofloxacin,The risk or severity of adverse effects can be increased when Prednisone is combined with Levofloxacin.
+Warfarin,Levofloxacin,Warfarin may increase the anticoagulant activities of Levofloxacin.
+Rosiglitazone,Levofloxacin,Rosiglitazone may increase the hypoglycemic activities of Levofloxacin.
+Pioglitazone,Levofloxacin,Pioglitazone may increase the hypoglycemic activities of Levofloxacin.
+Metformin,Levofloxacin,Metformin may increase the hypoglycemic activities of Levofloxacin.
+Bromocriptine,Levofloxacin,Bromocriptine may increase the hypoglycemic activities of Levofloxacin.
+Fluticasone Propionate,Levofloxacin,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Levofloxacin.
+Naproxen,Levofloxacin,Naproxen may increase the neuroexcitatory activities of Levofloxacin.
+Ibuprofen,Levofloxacin,Ibuprofen may increase the neuroexcitatory activities of Levofloxacin.
+Citalopram,Levofloxacin,Citalopram may increase the QTc-prolonging activities of Levofloxacin.
+Amiodarone,Levofloxacin,Amiodarone may increase the QTc-prolonging activities of Levofloxacin.
+Fluoxetine,Levofloxacin,Fluoxetine may increase the QTc-prolonging activities of Levofloxacin.
+Lovastatin,Levofloxacin,The serum concentration of Levofloxacin can be increased when it is combined with Lovastatin.
+Quetiapine,Levofloxacin,Quetiapine may increase the QTc-prolonging activities of Levofloxacin.
+Escitalopram,Levofloxacin,Escitalopram may increase the QTc-prolonging activities of Levofloxacin.
+Pravastatin,Levofloxacin,The serum concentration of Levofloxacin can be increased when it is combined with Pravastatin.
+Simvastatin,Levofloxacin,The serum concentration of Levofloxacin can be increased when it is combined with Simvastatin.
+Rosuvastatin,Levofloxacin,The serum concentration of Levofloxacin can be increased when it is combined with Rosuvastatin.
+Atenolol,Furosemide,The risk or severity of adverse effects can be increased when Atenolol is combined with Furosemide.
+Metoprolol,Furosemide,The risk or severity of adverse effects can be increased when Metoprolol is combined with Furosemide.
+Prednisone,Furosemide,Prednisone may increase the hypokalemic activities of Furosemide.
+Chlorthalidone,Furosemide,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Furosemide.
+Methotrexate,Furosemide,The therapeutic efficacy of Furosemide can be decreased when used in combination with Methotrexate.
+Propranolol,Furosemide,The risk or severity of adverse effects can be increased when Propranolol is combined with Furosemide.
+Bromocriptine,Furosemide,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Furosemide.
+Fluticasone Propionate,Furosemide,Fluticasone propionate may increase the hypokalemic activities of Furosemide.
+Naproxen,Furosemide,Naproxen may decrease the diuretic activities of Furosemide.
+Ibuprofen,Furosemide,Ibuprofen may decrease the diuretic activities of Furosemide.
+Amiodarone,Furosemide,The risk or severity of adverse effects can be increased when Amiodarone is combined with Furosemide.
+Fentanyl,Furosemide,The risk or severity of adverse effects can be increased when Fentanyl is combined with Furosemide.
+Tramadol,Furosemide,The risk or severity of adverse effects can be increased when Tramadol is combined with Furosemide.
+Aripiprazole,Furosemide,Aripiprazole may increase the hypotensive activities of Furosemide.
+Morphine,Furosemide,The risk or severity of adverse effects can be increased when Morphine is combined with Furosemide.
+Amlodipine,Furosemide,The risk or severity of adverse effects can be increased when Amlodipine is combined with Furosemide.
+Enalapril,Furosemide,The risk or severity of adverse effects can be increased when Enalapril is combined with Furosemide.
+Losartan,Furosemide,The risk or severity of adverse effects can be increased when Losartan is combined with Furosemide.
+Warfarin,Prednisone,Warfarin may increase the anticoagulant activities of Prednisone.
+Bromocriptine,Prednisone,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Prednisone.
+Naproxen,Prednisone,The risk or severity of adverse effects can be increased when Naproxen is combined with Prednisone.
+Ibuprofen,Prednisone,The risk or severity of adverse effects can be increased when Ibuprofen is combined with Prednisone.
+Pravastatin,Prednisone,The serum concentration of Prednisone can be increased when it is combined with Pravastatin.
+Simvastatin,Prednisone,The serum concentration of Prednisone can be increased when it is combined with Simvastatin.
+Rosuvastatin,Prednisone,The serum concentration of Prednisone can be increased when it is combined with Rosuvastatin.
+Warfarin,Fluticasone Propionate,Warfarin may increase the anticoagulant activities of Fluticasone propionate.
+Bromocriptine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Fluticasone propionate.
+Naproxen,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Naproxen is combined with Fluticasone propionate.
+Ibuprofen,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Ibuprofen is combined with Fluticasone propionate.
+Quetiapine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Quetiapine is combined with Fluticasone propionate.
+Pravastatin,Fluticasone Propionate,The serum concentration of Fluticasone propionate can be increased when it is combined with Pravastatin.
+Simvastatin,Fluticasone Propionate,The serum concentration of Fluticasone propionate can be increased when it is combined with Simvastatin.
+Rosuvastatin,Fluticasone Propionate,The serum concentration of Fluticasone propionate can be increased when it is combined with Rosuvastatin.
+Ondansetron,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Ondansetron is combined with Fluticasone propionate.
+Fentanyl,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Fentanyl is combined with Fluticasone propionate.
+Tramadol,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Tramadol is combined with Fluticasone propionate.
+Aripiprazole,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Fluticasone propionate.
+Morphine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Morphine is combined with Fluticasone propionate.
+Olanzapine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Olanzapine is combined with Fluticasone propionate.
+Pregabalin,Fluticasone Propionate,The therapeutic efficacy of Fluticasone propionate can be increased when used in combination with Pregabalin.
+Mirtazapine,Fluticasone Propionate,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Fluticasone propionate.
+Trazodone,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Trazodone is combined with Fluticasone propionate.
+Alprazolam,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Alprazolam is combined with Fluticasone propionate.
+Lorazepam,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Lorazepam is combined with Fluticasone propionate.
+Cetirizine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Cetirizine is combined with Fluticasone propionate.
+Lamotrigine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Fluticasone propionate.
+Cyclobenzaprine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Fluticasone propionate.
+Gabapentin,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Gabapentin is combined with Fluticasone propionate.
+Diazepam,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Diazepam is combined with Fluticasone propionate.
+Loratadine,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Loratadine is combined with Fluticasone propionate.
+Risperidone,Fluticasone Propionate,The risk or severity of adverse effects can be increased when Risperidone is combined with Fluticasone propionate.
+Atenolol,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Atenolol is combined with Hydrochlorothiazide.
+Metoprolol,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Metoprolol is combined with Hydrochlorothiazide.
+Furosemide,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Furosemide is combined with Hydrochlorothiazide.
+Prednisone,Hydrochlorothiazide,Prednisone may increase the hypokalemic activities of Hydrochlorothiazide.
+Chlorthalidone,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Hydrochlorothiazide.
+Propranolol,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Propranolol is combined with Hydrochlorothiazide.
+Bromocriptine,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Hydrochlorothiazide.
+Fluticasone Propionate,Hydrochlorothiazide,Fluticasone propionate may increase the hypokalemic activities of Hydrochlorothiazide.
+Naproxen,Hydrochlorothiazide,The therapeutic efficacy of Hydrochlorothiazide can be decreased when used in combination with Naproxen.
+Ibuprofen,Hydrochlorothiazide,The therapeutic efficacy of Hydrochlorothiazide can be decreased when used in combination with Ibuprofen.
+Amiodarone,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Amiodarone is combined with Hydrochlorothiazide.
+Amphetamine,Hydrochlorothiazide,Amphetamine may increase the hypotensive activities of Hydrochlorothiazide.
+Sildenafil,Hydrochlorothiazide,Sildenafil may increase the antihypertensive activities of Hydrochlorothiazide.
+Fentanyl,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Fentanyl is combined with Hydrochlorothiazide.
+Tramadol,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Tramadol is combined with Hydrochlorothiazide.
+Aripiprazole,Hydrochlorothiazide,Aripiprazole may increase the hypotensive activities of Hydrochlorothiazide.
+Morphine,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Morphine is combined with Hydrochlorothiazide.
+Amlodipine,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Amlodipine is combined with Hydrochlorothiazide.
+Lisinopril,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Lisinopril is combined with Hydrochlorothiazide.
+Enalapril,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Enalapril is combined with Hydrochlorothiazide.
+Losartan,Hydrochlorothiazide,The risk or severity of adverse effects can be increased when Losartan is combined with Hydrochlorothiazide.
+Bimatoprost,Hydrochlorothiazide,Bimatoprost may increase the hypotensive activities of Hydrochlorothiazide.
+Latanoprost,Hydrochlorothiazide,Latanoprost may increase the hypotensive activities of Hydrochlorothiazide.
+Allopurinol,Hydrochlorothiazide,The risk of a hypersensitivity reaction to Hydrochlorothiazide is increased when it is combined with Allopurinol.
+Atenolol,Bimatoprost,Atenolol may increase the hypotensive activities of Bimatoprost.
+Metoprolol,Bimatoprost,Metoprolol may increase the hypotensive activities of Bimatoprost.
+Chlorthalidone,Bimatoprost,Chlorthalidone may increase the hypotensive activities of Bimatoprost.
+Propranolol,Bimatoprost,Propranolol may increase the hypotensive activities of Bimatoprost.
+Naproxen,Bimatoprost,The therapeutic efficacy of Bimatoprost can be decreased when used in combination with Naproxen.
+Ibuprofen,Bimatoprost,The therapeutic efficacy of Bimatoprost can be decreased when used in combination with Ibuprofen.
+Amphetamine,Bimatoprost,Amphetamine may increase the hypotensive activities of Bimatoprost.
+Sildenafil,Bimatoprost,Sildenafil may increase the antihypertensive activities of Bimatoprost.
+Amlodipine,Bimatoprost,Amlodipine may increase the hypotensive activities of Bimatoprost.
+Lisinopril,Bimatoprost,Lisinopril may increase the hypotensive activities of Bimatoprost.
+Enalapril,Bimatoprost,Enalapril may increase the hypotensive activities of Bimatoprost.
+Losartan,Bimatoprost,Losartan may increase the hypotensive activities of Bimatoprost.
+Metoprolol,Chlorthalidone,The risk or severity of adverse effects can be increased when Metoprolol is combined with Chlorthalidone.
+Prednisone,Chlorthalidone,Prednisone may increase the hypokalemic activities of Chlorthalidone.
+Bromocriptine,Chlorthalidone,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Chlorthalidone.
+Fluticasone Propionate,Chlorthalidone,Fluticasone propionate may increase the hypokalemic activities of Chlorthalidone.
+Naproxen,Chlorthalidone,The therapeutic efficacy of Chlorthalidone can be decreased when used in combination with Naproxen.
+Ibuprofen,Chlorthalidone,The therapeutic efficacy of Chlorthalidone can be decreased when used in combination with Ibuprofen.
+Amiodarone,Chlorthalidone,The risk or severity of adverse effects can be increased when Amiodarone is combined with Chlorthalidone.
+Amphetamine,Chlorthalidone,Amphetamine may increase the hypotensive activities of Chlorthalidone.
+Sildenafil,Chlorthalidone,Sildenafil may increase the antihypertensive activities of Chlorthalidone.
+Fentanyl,Chlorthalidone,The risk or severity of adverse effects can be increased when Fentanyl is combined with Chlorthalidone.
+Tramadol,Chlorthalidone,The risk or severity of adverse effects can be increased when Tramadol is combined with Chlorthalidone.
+Aripiprazole,Chlorthalidone,Aripiprazole may increase the hypotensive activities of Chlorthalidone.
+Morphine,Chlorthalidone,The risk or severity of adverse effects can be increased when Morphine is combined with Chlorthalidone.
+Allopurinol,Chlorthalidone,The risk of a hypersensitivity reaction to Chlorthalidone is increased when it is combined with Allopurinol.
+Atenolol,Latanoprost,Atenolol may increase the hypotensive activities of Latanoprost.
+Metoprolol,Latanoprost,Metoprolol may increase the hypotensive activities of Latanoprost.
+Chlorthalidone,Latanoprost,Chlorthalidone may increase the hypotensive activities of Latanoprost.
+Propranolol,Latanoprost,Propranolol may increase the hypotensive activities of Latanoprost.
+Naproxen,Latanoprost,The therapeutic efficacy of Latanoprost can be decreased when used in combination with Naproxen.
+Ibuprofen,Latanoprost,The therapeutic efficacy of Latanoprost can be decreased when used in combination with Ibuprofen.
+Amphetamine,Latanoprost,Amphetamine may increase the hypotensive activities of Latanoprost.
+Sildenafil,Latanoprost,Sildenafil may increase the antihypertensive activities of Latanoprost.
+Amlodipine,Latanoprost,Amlodipine may increase the hypotensive activities of Latanoprost.
+Enalapril,Latanoprost,Enalapril may increase the hypotensive activities of Latanoprost.
+Atenolol,Methylphenidate,Atenolol may decrease the antihypertensive activities of Methylphenidate.
+Metoprolol,Methylphenidate,The serum concentration of Methylphenidate can be increased when it is combined with Metoprolol.
+Chlorthalidone,Methylphenidate,Chlorthalidone may decrease the antihypertensive activities of Methylphenidate.
+Hydrochlorothiazide,Methylphenidate,Hydrochlorothiazide may decrease the antihypertensive activities of Methylphenidate.
+Carvedilol,Methylphenidate,Carvedilol may decrease the antihypertensive activities of Methylphenidate.
+Propranolol,Methylphenidate,Propranolol may decrease the antihypertensive activities of Methylphenidate.
+Warfarin,Methylphenidate,The serum concentration of Methylphenidate can be increased when it is combined with Warfarin.
+Quetiapine,Methylphenidate,The risk or severity of adverse effects can be increased when Quetiapine is combined with Methylphenidate.
+Ondansetron,Methylphenidate,The risk or severity of adverse effects can be increased when Ondansetron is combined with Methylphenidate.
+Aripiprazole,Methylphenidate,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Methylphenidate.
+Amlodipine,Methylphenidate,Amlodipine may decrease the antihypertensive activities of Methylphenidate.
+Lisinopril,Methylphenidate,Lisinopril may decrease the antihypertensive activities of Methylphenidate.
+Enalapril,Methylphenidate,Enalapril may decrease the antihypertensive activities of Methylphenidate.
+Losartan,Methylphenidate,Losartan may decrease the antihypertensive activities of Methylphenidate.
+Esomeprazole,Methylphenidate,Esomeprazole can cause an increase in the absorption of Methylphenidate resulting in an increased serum concentration and potentially a worsening of adverse effects.
+Omeprazole,Methylphenidate,Omeprazole can cause an increase in the absorption of Methylphenidate resulting in an increased serum concentration and potentially a worsening of adverse effects.
+Ranitidine,Methylphenidate,Ranitidine can cause an increase in the absorption of Methylphenidate resulting in an increased serum concentration and potentially a worsening of adverse effects.
+Olanzapine,Methylphenidate,The risk or severity of adverse effects can be increased when Olanzapine is combined with Methylphenidate.
+Risperidone,Methylphenidate,The risk or severity of adverse effects can be increased when Risperidone is combined with Methylphenidate.
+Bimatoprost,Methylphenidate,Bimatoprost may decrease the antihypertensive activities of Methylphenidate.
+Latanoprost,Methylphenidate,Latanoprost may decrease the antihypertensive activities of Methylphenidate.
+Atenolol,Venlafaxine,The serum concentration of Venlafaxine can be increased when it is combined with Atenolol.
+Metoprolol,Venlafaxine,The serum concentration of Venlafaxine can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Venlafaxine,Ciprofloxacin may increase the QTc-prolonging activities of Venlafaxine.
+Levofloxacin,Venlafaxine,Levofloxacin may increase the QTc-prolonging activities of Venlafaxine.
+Prednisone,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Prednisone.
+Chlorthalidone,Venlafaxine,Chlorthalidone may increase the hyponatremic activities of Venlafaxine.
+Hydrochlorothiazide,Venlafaxine,Hydrochlorothiazide may increase the hyponatremic activities of Venlafaxine.
+Carvedilol,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Carvedilol.
+Propranolol,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Propranolol.
+Rosiglitazone,Venlafaxine,Rosiglitazone may increase the hypoglycemic activities of Venlafaxine.
+Pioglitazone,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Pioglitazone.
+Metformin,Venlafaxine,Metformin may increase the hypoglycemic activities of Venlafaxine.
+Fluticasone Propionate,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Fluticasone propionate.
+Citalopram,Venlafaxine,Citalopram may increase the QTc-prolonging activities of Venlafaxine.
+Fluoxetine,Venlafaxine,Fluoxetine may increase the QTc-prolonging activities of Venlafaxine.
+Quetiapine,Venlafaxine,Quetiapine may increase the QTc-prolonging activities of Venlafaxine.
+Escitalopram,Venlafaxine,Escitalopram may increase the QTc-prolonging activities of Venlafaxine.
+Pravastatin,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Pravastatin.
+Simvastatin,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Simvastatin.
+Rosuvastatin,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Rosuvastatin.
+Ondansetron,Venlafaxine,Ondansetron may increase the QTc-prolonging activities of Venlafaxine.
+Amphetamine,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Amphetamine.
+Fentanyl,Venlafaxine,The serum concentration of Venlafaxine can be increased when it is combined with Fentanyl.
+Aripiprazole,Venlafaxine,The serum concentration of Venlafaxine can be increased when it is combined with Aripiprazole.
+Morphine,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Morphine.
+Amlodipine,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Amlodipine.
+Enalapril,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Enalapril.
+Losartan,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Losartan.
+Esomeprazole,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Esomeprazole.
+Omeprazole,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Omeprazole.
+Ranitidine,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Ranitidine.
+Olanzapine,Venlafaxine,Olanzapine may increase the serotonergic activities of Venlafaxine.
+Clopidogrel,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Clopidogrel.
+Pregabalin,Venlafaxine,The risk or severity of adverse effects can be increased when Pregabalin is combined with Venlafaxine.
+Trazodone,Venlafaxine,Trazodone may increase the serotonergic activities of Venlafaxine.
+Alprazolam,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Alprazolam.
+Lorazepam,Venlafaxine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Venlafaxine.
+Cetirizine,Venlafaxine,The risk or severity of adverse effects can be increased when Cetirizine is combined with Venlafaxine.
+Lamotrigine,Venlafaxine,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Venlafaxine.
+Gabapentin,Venlafaxine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Venlafaxine.
+Diazepam,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Diazepam.
+Loratadine,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Loratadine.
+Risperidone,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Risperidone.
+Cephalexin,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Cephalexin.
+Bupropion,Venlafaxine,The serum concentration of Venlafaxine can be increased when it is combined with Bupropion.
+Levothyroxine,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Levothyroxine.
+Clonazepam,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Clonazepam.
+Isosorbide Mononitrate,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Isosorbide mononitrate.
+Metronidazole,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Metronidazole.
+Methylphenidate,Venlafaxine,The metabolism of Venlafaxine can be decreased when combined with Methylphenidate.
+Levetiracetam,Venlafaxine,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Venlafaxine.
+Metoprolol,Lovastatin,The serum concentration of Lovastatin can be increased when it is combined with Metoprolol.
+Prednisone,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Prednisone.
+Tamoxifen,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Tamoxifen.
+Carvedilol,Lovastatin,The serum concentration of Lovastatin can be increased when it is combined with Carvedilol.
+Propranolol,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Propranolol.
+Warfarin,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Warfarin.
+Rosiglitazone,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Rosiglitazone.
+Pioglitazone,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Pioglitazone.
+Bromocriptine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Bromocriptine.
+Fluticasone Propionate,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Fluticasone propionate.
+Naproxen,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Naproxen.
+Ibuprofen,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Ibuprofen.
+Citalopram,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Citalopram.
+Fluoxetine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Fluoxetine.
+Quetiapine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Quetiapine.
+Escitalopram,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Escitalopram.
+Pravastatin,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Pravastatin.
+Simvastatin,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Simvastatin.
+Rosuvastatin,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Rosuvastatin.
+Ondansetron,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Ondansetron.
+Sildenafil,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Sildenafil.
+Fentanyl,Lovastatin,The serum concentration of Lovastatin can be increased when it is combined with Fentanyl.
+Tramadol,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Tramadol.
+Aripiprazole,Lovastatin,The serum concentration of Lovastatin can be increased when it is combined with Aripiprazole.
+Morphine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Morphine.
+Amlodipine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Amlodipine.
+Losartan,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Losartan.
+Esomeprazole,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Esomeprazole.
+Omeprazole,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Omeprazole.
+Clopidogrel,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Clopidogrel.
+Pregabalin,Lovastatin,The risk or severity of adverse effects can be increased when Pregabalin is combined with Lovastatin.
+Mirtazapine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Mirtazapine.
+Trazodone,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Trazodone.
+Alprazolam,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Alprazolam.
+Lamotrigine,Lovastatin,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Lovastatin.
+Cyclobenzaprine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Cyclobenzaprine.
+Gabapentin,Lovastatin,The risk or severity of adverse effects can be increased when Gabapentin is combined with Lovastatin.
+Diazepam,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Diazepam.
+Loratadine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Loratadine.
+Risperidone,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Risperidone.
+Venlafaxine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Venlafaxine.
+Sertraline,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Sertraline.
+Cephalexin,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Cephalexin.
+Bupropion,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Bupropion.
+Levothyroxine,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Levothyroxine.
+Clonazepam,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Clonazepam.
+Isosorbide Mononitrate,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Isosorbide mononitrate.
+Metronidazole,Lovastatin,The metabolism of Lovastatin can be decreased when combined with Metronidazole.
+Metoprolol,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Metoprolol.
+Prednisone,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Prednisone.
+Tamoxifen,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Tamoxifen.
+Carvedilol,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Carvedilol.
+Warfarin,Amiodarone,Warfarin may increase the anticoagulant activities of Amiodarone.
+Rosiglitazone,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Rosiglitazone.
+Pioglitazone,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Pioglitazone.
+Bromocriptine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Bromocriptine.
+Fluticasone Propionate,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Fluticasone propionate.
+Naproxen,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Naproxen.
+Ibuprofen,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Ibuprofen.
+Citalopram,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Citalopram.
+Fluoxetine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Fluoxetine.
+Lovastatin,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Lovastatin.
+Quetiapine,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Quetiapine.
+Escitalopram,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Escitalopram.
+Pravastatin,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Pravastatin.
+Simvastatin,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Simvastatin.
+Rosuvastatin,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Rosuvastatin.
+Ondansetron,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Ondansetron.
+Amphetamine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Amphetamine.
+Sildenafil,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Sildenafil.
+Fentanyl,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Fentanyl.
+Tramadol,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Tramadol.
+Aripiprazole,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Aripiprazole.
+Morphine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Morphine.
+Amlodipine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Amlodipine.
+Enalapril,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Enalapril.
+Losartan,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Losartan.
+Esomeprazole,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Esomeprazole.
+Omeprazole,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Omeprazole.
+Ranitidine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Ranitidine.
+Mirtazapine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Mirtazapine.
+Trazodone,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Trazodone.
+Alprazolam,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Alprazolam.
+Cyclobenzaprine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Cyclobenzaprine.
+Diazepam,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Diazepam.
+Loratadine,Amiodarone,The serum concentration of Amiodarone can be increased when it is combined with Loratadine.
+Venlafaxine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Venlafaxine.
+Sertraline,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Sertraline.
+Cephalexin,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Cephalexin.
+Atorvastatin,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Atorvastatin.
+Bupropion,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Bupropion.
+Levothyroxine,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Levothyroxine.
+Clonazepam,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Clonazepam.
+Isosorbide Mononitrate,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Isosorbide mononitrate.
+Metronidazole,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Metronidazole.
+Methylphenidate,Amiodarone,The metabolism of Amiodarone can be decreased when combined with Methylphenidate.
+Metoprolol,Sildenafil,The serum concentration of Sildenafil can be increased when it is combined with Metoprolol.
+Prednisone,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Prednisone.
+Tamoxifen,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Tamoxifen.
+Carvedilol,Sildenafil,The serum concentration of Sildenafil can be increased when it is combined with Carvedilol.
+Warfarin,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Warfarin.
+Rosiglitazone,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Rosiglitazone.
+Pioglitazone,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Pioglitazone.
+Bromocriptine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Bromocriptine.
+Fluticasone Propionate,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Fluticasone propionate.
+Naproxen,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Naproxen.
+Ibuprofen,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Ibuprofen.
+Citalopram,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Citalopram.
+Quetiapine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Quetiapine.
+Escitalopram,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Escitalopram.
+Pravastatin,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Pravastatin.
+Simvastatin,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Simvastatin.
+Rosuvastatin,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Rosuvastatin.
+Ondansetron,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Ondansetron.
+Fentanyl,Sildenafil,The serum concentration of Sildenafil can be increased when it is combined with Fentanyl.
+Tramadol,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Tramadol.
+Aripiprazole,Sildenafil,The serum concentration of Sildenafil can be increased when it is combined with Aripiprazole.
+Morphine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Morphine.
+Esomeprazole,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Esomeprazole.
+Omeprazole,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Omeprazole.
+Clopidogrel,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Clopidogrel.
+Mirtazapine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Mirtazapine.
+Trazodone,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Trazodone.
+Alprazolam,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Alprazolam.
+Cyclobenzaprine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Cyclobenzaprine.
+Diazepam,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Diazepam.
+Loratadine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Loratadine.
+Risperidone,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Risperidone.
+Venlafaxine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Venlafaxine.
+Sertraline,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Sertraline.
+Cephalexin,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Cephalexin.
+Levothyroxine,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Levothyroxine.
+Clonazepam,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Clonazepam.
+Isosorbide Mononitrate,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Isosorbide mononitrate.
+Metronidazole,Sildenafil,The metabolism of Sildenafil can be decreased when combined with Metronidazole.
+Atenolol,Ibuprofen,Atenolol may decrease the antihypertensive activities of Ibuprofen.
+Metoprolol,Ibuprofen,Metoprolol may decrease the antihypertensive activities of Ibuprofen.
+Methotrexate,Ibuprofen,The serum concentration of Ibuprofen can be increased when it is combined with Methotrexate.
+Carvedilol,Ibuprofen,Carvedilol may decrease the antihypertensive activities of Ibuprofen.
+Propranolol,Ibuprofen,Propranolol may decrease the antihypertensive activities of Ibuprofen.
+Warfarin,Ibuprofen,Warfarin may increase the anticoagulant activities of Ibuprofen.
+Naproxen,Ibuprofen,The risk or severity of adverse effects can be increased when Naproxen is combined with Ibuprofen.
+Lisinopril,Ibuprofen,The risk or severity of adverse effects can be increased when Lisinopril is combined with Ibuprofen.
+Enalapril,Ibuprofen,The risk or severity of adverse effects can be increased when Enalapril is combined with Ibuprofen.
+Bromocriptine,Metoprolol,Bromocriptine may increase the atrioventricular blocking (AV block) activities of Metoprolol.
+Fentanyl,Metoprolol,Fentanyl may increase the bradycardic activities of Metoprolol.
+Morphine,Metoprolol,The risk or severity of adverse effects can be increased when Morphine is combined with Metoprolol.
+Trazodone,Metoprolol,The metabolism of Metoprolol can be decreased when combined with Trazodone.
+Cyclobenzaprine,Metoprolol,The metabolism of Metoprolol can be decreased when combined with Cyclobenzaprine.
+Cephalexin,Metoprolol,The metabolism of Metoprolol can be decreased when combined with Cephalexin.
+Memantine,Metoprolol,Memantine may increase the bradycardic activities of Metoprolol.
+Atenolol,Losartan,The risk or severity of adverse effects can be increased when Atenolol is combined with Losartan.
+Metoprolol,Losartan,The risk or severity of adverse effects can be increased when Metoprolol is combined with Losartan.
+Ciprofloxacin,Losartan,Ciprofloxacin may increase the arrhythmogenic activities of Losartan.
+Chlorthalidone,Losartan,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Losartan.
+Tamoxifen,Losartan,The metabolism of Losartan can be decreased when combined with Tamoxifen.
+Carvedilol,Losartan,The serum concentration of Losartan can be increased when it is combined with Carvedilol.
+Propranolol,Losartan,The risk or severity of adverse effects can be increased when Propranolol is combined with Losartan.
+Warfarin,Losartan,The metabolism of Losartan can be decreased when combined with Warfarin.
+Rosiglitazone,Losartan,The metabolism of Losartan can be decreased when combined with Rosiglitazone.
+Pioglitazone,Losartan,The metabolism of Losartan can be decreased when combined with Pioglitazone.
+Bromocriptine,Losartan,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Losartan.
+Naproxen,Losartan,The metabolism of Losartan can be decreased when combined with Naproxen.
+Ibuprofen,Losartan,The metabolism of Losartan can be decreased when combined with Ibuprofen.
+Fluoxetine,Losartan,The metabolism of Losartan can be decreased when combined with Fluoxetine.
+Pravastatin,Losartan,The metabolism of Losartan can be decreased when combined with Pravastatin.
+Simvastatin,Losartan,The metabolism of Losartan can be decreased when combined with Simvastatin.
+Rosuvastatin,Losartan,The metabolism of Losartan can be decreased when combined with Rosuvastatin.
+Ondansetron,Losartan,The metabolism of Losartan can be decreased when combined with Ondansetron.
+Amphetamine,Losartan,Amphetamine may increase the hypotensive activities of Losartan.
+Sildenafil,Losartan,Sildenafil may increase the antihypertensive activities of Losartan.
+Aripiprazole,Losartan,Aripiprazole may increase the hypotensive activities of Losartan.
+Morphine,Losartan,The risk or severity of adverse effects can be increased when Morphine is combined with Losartan.
+Amlodipine,Losartan,The risk or severity of adverse effects can be increased when Amlodipine is combined with Losartan.
+Omeprazole,Losartan,The metabolism of Losartan can be decreased when combined with Omeprazole.
+Clopidogrel,Losartan,The metabolism of Losartan can be decreased when combined with Clopidogrel.
+Mirtazapine,Losartan,The metabolism of Losartan can be decreased when combined with Mirtazapine.
+Alprazolam,Losartan,The metabolism of Losartan can be decreased when combined with Alprazolam.
+Diazepam,Losartan,The metabolism of Losartan can be decreased when combined with Diazepam.
+Loratadine,Losartan,The metabolism of Losartan can be decreased when combined with Loratadine.
+Sertraline,Losartan,The metabolism of Losartan can be decreased when combined with Sertraline.
+Bupropion,Losartan,The metabolism of Losartan can be decreased when combined with Bupropion.
+Latanoprost,Losartan,Latanoprost may increase the hypotensive activities of Losartan.
+Metronidazole,Losartan,The metabolism of Losartan can be decreased when combined with Metronidazole.
+Metoprolol,Aripiprazole,The serum concentration of Aripiprazole can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Aripiprazole,Ciprofloxacin may increase the QTc-prolonging activities of Aripiprazole.
+Levofloxacin,Aripiprazole,Levofloxacin may increase the QTc-prolonging activities of Aripiprazole.
+Prednisone,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Prednisone.
+Tamoxifen,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Tamoxifen.
+Pioglitazone,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Pioglitazone.
+Fluoxetine,Aripiprazole,The risk or severity of adverse effects can be increased when Fluoxetine is combined with Aripiprazole.
+Escitalopram,Aripiprazole,Escitalopram may increase the QTc-prolonging activities of Aripiprazole.
+Simvastatin,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Simvastatin.
+Ondansetron,Aripiprazole,Ondansetron may increase the QTc-prolonging activities of Aripiprazole.
+Amphetamine,Aripiprazole,Amphetamine may decrease the stimulatory activities of Aripiprazole.
+Fentanyl,Aripiprazole,The risk or severity of adverse effects can be increased when Fentanyl is combined with Aripiprazole.
+Tramadol,Aripiprazole,The risk or severity of adverse effects can be increased when Tramadol is combined with Aripiprazole.
+Omeprazole,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Omeprazole.
+Olanzapine,Aripiprazole,The risk or severity of adverse effects can be increased when Olanzapine is combined with Aripiprazole.
+Pregabalin,Aripiprazole,The therapeutic efficacy of Aripiprazole can be increased when used in combination with Pregabalin.
+Mirtazapine,Aripiprazole,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Aripiprazole.
+Alprazolam,Aripiprazole,The risk or severity of adverse effects can be increased when Alprazolam is combined with Aripiprazole.
+Lorazepam,Aripiprazole,The risk or severity of adverse effects can be increased when Lorazepam is combined with Aripiprazole.
+Cyclobenzaprine,Aripiprazole,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Aripiprazole.
+Gabapentin,Aripiprazole,The risk or severity of adverse effects can be increased when Gabapentin is combined with Aripiprazole.
+Diazepam,Aripiprazole,The risk or severity of adverse effects can be increased when Diazepam is combined with Aripiprazole.
+Loratadine,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Loratadine.
+Risperidone,Aripiprazole,The risk or severity of adverse effects can be increased when Risperidone is combined with Aripiprazole.
+Paroxetine,Aripiprazole,The risk or severity of adverse effects can be increased when Paroxetine is combined with Aripiprazole.
+Sertraline,Aripiprazole,The risk or severity of adverse effects can be increased when Sertraline is combined with Aripiprazole.
+Atorvastatin,Aripiprazole,The serum concentration of Aripiprazole can be decreased when it is combined with Atorvastatin.
+Atenolol,Sertraline,The serum concentration of Sertraline can be increased when it is combined with Atenolol.
+Metoprolol,Sertraline,The serum concentration of Sertraline can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Sertraline,Ciprofloxacin may increase the QTc-prolonging activities of Sertraline.
+Levofloxacin,Sertraline,Levofloxacin may increase the QTc-prolonging activities of Sertraline.
+Chlorthalidone,Sertraline,Chlorthalidone may increase the hyponatremic activities of Sertraline.
+Hydrochlorothiazide,Sertraline,Hydrochlorothiazide may increase the hyponatremic activities of Sertraline.
+Carvedilol,Sertraline,The metabolism of Sertraline can be decreased when combined with Carvedilol.
+Propranolol,Sertraline,The metabolism of Sertraline can be decreased when combined with Propranolol.
+Warfarin,Sertraline,The metabolism of Sertraline can be decreased when combined with Warfarin.
+Rosiglitazone,Sertraline,Rosiglitazone may increase the hypoglycemic activities of Sertraline.
+Pioglitazone,Sertraline,Pioglitazone may increase the hypoglycemic activities of Sertraline.
+Metformin,Sertraline,Metformin may increase the hypoglycemic activities of Sertraline.
+Fluticasone Propionate,Sertraline,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Sertraline.
+Ibuprofen,Sertraline,The metabolism of Sertraline can be decreased when combined with Ibuprofen.
+Citalopram,Sertraline,The serum concentration of Sertraline can be increased when it is combined with Citalopram.
+Fluoxetine,Sertraline,Fluoxetine may increase the QTc-prolonging activities of Sertraline.
+Quetiapine,Sertraline,Quetiapine may increase the QTc-prolonging activities of Sertraline.
+Escitalopram,Sertraline,Escitalopram may increase the QTc-prolonging activities of Sertraline.
+Pravastatin,Sertraline,The serum concentration of Sertraline can be increased when it is combined with Pravastatin.
+Simvastatin,Sertraline,The metabolism of Sertraline can be decreased when combined with Simvastatin.
+Rosuvastatin,Sertraline,The metabolism of Sertraline can be decreased when combined with Rosuvastatin.
+Ondansetron,Sertraline,Ondansetron may increase the QTc-prolonging activities of Sertraline.
+Amphetamine,Sertraline,The metabolism of Sertraline can be decreased when combined with Amphetamine.
+Fentanyl,Sertraline,The risk or severity of adverse effects can be increased when Fentanyl is combined with Sertraline.
+Morphine,Sertraline,The metabolism of Sertraline can be decreased when combined with Morphine.
+Ranitidine,Sertraline,The metabolism of Sertraline can be decreased when combined with Ranitidine.
+Duloxetine,Sertraline,The risk or severity of adverse effects can be increased when Duloxetine is combined with Sertraline.
+Olanzapine,Sertraline,Olanzapine may increase the serotonergic activities of Sertraline.
+Pregabalin,Sertraline,The risk or severity of adverse effects can be increased when Pregabalin is combined with Sertraline.
+Trazodone,Sertraline,The risk or severity of adverse effects can be increased when Trazodone is combined with Sertraline.
+Alprazolam,Sertraline,The risk or severity of adverse effects can be increased when Alprazolam is combined with Sertraline.
+Lorazepam,Sertraline,The risk or severity of adverse effects can be increased when Lorazepam is combined with Sertraline.
+Cetirizine,Sertraline,The risk or severity of adverse effects can be increased when Cetirizine is combined with Sertraline.
+Lamotrigine,Sertraline,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Sertraline.
+Gabapentin,Sertraline,The risk or severity of adverse effects can be increased when Gabapentin is combined with Sertraline.
+Diazepam,Sertraline,The metabolism of Sertraline can be decreased when combined with Diazepam.
+Loratadine,Sertraline,The metabolism of Sertraline can be decreased when combined with Loratadine.
+Risperidone,Sertraline,The metabolism of Sertraline can be decreased when combined with Risperidone.
+Venlafaxine,Sertraline,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Sertraline.
+Cephalexin,Sertraline,The metabolism of Sertraline can be decreased when combined with Cephalexin.
+Amoxicillin,Sertraline,The metabolism of Sertraline can be decreased when combined with Amoxicillin.
+Bupropion,Sertraline,The serum concentration of Sertraline can be increased when it is combined with Bupropion.
+Clonazepam,Sertraline,The risk or severity of adverse effects can be increased when Clonazepam is combined with Sertraline.
+Methylphenidate,Sertraline,The metabolism of Sertraline can be decreased when combined with Methylphenidate.
+Levetiracetam,Sertraline,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Sertraline.
+Metoprolol,Bupropion,The serum concentration of Bupropion can be increased when it is combined with Metoprolol.
+Tamoxifen,Bupropion,The serum concentration of Bupropion can be increased when it is combined with Tamoxifen.
+Carvedilol,Bupropion,The metabolism of Bupropion can be decreased when combined with Carvedilol.
+Propranolol,Bupropion,The metabolism of Bupropion can be decreased when combined with Propranolol.
+Metformin,Bupropion,The serum concentration of Bupropion can be increased when it is combined with Metformin.
+Bromocriptine,Bupropion,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Bupropion.
+Quetiapine,Bupropion,The metabolism of Bupropion can be decreased when combined with Quetiapine.
+Escitalopram,Bupropion,The metabolism of Bupropion can be decreased when combined with Escitalopram.
+Simvastatin,Bupropion,The metabolism of Bupropion can be decreased when combined with Simvastatin.
+Ondansetron,Bupropion,The metabolism of Bupropion can be decreased when combined with Ondansetron.
+Amphetamine,Bupropion,The metabolism of Bupropion can be decreased when combined with Amphetamine.
+Amphetamine,Bupropion,The risk or severity of adverse effects can be increased when Amphetamine is combined with Bupropion.
+Sildenafil,Bupropion,The metabolism of Bupropion can be decreased when combined with Sildenafil.
+Aripiprazole,Bupropion,The serum concentration of Bupropion can be increased when it is combined with Aripiprazole.
+Morphine,Bupropion,The metabolism of Bupropion can be decreased when combined with Morphine.
+Ranitidine,Bupropion,The metabolism of Bupropion can be decreased when combined with Ranitidine.
+Duloxetine,Bupropion,The serum concentration of Bupropion can be increased when it is combined with Duloxetine.
+Olanzapine,Bupropion,The metabolism of Bupropion can be decreased when combined with Olanzapine.
+Mirtazapine,Bupropion,The metabolism of Bupropion can be decreased when combined with Mirtazapine.
+Trazodone,Bupropion,The metabolism of Bupropion can be decreased when combined with Trazodone.
+Cyclobenzaprine,Bupropion,The metabolism of Bupropion can be decreased when combined with Cyclobenzaprine.
+Loratadine,Bupropion,The metabolism of Bupropion can be decreased when combined with Loratadine.
+Risperidone,Bupropion,The metabolism of Bupropion can be decreased when combined with Risperidone.
+Cephalexin,Bupropion,The metabolism of Bupropion can be decreased when combined with Cephalexin.
+Memantine,Bupropion,The serum concentration of Bupropion can be increased when it is combined with Memantine.
+Methylphenidate,Bupropion,The metabolism of Bupropion can be decreased when combined with Methylphenidate.
+Atenolol,Paroxetine,The serum concentration of Paroxetine can be increased when it is combined with Atenolol.
+Metoprolol,Paroxetine,The serum concentration of Paroxetine can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Paroxetine,Ciprofloxacin may increase the QTc-prolonging activities of Paroxetine.
+Levofloxacin,Paroxetine,Levofloxacin may increase the QTc-prolonging activities of Paroxetine.
+Chlorthalidone,Paroxetine,Chlorthalidone may increase the hyponatremic activities of Paroxetine.
+Hydrochlorothiazide,Paroxetine,Hydrochlorothiazide may increase the hyponatremic activities of Paroxetine.
+Tamoxifen,Paroxetine,The serum concentration of Paroxetine can be increased when it is combined with Tamoxifen.
+Carvedilol,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Carvedilol.
+Propranolol,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Propranolol.
+Warfarin,Paroxetine,Warfarin may increase the anticoagulant activities of Paroxetine.
+Rosiglitazone,Paroxetine,Rosiglitazone may increase the hypoglycemic activities of Paroxetine.
+Pioglitazone,Paroxetine,Pioglitazone may increase the hypoglycemic activities of Paroxetine.
+Metformin,Paroxetine,Metformin may increase the hypoglycemic activities of Paroxetine.
+Fluticasone Propionate,Paroxetine,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Paroxetine.
+Citalopram,Paroxetine,Citalopram may increase the QTc-prolonging activities of Paroxetine.
+Amiodarone,Paroxetine,Amiodarone may increase the QTc-prolonging activities of Paroxetine.
+Fluoxetine,Paroxetine,Fluoxetine may increase the QTc-prolonging activities of Paroxetine.
+Quetiapine,Paroxetine,Quetiapine may increase the QTc-prolonging activities of Paroxetine.
+Escitalopram,Paroxetine,Escitalopram may increase the QTc-prolonging activities of Paroxetine.
+Pravastatin,Paroxetine,The risk or severity of adverse effects can be increased when Pravastatin is combined with Paroxetine.
+Simvastatin,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Simvastatin.
+Ondansetron,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Ondansetron.
+Amphetamine,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Amphetamine.
+Sildenafil,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Sildenafil.
+Morphine,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Morphine.
+Ranitidine,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Ranitidine.
+Olanzapine,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Olanzapine.
+Clopidogrel,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Clopidogrel.
+Pregabalin,Paroxetine,The risk or severity of adverse effects can be increased when Pregabalin is combined with Paroxetine.
+Trazodone,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Trazodone.
+Alprazolam,Paroxetine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Paroxetine.
+Lorazepam,Paroxetine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Paroxetine.
+Cetirizine,Paroxetine,The risk or severity of adverse effects can be increased when Cetirizine is combined with Paroxetine.
+Lamotrigine,Paroxetine,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Paroxetine.
+Gabapentin,Paroxetine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Paroxetine.
+Diazepam,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Diazepam.
+Loratadine,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Loratadine.
+Risperidone,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Risperidone.
+Venlafaxine,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Venlafaxine.
+Sertraline,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Sertraline.
+Cephalexin,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Cephalexin.
+Bupropion,Paroxetine,The risk or severity of adverse effects can be increased when Bupropion is combined with Paroxetine.
+Clonazepam,Paroxetine,The risk or severity of adverse effects can be increased when Clonazepam is combined with Paroxetine.
+Methylphenidate,Paroxetine,The metabolism of Paroxetine can be decreased when combined with Methylphenidate.
+Levetiracetam,Paroxetine,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Paroxetine.
+Atenolol,Fluoxetine,The serum concentration of Fluoxetine can be increased when it is combined with Atenolol.
+Metoprolol,Fluoxetine,The serum concentration of Fluoxetine can be increased when it is combined with Metoprolol.
+Chlorthalidone,Fluoxetine,Chlorthalidone may increase the hyponatremic activities of Fluoxetine.
+Hydrochlorothiazide,Fluoxetine,Hydrochlorothiazide may increase the hyponatremic activities of Fluoxetine.
+Tamoxifen,Fluoxetine,The serum concentration of Fluoxetine can be increased when it is combined with Tamoxifen.
+Carvedilol,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Carvedilol.
+Propranolol,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Propranolol.
+Warfarin,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Warfarin.
+Rosiglitazone,Fluoxetine,Rosiglitazone may increase the hypoglycemic activities of Fluoxetine.
+Pioglitazone,Fluoxetine,Pioglitazone may increase the hypoglycemic activities of Fluoxetine.
+Metformin,Fluoxetine,Metformin may increase the hypoglycemic activities of Fluoxetine.
+Fluticasone Propionate,Fluoxetine,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Fluoxetine.
+Ibuprofen,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Ibuprofen.
+Citalopram,Fluoxetine,The serum concentration of Fluoxetine can be increased when it is combined with Citalopram.
+Quetiapine,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Quetiapine.
+Escitalopram,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Escitalopram.
+Pravastatin,Fluoxetine,The serum concentration of Fluoxetine can be increased when it is combined with Pravastatin.
+Simvastatin,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Simvastatin.
+Rosuvastatin,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Rosuvastatin.
+Ondansetron,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Ondansetron.
+Amphetamine,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Amphetamine.
+Sildenafil,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Sildenafil.
+Morphine,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Morphine.
+Ranitidine,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Ranitidine.
+Duloxetine,Fluoxetine,The serum concentration of Fluoxetine can be increased when it is combined with Duloxetine.
+Pregabalin,Fluoxetine,The risk or severity of adverse effects can be increased when Pregabalin is combined with Fluoxetine.
+Alprazolam,Fluoxetine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Fluoxetine.
+Lorazepam,Fluoxetine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Fluoxetine.
+Cetirizine,Fluoxetine,The risk or severity of adverse effects can be increased when Cetirizine is combined with Fluoxetine.
+Lamotrigine,Fluoxetine,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Fluoxetine.
+Gabapentin,Fluoxetine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Fluoxetine.
+Diazepam,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Diazepam.
+Loratadine,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Loratadine.
+Risperidone,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Risperidone.
+Cephalexin,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Cephalexin.
+Amoxicillin,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Amoxicillin.
+Bupropion,Fluoxetine,The risk or severity of adverse effects can be increased when Bupropion is combined with Fluoxetine.
+Clonazepam,Fluoxetine,The risk or severity of adverse effects can be increased when Clonazepam is combined with Fluoxetine.
+Methylphenidate,Fluoxetine,The metabolism of Fluoxetine can be decreased when combined with Methylphenidate.
+Levetiracetam,Fluoxetine,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Fluoxetine.
+Atenolol,Duloxetine,Atenolol may increase the orthostatic hypotensive activities of Duloxetine.
+Metoprolol,Duloxetine,The serum concentration of Duloxetine can be increased when it is combined with Metoprolol.
+Furosemide,Duloxetine,Furosemide may increase the orthostatic hypotensive activities of Duloxetine.
+Chlorthalidone,Duloxetine,Chlorthalidone may increase the orthostatic hypotensive activities of Duloxetine.
+Hydrochlorothiazide,Duloxetine,Hydrochlorothiazide may increase the orthostatic hypotensive activities of Duloxetine.
+Carvedilol,Duloxetine,Carvedilol may increase the orthostatic hypotensive activities of Duloxetine.
+Propranolol,Duloxetine,Propranolol may increase the orthostatic hypotensive activities of Duloxetine.
+Warfarin,Duloxetine,Warfarin may increase the anticoagulant activities of Duloxetine.
+Rosiglitazone,Duloxetine,Rosiglitazone may increase the hypoglycemic activities of Duloxetine.
+Pioglitazone,Duloxetine,Pioglitazone may increase the hypoglycemic activities of Duloxetine.
+Metformin,Duloxetine,Metformin may increase the hypoglycemic activities of Duloxetine.
+Bromocriptine,Duloxetine,Bromocriptine may increase the orthostatic hypotensive activities of Duloxetine.
+Fluticasone Propionate,Duloxetine,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Duloxetine.
+Citalopram,Duloxetine,The risk or severity of adverse effects can be increased when Citalopram is combined with Duloxetine.
+Amiodarone,Duloxetine,Amiodarone may increase the orthostatic hypotensive activities of Duloxetine.
+Quetiapine,Duloxetine,Quetiapine may increase the orthostatic hypotensive activities of Duloxetine.
+Simvastatin,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Simvastatin.
+Amphetamine,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Amphetamine.
+Sildenafil,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Sildenafil.
+Aripiprazole,Duloxetine,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Duloxetine.
+Morphine,Duloxetine,Morphine may increase the orthostatic hypotensive activities of Duloxetine.
+Amlodipine,Duloxetine,Amlodipine may increase the orthostatic hypotensive activities of Duloxetine.
+Lisinopril,Duloxetine,Lisinopril may increase the orthostatic hypotensive activities of Duloxetine.
+Enalapril,Duloxetine,Enalapril may increase the orthostatic hypotensive activities of Duloxetine.
+Losartan,Duloxetine,Losartan may increase the orthostatic hypotensive activities of Duloxetine.
+Ranitidine,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Ranitidine.
+Olanzapine,Duloxetine,Olanzapine may increase the serotonergic activities of Duloxetine.
+Pregabalin,Duloxetine,The risk or severity of adverse effects can be increased when Pregabalin is combined with Duloxetine.
+Mirtazapine,Duloxetine,Mirtazapine may increase the serotonergic activities of Duloxetine.
+Trazodone,Duloxetine,The risk or severity of adverse effects can be increased when Trazodone is combined with Duloxetine.
+Alprazolam,Duloxetine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Duloxetine.
+Lorazepam,Duloxetine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Duloxetine.
+Cetirizine,Duloxetine,The risk or severity of adverse effects can be increased when Cetirizine is combined with Duloxetine.
+Lamotrigine,Duloxetine,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Duloxetine.
+Cyclobenzaprine,Duloxetine,Cyclobenzaprine may increase the serotonergic activities of Duloxetine.
+Gabapentin,Duloxetine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Duloxetine.
+Diazepam,Duloxetine,The risk or severity of adverse effects can be increased when Diazepam is combined with Duloxetine.
+Loratadine,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Loratadine.
+Risperidone,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Risperidone.
+Venlafaxine,Duloxetine,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Duloxetine.
+Paroxetine,Duloxetine,Paroxetine may increase the serotonergic activities of Duloxetine.
+Cephalexin,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Cephalexin.
+Clonazepam,Duloxetine,The risk or severity of adverse effects can be increased when Clonazepam is combined with Duloxetine.
+Isosorbide Mononitrate,Duloxetine,Isosorbide mononitrate may increase the orthostatic hypotensive activities of Duloxetine.
+Methylphenidate,Duloxetine,The metabolism of Duloxetine can be decreased when combined with Methylphenidate.
+Levetiracetam,Duloxetine,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Duloxetine.
+Metoprolol,Citalopram,The serum concentration of Citalopram can be increased when it is combined with Metoprolol.
+Chlorthalidone,Citalopram,Chlorthalidone may increase the hyponatremic activities of Citalopram.
+Hydrochlorothiazide,Citalopram,Hydrochlorothiazide may increase the hyponatremic activities of Citalopram.
+Carvedilol,Citalopram,The metabolism of Citalopram can be decreased when combined with Carvedilol.
+Propranolol,Citalopram,The metabolism of Citalopram can be decreased when combined with Propranolol.
+Warfarin,Citalopram,The metabolism of Citalopram can be decreased when combined with Warfarin.
+Rosiglitazone,Citalopram,Rosiglitazone may increase the hypoglycemic activities of Citalopram.
+Pioglitazone,Citalopram,Pioglitazone may increase the hypoglycemic activities of Citalopram.
+Metformin,Citalopram,Metformin may increase the hypoglycemic activities of Citalopram.
+Fluticasone Propionate,Citalopram,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Citalopram.
+Naproxen,Citalopram,The metabolism of Citalopram can be decreased when combined with Naproxen.
+Ibuprofen,Citalopram,The metabolism of Citalopram can be decreased when combined with Ibuprofen.
+Quetiapine,Citalopram,The metabolism of Citalopram can be decreased when combined with Quetiapine.
+Simvastatin,Citalopram,The metabolism of Citalopram can be decreased when combined with Simvastatin.
+Rosuvastatin,Citalopram,The metabolism of Citalopram can be decreased when combined with Rosuvastatin.
+Amphetamine,Citalopram,The metabolism of Citalopram can be decreased when combined with Amphetamine.
+Aripiprazole,Citalopram,The serum concentration of Citalopram can be increased when it is combined with Aripiprazole.
+Morphine,Citalopram,The metabolism of Citalopram can be decreased when combined with Morphine.
+Ranitidine,Citalopram,The metabolism of Citalopram can be decreased when combined with Ranitidine.
+Pregabalin,Citalopram,The risk or severity of adverse effects can be increased when Pregabalin is combined with Citalopram.
+Mirtazapine,Citalopram,The risk or severity of adverse effects can be increased when Mirtazapine is combined with Citalopram.
+Alprazolam,Citalopram,The risk or severity of adverse effects can be increased when Alprazolam is combined with Citalopram.
+Lorazepam,Citalopram,The risk or severity of adverse effects can be increased when Lorazepam is combined with Citalopram.
+Cetirizine,Citalopram,The risk or severity of adverse effects can be increased when Cetirizine is combined with Citalopram.
+Lamotrigine,Citalopram,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Citalopram.
+Cyclobenzaprine,Citalopram,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Citalopram.
+Gabapentin,Citalopram,The risk or severity of adverse effects can be increased when Gabapentin is combined with Citalopram.
+Diazepam,Citalopram,The metabolism of Citalopram can be decreased when combined with Diazepam.
+Loratadine,Citalopram,The metabolism of Citalopram can be decreased when combined with Loratadine.
+Risperidone,Citalopram,The metabolism of Citalopram can be decreased when combined with Risperidone.
+Cephalexin,Citalopram,The metabolism of Citalopram can be decreased when combined with Cephalexin.
+Amoxicillin,Citalopram,The metabolism of Citalopram can be decreased when combined with Amoxicillin.
+Bupropion,Citalopram,The risk or severity of adverse effects can be increased when Bupropion is combined with Citalopram.
+Clonazepam,Citalopram,The risk or severity of adverse effects can be increased when Clonazepam is combined with Citalopram.
+Methylphenidate,Citalopram,The metabolism of Citalopram can be decreased when combined with Methylphenidate.
+Levetiracetam,Citalopram,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Citalopram.
+Metoprolol,Atorvastatin,The serum concentration of Atorvastatin can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Atorvastatin,The risk or severity of adverse effects can be increased when Ciprofloxacin is combined with Atorvastatin.
+Levofloxacin,Atorvastatin,The risk or severity of adverse effects can be increased when Levofloxacin is combined with Atorvastatin.
+Prednisone,Atorvastatin,The risk or severity of adverse effects can be increased when Prednisone is combined with Atorvastatin.
+Tamoxifen,Atorvastatin,The risk or severity of adverse effects can be increased when Tamoxifen is combined with Atorvastatin.
+Warfarin,Atorvastatin,Warfarin may increase the anticoagulant activities of Atorvastatin.
+Bromocriptine,Atorvastatin,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Atorvastatin.
+Fluticasone Propionate,Atorvastatin,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Atorvastatin.
+Fluoxetine,Atorvastatin,The risk or severity of adverse effects can be increased when Fluoxetine is combined with Atorvastatin.
+Lovastatin,Atorvastatin,The risk or severity of adverse effects can be increased when Lovastatin is combined with Atorvastatin.
+Pravastatin,Atorvastatin,The risk or severity of adverse effects can be increased when Pravastatin is combined with Atorvastatin.
+Simvastatin,Atorvastatin,The risk or severity of adverse effects can be increased when Simvastatin is combined with Atorvastatin.
+Rosuvastatin,Atorvastatin,The risk or severity of adverse effects can be increased when Rosuvastatin is combined with Atorvastatin.
+Sildenafil,Atorvastatin,The risk or severity of adverse effects can be increased when Sildenafil is combined with Atorvastatin.
+Fentanyl,Atorvastatin,The risk or severity of adverse effects can be increased when Fentanyl is combined with Atorvastatin.
+Tramadol,Atorvastatin,The risk or severity of adverse effects can be increased when Tramadol is combined with Atorvastatin.
+Amlodipine,Atorvastatin,The risk or severity of adverse effects can be increased when Amlodipine is combined with Atorvastatin.
+Losartan,Atorvastatin,The risk or severity of adverse effects can be increased when Losartan is combined with Atorvastatin.
+Omeprazole,Atorvastatin,The risk or severity of adverse effects can be increased when Omeprazole is combined with Atorvastatin.
+Ranitidine,Atorvastatin,The risk or severity of adverse effects can be increased when Ranitidine is combined with Atorvastatin.
+Olanzapine,Atorvastatin,The risk or severity of adverse effects can be increased when Olanzapine is combined with Atorvastatin.
+Pregabalin,Atorvastatin,The risk or severity of adverse effects can be increased when Pregabalin is combined with Atorvastatin.
+Mirtazapine,Atorvastatin,The risk or severity of adverse effects can be increased when Mirtazapine is combined with Atorvastatin.
+Alprazolam,Atorvastatin,The risk or severity of adverse effects can be increased when Alprazolam is combined with Atorvastatin.
+Lamotrigine,Atorvastatin,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Atorvastatin.
+Gabapentin,Atorvastatin,The risk or severity of adverse effects can be increased when Gabapentin is combined with Atorvastatin.
+Diazepam,Atorvastatin,The risk or severity of adverse effects can be increased when Diazepam is combined with Atorvastatin.
+Loratadine,Atorvastatin,The risk or severity of adverse effects can be increased when Loratadine is combined with Atorvastatin.
+Risperidone,Atorvastatin,The risk or severity of adverse effects can be increased when Risperidone is combined with Atorvastatin.
+Venlafaxine,Atorvastatin,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Atorvastatin.
+Sertraline,Atorvastatin,The risk or severity of adverse effects can be increased when Sertraline is combined with Atorvastatin.
+Ezetimibe,Atorvastatin,The risk or severity of adverse effects can be increased when Ezetimibe is combined with Atorvastatin.
+Metronidazole,Atorvastatin,The risk or severity of adverse effects can be increased when Metronidazole is combined with Atorvastatin.
+Metoprolol,Tamoxifen,The serum concentration of Tamoxifen can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Tamoxifen,Ciprofloxacin may increase the QTc-prolonging activities of Tamoxifen.
+Levofloxacin,Tamoxifen,Levofloxacin may increase the QTc-prolonging activities of Tamoxifen.
+Warfarin,Tamoxifen,Warfarin may increase the anticoagulant activities of Tamoxifen.
+Rosiglitazone,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Rosiglitazone.
+Pioglitazone,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Pioglitazone.
+Bromocriptine,Tamoxifen,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Tamoxifen.
+Naproxen,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Naproxen.
+Ibuprofen,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Ibuprofen.
+Citalopram,Tamoxifen,The serum concentration of the active metabolites of Tamoxifen can be reduced when Tamoxifen is used in combination with Citalopram resulting in a loss in efficacy.
+Quetiapine,Tamoxifen,Quetiapine may increase the QTc-prolonging activities of Tamoxifen.
+Escitalopram,Tamoxifen,Escitalopram may increase the QTc-prolonging activities of Tamoxifen.
+Pravastatin,Tamoxifen,The serum concentration of Tamoxifen can be increased when it is combined with Pravastatin.
+Simvastatin,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Simvastatin.
+Rosuvastatin,Tamoxifen,The serum concentration of Tamoxifen can be increased when it is combined with Rosuvastatin.
+Ondansetron,Tamoxifen,Ondansetron may increase the QTc-prolonging activities of Tamoxifen.
+Morphine,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Morphine.
+Duloxetine,Tamoxifen,The serum concentration of the active metabolites of Tamoxifen can be reduced when Tamoxifen is used in combination with Duloxetine resulting in a loss in efficacy.
+Mirtazapine,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Mirtazapine.
+Diazepam,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Diazepam.
+Loratadine,Tamoxifen,The metabolism of Tamoxifen can be decreased when combined with Loratadine.
+Venlafaxine,Tamoxifen,The serum concentration of the active metabolites of Tamoxifen can be reduced when Tamoxifen is used in combination with Venlafaxine resulting in a loss in efficacy.
+Sertraline,Tamoxifen,The serum concentration of the active metabolites of Tamoxifen can be reduced when Tamoxifen is used in combination with Sertraline resulting in a loss in efficacy.
+Metoprolol,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Metoprolol.
+Methotrexate,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Methotrexate.
+Tamoxifen,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Tamoxifen.
+Carvedilol,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Carvedilol.
+Propranolol,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Propranolol.
+Warfarin,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Warfarin.
+Rosiglitazone,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Rosiglitazone.
+Pioglitazone,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Pioglitazone.
+Bromocriptine,Omeprazole,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Omeprazole.
+Naproxen,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Naproxen.
+Ibuprofen,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Ibuprofen.
+Citalopram,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Citalopram.
+Fluoxetine,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Fluoxetine.
+Quetiapine,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Quetiapine.
+Escitalopram,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Escitalopram.
+Pravastatin,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Pravastatin.
+Simvastatin,Omeprazole,The serum concentration of Omeprazole can be increased when it is combined with Simvastatin.
+Rosuvastatin,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Rosuvastatin.
+Ondansetron,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Ondansetron.
+Esomeprazole,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Esomeprazole.
+Ranitidine,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Ranitidine.
+Mirtazapine,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Mirtazapine.
+Alprazolam,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Alprazolam.
+Diazepam,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Diazepam.
+Loratadine,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Loratadine.
+Sertraline,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Sertraline.
+Amoxicillin,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Amoxicillin.
+Bupropion,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Bupropion.
+Metronidazole,Omeprazole,The metabolism of Omeprazole can be decreased when combined with Metronidazole.
+Metoprolol,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Metoprolol.
+Methotrexate,Esomeprazole,The serum concentration of Esomeprazole can be increased when it is combined with Methotrexate.
+Tamoxifen,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Tamoxifen.
+Propranolol,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Propranolol.
+Warfarin,Esomeprazole,The serum concentration of Esomeprazole can be increased when it is combined with Warfarin.
+Ibuprofen,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Ibuprofen.
+Citalopram,Esomeprazole,The serum concentration of Esomeprazole can be increased when it is combined with Citalopram.
+Fluoxetine,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Fluoxetine.
+Quetiapine,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Quetiapine.
+Escitalopram,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Escitalopram.
+Rosuvastatin,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Rosuvastatin.
+Ranitidine,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Ranitidine.
+Diazepam,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Diazepam.
+Sertraline,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Sertraline.
+Amoxicillin,Esomeprazole,The metabolism of Esomeprazole can be decreased when combined with Amoxicillin.
+Levofloxacin,Ciprofloxacin,Levofloxacin may increase the QTc-prolonging activities of Ciprofloxacin.
+Methotrexate,Ciprofloxacin,The serum concentration of Ciprofloxacin can be increased when it is combined with Methotrexate.
+Bromocriptine,Ciprofloxacin,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Ciprofloxacin.
+Citalopram,Ciprofloxacin,Citalopram may increase the QTc-prolonging activities of Ciprofloxacin.
+Amiodarone,Ciprofloxacin,Amiodarone may increase the QTc-prolonging activities of Ciprofloxacin.
+Fluoxetine,Ciprofloxacin,Fluoxetine may increase the QTc-prolonging activities of Ciprofloxacin.
+Lovastatin,Ciprofloxacin,The serum concentration of Ciprofloxacin can be increased when it is combined with Lovastatin.
+Quetiapine,Ciprofloxacin,Quetiapine may increase the QTc-prolonging activities of Ciprofloxacin.
+Escitalopram,Ciprofloxacin,Escitalopram may increase the QTc-prolonging activities of Ciprofloxacin.
+Pravastatin,Ciprofloxacin,The serum concentration of Ciprofloxacin can be increased when it is combined with Pravastatin.
+Simvastatin,Ciprofloxacin,The serum concentration of Ciprofloxacin can be increased when it is combined with Simvastatin.
+Rosuvastatin,Ciprofloxacin,The serum concentration of Ciprofloxacin can be increased when it is combined with Rosuvastatin.
+Ondansetron,Ciprofloxacin,Ondansetron may increase the QTc-prolonging activities of Ciprofloxacin.
+Metoprolol,Rosiglitazone,The serum concentration of Rosiglitazone can be increased when it is combined with Metoprolol.
+Furosemide,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Furosemide.
+Prednisone,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Prednisone.
+Chlorthalidone,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Chlorthalidone.
+Hydrochlorothiazide,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Hydrochlorothiazide.
+Warfarin,Rosiglitazone,Warfarin may increase the anticoagulant activities of Rosiglitazone.
+Pioglitazone,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Pioglitazone.
+Naproxen,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Naproxen.
+Ibuprofen,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Ibuprofen.
+Quetiapine,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Quetiapine.
+Simvastatin,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Simvastatin.
+Aripiprazole,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Aripiprazole.
+Morphine,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Morphine.
+Olanzapine,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Olanzapine.
+Mirtazapine,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Mirtazapine.
+Diazepam,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Diazepam.
+Loratadine,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Loratadine.
+Risperidone,Rosiglitazone,The therapeutic efficacy of Rosiglitazone can be decreased when used in combination with Risperidone.
+Atorvastatin,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Atorvastatin.
+Bupropion,Rosiglitazone,The metabolism of Rosiglitazone can be decreased when combined with Bupropion.
+Isosorbide Mononitrate,Rosiglitazone,The risk or severity of adverse effects can be increased when Isosorbide mononitrate is combined with Rosiglitazone.
+Metoprolol,Pioglitazone,The serum concentration of Pioglitazone can be increased when it is combined with Metoprolol.
+Furosemide,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Furosemide.
+Prednisone,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Prednisone.
+Chlorthalidone,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Chlorthalidone.
+Hydrochlorothiazide,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Hydrochlorothiazide.
+Warfarin,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Warfarin.
+Naproxen,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Naproxen.
+Ibuprofen,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Ibuprofen.
+Quetiapine,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Quetiapine.
+Simvastatin,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Simvastatin.
+Morphine,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Morphine.
+Olanzapine,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Olanzapine.
+Mirtazapine,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Mirtazapine.
+Diazepam,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Diazepam.
+Loratadine,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Loratadine.
+Risperidone,Pioglitazone,The therapeutic efficacy of Pioglitazone can be decreased when used in combination with Risperidone.
+Atorvastatin,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Atorvastatin.
+Bupropion,Pioglitazone,The metabolism of Pioglitazone can be decreased when combined with Bupropion.
+Tamoxifen,Clopidogrel,The metabolism of Clopidogrel can be decreased when combined with Tamoxifen.
+Warfarin,Clopidogrel,Warfarin may increase the anticoagulant activities of Clopidogrel.
+Rosiglitazone,Clopidogrel,Rosiglitazone may increase the anticoagulant activities of Clopidogrel.
+Citalopram,Clopidogrel,The serum concentration of the active metabolites of Clopidogrel can be reduced when Clopidogrel is used in combination with Citalopram resulting in a loss in efficacy.
+Amiodarone,Clopidogrel,The serum concentration of the active metabolites of Clopidogrel can be reduced when Clopidogrel is used in combination with Amiodarone resulting in a loss in efficacy.
+Fluoxetine,Clopidogrel,The serum concentration of the active metabolites of Clopidogrel can be reduced when Clopidogrel is used in combination with Fluoxetine resulting in a loss in efficacy.
+Rosuvastatin,Clopidogrel,The serum concentration of Clopidogrel can be increased when it is combined with Rosuvastatin.
+Tramadol,Clopidogrel,The metabolism of Clopidogrel can be decreased when combined with Tramadol.
+Morphine,Clopidogrel,Morphine may decrease the antiplatelet activities of Clopidogrel.
+Amlodipine,Clopidogrel,The therapeutic efficacy of Clopidogrel can be decreased when used in combination with Amlodipine.
+Esomeprazole,Clopidogrel,Esomeprazole may decrease the antiplatelet activities of Clopidogrel.
+Omeprazole,Clopidogrel,Omeprazole may decrease the antiplatelet activities of Clopidogrel.
+Pregabalin,Clopidogrel,The therapeutic efficacy of Clopidogrel can be decreased when used in combination with Pregabalin.
+Lamotrigine,Clopidogrel,The therapeutic efficacy of Clopidogrel can be decreased when used in combination with Lamotrigine.
+Gabapentin,Clopidogrel,The therapeutic efficacy of Clopidogrel can be decreased when used in combination with Gabapentin.
+Diazepam,Clopidogrel,The metabolism of Clopidogrel can be decreased when combined with Diazepam.
+Sertraline,Clopidogrel,The serum concentration of the active metabolites of Clopidogrel can be reduced when Clopidogrel is used in combination with Sertraline resulting in a loss in efficacy.
+Bupropion,Clopidogrel,The serum concentration of Clopidogrel can be increased when it is combined with Bupropion.
+Atenolol,Lisinopril,The risk or severity of adverse effects can be increased when Atenolol is combined with Lisinopril.
+Metoprolol,Lisinopril,The risk or severity of adverse effects can be increased when Metoprolol is combined with Lisinopril.
+Furosemide,Lisinopril,The risk or severity of adverse effects can be increased when Furosemide is combined with Lisinopril.
+Ciprofloxacin,Lisinopril,Ciprofloxacin may increase the arrhythmogenic activities of Lisinopril.
+Chlorthalidone,Lisinopril,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Lisinopril.
+Propranolol,Lisinopril,The risk or severity of adverse effects can be increased when Propranolol is combined with Lisinopril.
+Bromocriptine,Lisinopril,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Lisinopril.
+Amiodarone,Lisinopril,The risk or severity of adverse effects can be increased when Amiodarone is combined with Lisinopril.
+Lovastatin,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Lovastatin.
+Simvastatin,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Simvastatin.
+Rosuvastatin,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Rosuvastatin.
+Amphetamine,Lisinopril,Amphetamine may increase the hypotensive activities of Lisinopril.
+Sildenafil,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Sildenafil.
+Aripiprazole,Lisinopril,Aripiprazole may increase the hypotensive activities of Lisinopril.
+Morphine,Lisinopril,The risk or severity of adverse effects can be increased when Morphine is combined with Lisinopril.
+Amlodipine,Lisinopril,The risk or severity of adverse effects can be increased when Amlodipine is combined with Lisinopril.
+Enalapril,Lisinopril,The risk or severity of adverse effects can be increased when Enalapril is combined with Lisinopril.
+Losartan,Lisinopril,The risk or severity of adverse effects can be increased when Losartan is combined with Lisinopril.
+Mirtazapine,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Mirtazapine.
+Alprazolam,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Alprazolam.
+Cyclobenzaprine,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Cyclobenzaprine.
+Atorvastatin,Lisinopril,The serum concentration of Lisinopril can be increased when it is combined with Atorvastatin.
+Latanoprost,Lisinopril,Latanoprost may increase the hypotensive activities of Lisinopril.
+Allopurinol,Lisinopril,The risk of a hypersensitivity reaction to Lisinopril is increased when it is combined with Allopurinol.
+Atenolol,Enalapril,The risk or severity of adverse effects can be increased when Atenolol is combined with Enalapril.
+Metoprolol,Enalapril,The risk or severity of adverse effects can be increased when Metoprolol is combined with Enalapril.
+Ciprofloxacin,Enalapril,Ciprofloxacin may increase the arrhythmogenic activities of Enalapril.
+Chlorthalidone,Enalapril,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Enalapril.
+Propranolol,Enalapril,The risk or severity of adverse effects can be increased when Propranolol is combined with Enalapril.
+Bromocriptine,Enalapril,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Enalapril.
+Lovastatin,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Lovastatin.
+Simvastatin,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Simvastatin.
+Rosuvastatin,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Rosuvastatin.
+Amphetamine,Enalapril,Amphetamine may increase the hypotensive activities of Enalapril.
+Sildenafil,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Sildenafil.
+Aripiprazole,Enalapril,Aripiprazole may increase the hypotensive activities of Enalapril.
+Morphine,Enalapril,The risk or severity of adverse effects can be increased when Morphine is combined with Enalapril.
+Amlodipine,Enalapril,The risk or severity of adverse effects can be increased when Amlodipine is combined with Enalapril.
+Losartan,Enalapril,The risk or severity of adverse effects can be increased when Losartan is combined with Enalapril.
+Mirtazapine,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Mirtazapine.
+Alprazolam,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Alprazolam.
+Cyclobenzaprine,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Cyclobenzaprine.
+Atorvastatin,Enalapril,The serum concentration of Enalapril can be increased when it is combined with Atorvastatin.
+Allopurinol,Enalapril,The risk of a hypersensitivity reaction to Enalapril is increased when it is combined with Allopurinol.
+Atenolol,Amlodipine,The risk or severity of adverse effects can be increased when Atenolol is combined with Amlodipine.
+Metoprolol,Amlodipine,The serum concentration of Amlodipine can be increased when it is combined with Metoprolol.
+Chlorthalidone,Amlodipine,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Amlodipine.
+Bromocriptine,Amlodipine,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Amlodipine.
+Pravastatin,Amlodipine,The serum concentration of Amlodipine can be increased when it is combined with Pravastatin.
+Simvastatin,Amlodipine,The serum concentration of Amlodipine can be increased when it is combined with Simvastatin.
+Rosuvastatin,Amlodipine,The serum concentration of Amlodipine can be increased when it is combined with Rosuvastatin.
+Amphetamine,Amlodipine,Amphetamine may increase the hypotensive activities of Amlodipine.
+Sildenafil,Amlodipine,Sildenafil may increase the antihypertensive activities of Amlodipine.
+Aripiprazole,Amlodipine,Aripiprazole may increase the hypotensive activities of Amlodipine.
+Morphine,Amlodipine,The risk or severity of adverse effects can be increased when Morphine is combined with Amlodipine.
+Atenolol,Carvedilol,Atenolol may increase the orthostatic hypotensive activities of Carvedilol.
+Metoprolol,Carvedilol,Metoprolol may increase the orthostatic hypotensive activities of Carvedilol.
+Furosemide,Carvedilol,The risk or severity of adverse effects can be increased when Furosemide is combined with Carvedilol.
+Chlorthalidone,Carvedilol,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Carvedilol.
+Hydrochlorothiazide,Carvedilol,The risk or severity of adverse effects can be increased when Hydrochlorothiazide is combined with Carvedilol.
+Propranolol,Carvedilol,Propranolol may increase the orthostatic hypotensive activities of Carvedilol.
+Bromocriptine,Carvedilol,Bromocriptine may increase the atrioventricular blocking (AV block) activities of Carvedilol.
+Amphetamine,Carvedilol,Amphetamine may increase the hypotensive activities of Carvedilol.
+Fentanyl,Carvedilol,Fentanyl may increase the bradycardic activities of Carvedilol.
+Aripiprazole,Carvedilol,Aripiprazole may increase the hypotensive activities of Carvedilol.
+Morphine,Carvedilol,The risk or severity of adverse effects can be increased when Morphine is combined with Carvedilol.
+Amlodipine,Carvedilol,The risk or severity of adverse effects can be increased when Amlodipine is combined with Carvedilol.
+Lisinopril,Carvedilol,The risk or severity of adverse effects can be increased when Lisinopril is combined with Carvedilol.
+Enalapril,Carvedilol,The risk or severity of adverse effects can be increased when Enalapril is combined with Carvedilol.
+Bimatoprost,Carvedilol,Bimatoprost may increase the hypotensive activities of Carvedilol.
+Latanoprost,Carvedilol,Latanoprost may increase the hypotensive activities of Carvedilol.
+Memantine,Carvedilol,Memantine may increase the bradycardic activities of Carvedilol.
+Isosorbide Mononitrate,Carvedilol,The risk or severity of adverse effects can be increased when Isosorbide mononitrate is combined with Carvedilol.
+Atenolol,Propranolol,The risk or severity of adverse effects can be increased when Atenolol is combined with Propranolol.
+Metoprolol,Propranolol,The serum concentration of Propranolol can be increased when it is combined with Metoprolol.
+Chlorthalidone,Propranolol,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Propranolol.
+Bromocriptine,Propranolol,Bromocriptine may increase the atrioventricular blocking (AV block) activities of Propranolol.
+Amiodarone,Propranolol,Amiodarone may increase the bradycardic activities of Propranolol.
+Amphetamine,Propranolol,Amphetamine may increase the hypotensive activities of Propranolol.
+Sildenafil,Propranolol,Sildenafil may increase the antihypertensive activities of Propranolol.
+Fentanyl,Propranolol,Fentanyl may increase the bradycardic activities of Propranolol.
+Aripiprazole,Propranolol,Aripiprazole may increase the hypotensive activities of Propranolol.
+Morphine,Propranolol,The risk or severity of adverse effects can be increased when Morphine is combined with Propranolol.
+Amlodipine,Propranolol,The risk or severity of adverse effects can be increased when Amlodipine is combined with Propranolol.
+Memantine,Propranolol,Memantine may increase the bradycardic activities of Propranolol.
+Metoprolol,Atenolol,The risk or severity of adverse effects can be increased when Metoprolol is combined with Atenolol.
+Chlorthalidone,Atenolol,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Atenolol.
+Bromocriptine,Atenolol,Bromocriptine may increase the atrioventricular blocking (AV block) activities of Atenolol.
+Amiodarone,Atenolol,Amiodarone may increase the bradycardic activities of Atenolol.
+Amphetamine,Atenolol,Amphetamine may increase the hypotensive activities of Atenolol.
+Sildenafil,Atenolol,Sildenafil may increase the antihypertensive activities of Atenolol.
+Fentanyl,Atenolol,Fentanyl may increase the bradycardic activities of Atenolol.
+Aripiprazole,Atenolol,Aripiprazole may increase the hypotensive activities of Atenolol.
+Morphine,Atenolol,The risk or severity of adverse effects can be increased when Morphine is combined with Atenolol.
+Memantine,Atenolol,Memantine may increase the bradycardic activities of Atenolol.
+Atenolol,Risperidone,Atenolol may increase the hypotensive activities of Risperidone.
+Metoprolol,Risperidone,The serum concentration of Risperidone can be increased when it is combined with Metoprolol.
+Furosemide,Risperidone,The risk or severity of adverse effects can be increased when Furosemide is combined with Risperidone.
+Ciprofloxacin,Risperidone,Ciprofloxacin may increase the QTc-prolonging activities of Risperidone.
+Levofloxacin,Risperidone,Levofloxacin may increase the QTc-prolonging activities of Risperidone.
+Chlorthalidone,Risperidone,Chlorthalidone may increase the hypotensive activities of Risperidone.
+Hydrochlorothiazide,Risperidone,Hydrochlorothiazide may increase the hypotensive activities of Risperidone.
+Carvedilol,Risperidone,Carvedilol may increase the hypotensive activities of Risperidone.
+Propranolol,Risperidone,Propranolol may increase the hypotensive activities of Risperidone.
+Bromocriptine,Risperidone,Bromocriptine may increase the hypotensive activities of Risperidone.
+Amiodarone,Risperidone,Amiodarone may increase the hypotensive activities of Risperidone.
+Quetiapine,Risperidone,Quetiapine may increase the hypotensive activities of Risperidone.
+Pravastatin,Risperidone,The serum concentration of Risperidone can be increased when it is combined with Pravastatin.
+Simvastatin,Risperidone,The serum concentration of Risperidone can be increased when it is combined with Simvastatin.
+Rosuvastatin,Risperidone,The serum concentration of Risperidone can be increased when it is combined with Rosuvastatin.
+Ondansetron,Risperidone,Ondansetron may increase the QTc-prolonging activities of Risperidone.
+Amphetamine,Risperidone,Amphetamine may decrease the stimulatory activities of Risperidone.
+Tramadol,Risperidone,The risk or severity of adverse effects can be increased when Tramadol is combined with Risperidone.
+Morphine,Risperidone,Morphine may increase the hypotensive activities of Risperidone.
+Amlodipine,Risperidone,Amlodipine may increase the hypotensive activities of Risperidone.
+Lisinopril,Risperidone,Lisinopril may increase the hypotensive activities of Risperidone.
+Enalapril,Risperidone,Enalapril may increase the hypotensive activities of Risperidone.
+Losartan,Risperidone,Losartan may increase the hypotensive activities of Risperidone.
+Olanzapine,Risperidone,The risk or severity of adverse effects can be increased when Olanzapine is combined with Risperidone.
+Pregabalin,Risperidone,The therapeutic efficacy of Risperidone can be increased when used in combination with Pregabalin.
+Alprazolam,Risperidone,The risk or severity of adverse effects can be increased when Alprazolam is combined with Risperidone.
+Lorazepam,Risperidone,The risk or severity of adverse effects can be increased when Lorazepam is combined with Risperidone.
+Isosorbide Mononitrate,Risperidone,Isosorbide mononitrate may increase the hypotensive activities of Risperidone.
+Atenolol,Quetiapine,The risk or severity of adverse effects can be increased when Atenolol is combined with Quetiapine.
+Metoprolol,Quetiapine,The serum concentration of Quetiapine can be increased when it is combined with Metoprolol.
+Furosemide,Quetiapine,The risk or severity of adverse effects can be increased when Furosemide is combined with Quetiapine.
+Chlorthalidone,Quetiapine,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Quetiapine.
+Hydrochlorothiazide,Quetiapine,The risk or severity of adverse effects can be increased when Hydrochlorothiazide is combined with Quetiapine.
+Carvedilol,Quetiapine,The risk or severity of adverse effects can be increased when Carvedilol is combined with Quetiapine.
+Propranolol,Quetiapine,The risk or severity of adverse effects can be increased when Propranolol is combined with Quetiapine.
+Escitalopram,Quetiapine,The risk or severity of adverse effects can be increased when Escitalopram is combined with Quetiapine.
+Amphetamine,Quetiapine,Amphetamine may decrease the stimulatory activities of Quetiapine.
+Fentanyl,Quetiapine,The risk or severity of adverse effects can be increased when Fentanyl is combined with Quetiapine.
+Tramadol,Quetiapine,The risk or severity of adverse effects can be increased when Tramadol is combined with Quetiapine.
+Aripiprazole,Quetiapine,Aripiprazole may increase the hypotensive activities of Quetiapine.
+Morphine,Quetiapine,The risk or severity of adverse effects can be increased when Morphine is combined with Quetiapine.
+Amlodipine,Quetiapine,The risk or severity of adverse effects can be increased when Amlodipine is combined with Quetiapine.
+Lisinopril,Quetiapine,The risk or severity of adverse effects can be increased when Lisinopril is combined with Quetiapine.
+Enalapril,Quetiapine,The risk or severity of adverse effects can be increased when Enalapril is combined with Quetiapine.
+Losartan,Quetiapine,The risk or severity of adverse effects can be increased when Losartan is combined with Quetiapine.
+Pregabalin,Quetiapine,The therapeutic efficacy of Quetiapine can be increased when used in combination with Pregabalin.
+Mirtazapine,Quetiapine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Quetiapine.
+Alprazolam,Quetiapine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Quetiapine.
+Lorazepam,Quetiapine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Quetiapine.
+Cyclobenzaprine,Quetiapine,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Quetiapine.
+Gabapentin,Quetiapine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Quetiapine.
+Diazepam,Quetiapine,The risk or severity of adverse effects can be increased when Diazepam is combined with Quetiapine.
+Isosorbide Mononitrate,Quetiapine,The risk or severity of adverse effects can be increased when Isosorbide mononitrate is combined with Quetiapine.
+Atenolol,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Atenolol is combined with Isosorbide mononitrate.
+Metoprolol,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Metoprolol is combined with Isosorbide mononitrate.
+Furosemide,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Furosemide is combined with Isosorbide mononitrate.
+Chlorthalidone,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Chlorthalidone is combined with Isosorbide mononitrate.
+Hydrochlorothiazide,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Hydrochlorothiazide is combined with Isosorbide mononitrate.
+Propranolol,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Propranolol is combined with Isosorbide mononitrate.
+Bromocriptine,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Isosorbide mononitrate.
+Aripiprazole,Isosorbide Mononitrate,Aripiprazole may increase the hypotensive activities of Isosorbide mononitrate.
+Morphine,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Morphine is combined with Isosorbide mononitrate.
+Amlodipine,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Amlodipine is combined with Isosorbide mononitrate.
+Lisinopril,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Lisinopril is combined with Isosorbide mononitrate.
+Enalapril,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Enalapril is combined with Isosorbide mononitrate.
+Losartan,Isosorbide Mononitrate,The risk or severity of adverse effects can be increased when Losartan is combined with Isosorbide mononitrate.
+Metoprolol,Olanzapine,The serum concentration of Olanzapine can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Olanzapine,Ciprofloxacin may increase the QTc-prolonging activities of Olanzapine.
+Levofloxacin,Olanzapine,Levofloxacin may increase the QTc-prolonging activities of Olanzapine.
+Citalopram,Olanzapine,Citalopram may increase the QTc-prolonging activities of Olanzapine.
+Amiodarone,Olanzapine,Amiodarone may increase the QTc-prolonging activities of Olanzapine.
+Fluoxetine,Olanzapine,Fluoxetine may increase the QTc-prolonging activities of Olanzapine.
+Lovastatin,Olanzapine,The serum concentration of Olanzapine can be increased when it is combined with Lovastatin.
+Quetiapine,Olanzapine,Quetiapine may increase the QTc-prolonging activities of Olanzapine.
+Escitalopram,Olanzapine,Escitalopram may increase the QTc-prolonging activities of Olanzapine.
+Pravastatin,Olanzapine,The serum concentration of Olanzapine can be increased when it is combined with Pravastatin.
+Simvastatin,Olanzapine,The serum concentration of Olanzapine can be increased when it is combined with Simvastatin.
+Rosuvastatin,Olanzapine,The serum concentration of Olanzapine can be increased when it is combined with Rosuvastatin.
+Ondansetron,Olanzapine,Ondansetron may increase the QTc-prolonging activities of Olanzapine.
+Amphetamine,Olanzapine,Amphetamine may decrease the stimulatory activities of Olanzapine.
+Tramadol,Olanzapine,The risk or severity of adverse effects can be increased when Tramadol is combined with Olanzapine.
+Morphine,Olanzapine,The risk or severity of adverse effects can be increased when Morphine is combined with Olanzapine.
+Pregabalin,Olanzapine,The therapeutic efficacy of Olanzapine can be increased when used in combination with Pregabalin.
+Mirtazapine,Olanzapine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Olanzapine.
+Alprazolam,Olanzapine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Olanzapine.
+Lorazepam,Olanzapine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Olanzapine.
+Lamotrigine,Olanzapine,Lamotrigine may increase the sedative activities of Olanzapine.
+Diazepam,Olanzapine,The risk or severity of adverse effects can be increased when Diazepam is combined with Olanzapine.
+Cefuroxime,Olanzapine,Cefuroxime can cause a decrease in the absorption of Olanzapine resulting in a reduced serum concentration and potentially a decrease in efficacy.
+Clonazepam,Olanzapine,The risk or severity of adverse effects can be increased when Clonazepam is combined with Olanzapine.
+Metoprolol,Ondansetron,The serum concentration of Ondansetron can be increased when it is combined with Metoprolol.
+Levofloxacin,Ondansetron,Levofloxacin may increase the QTc-prolonging activities of Ondansetron.
+Bromocriptine,Ondansetron,Bromocriptine may increase the serotonergic activities of Ondansetron.
+Citalopram,Ondansetron,Citalopram may increase the serotonergic activities of Ondansetron.
+Quetiapine,Ondansetron,The risk or severity of adverse effects can be increased when Quetiapine is combined with Ondansetron.
+Escitalopram,Ondansetron,Escitalopram may increase the serotonergic activities of Ondansetron.
+Amphetamine,Ondansetron,Amphetamine may decrease the stimulatory activities of Ondansetron.
+Fentanyl,Ondansetron,Fentanyl may increase the serotonergic activities of Ondansetron.
+Tramadol,Ondansetron,Tramadol may decrease the analgesic activities of Ondansetron.
+Morphine,Ondansetron,The risk or severity of adverse effects can be increased when Morphine is combined with Ondansetron.
+Duloxetine,Ondansetron,Duloxetine may increase the serotonergic activities of Ondansetron.
+Pregabalin,Ondansetron,The therapeutic efficacy of Ondansetron can be increased when used in combination with Pregabalin.
+Mirtazapine,Ondansetron,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Ondansetron.
+Alprazolam,Ondansetron,The risk or severity of adverse effects can be increased when Alprazolam is combined with Ondansetron.
+Lorazepam,Ondansetron,The risk or severity of adverse effects can be increased when Lorazepam is combined with Ondansetron.
+Cyclobenzaprine,Ondansetron,Cyclobenzaprine may increase the serotonergic activities of Ondansetron.
+Gabapentin,Ondansetron,The risk or severity of adverse effects can be increased when Gabapentin is combined with Ondansetron.
+Diazepam,Ondansetron,The risk or severity of adverse effects can be increased when Diazepam is combined with Ondansetron.
+Fluticasone Propionate,Levetiracetam,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Levetiracetam.
+Quetiapine,Levetiracetam,The risk or severity of adverse effects can be increased when Quetiapine is combined with Levetiracetam.
+Ondansetron,Levetiracetam,The risk or severity of adverse effects can be increased when Ondansetron is combined with Levetiracetam.
+Fentanyl,Levetiracetam,The risk or severity of adverse effects can be increased when Fentanyl is combined with Levetiracetam.
+Tramadol,Levetiracetam,The risk or severity of adverse effects can be increased when Tramadol is combined with Levetiracetam.
+Aripiprazole,Levetiracetam,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Levetiracetam.
+Morphine,Levetiracetam,The risk or severity of adverse effects can be increased when Morphine is combined with Levetiracetam.
+Olanzapine,Levetiracetam,The risk or severity of adverse effects can be increased when Olanzapine is combined with Levetiracetam.
+Pregabalin,Levetiracetam,The therapeutic efficacy of Levetiracetam can be decreased when used in combination with Pregabalin.
+Mirtazapine,Levetiracetam,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Levetiracetam.
+Trazodone,Levetiracetam,The risk or severity of adverse effects can be increased when Trazodone is combined with Levetiracetam.
+Alprazolam,Levetiracetam,The risk or severity of adverse effects can be increased when Alprazolam is combined with Levetiracetam.
+Lorazepam,Levetiracetam,The risk or severity of adverse effects can be increased when Lorazepam is combined with Levetiracetam.
+Cetirizine,Levetiracetam,The risk or severity of adverse effects can be increased when Cetirizine is combined with Levetiracetam.
+Lamotrigine,Levetiracetam,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Levetiracetam.
+Cyclobenzaprine,Levetiracetam,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Levetiracetam.
+Gabapentin,Levetiracetam,The risk or severity of adverse effects can be increased when Gabapentin is combined with Levetiracetam.
+Diazepam,Levetiracetam,The risk or severity of adverse effects can be increased when Diazepam is combined with Levetiracetam.
+Loratadine,Levetiracetam,The risk or severity of adverse effects can be increased when Loratadine is combined with Levetiracetam.
+Risperidone,Levetiracetam,The risk or severity of adverse effects can be increased when Risperidone is combined with Levetiracetam.
+Clonazepam,Levetiracetam,The risk or severity of adverse effects can be increased when Clonazepam is combined with Levetiracetam.
+Ciprofloxacin,Trazodone,Ciprofloxacin may increase the QTc-prolonging activities of Trazodone.
+Levofloxacin,Trazodone,Levofloxacin may increase the QTc-prolonging activities of Trazodone.
+Warfarin,Trazodone,Warfarin may decrease the anticoagulant activities of Trazodone.
+Citalopram,Trazodone,Citalopram may increase the QTc-prolonging activities of Trazodone.
+Fluoxetine,Trazodone,Fluoxetine may increase the QTc-prolonging activities of Trazodone.
+Quetiapine,Trazodone,Quetiapine may increase the QTc-prolonging activities of Trazodone.
+Escitalopram,Trazodone,Escitalopram may increase the QTc-prolonging activities of Trazodone.
+Ondansetron,Trazodone,Ondansetron may increase the QTc-prolonging activities of Trazodone.
+Aripiprazole,Trazodone,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Trazodone.
+Morphine,Trazodone,The risk or severity of adverse effects can be increased when Morphine is combined with Trazodone.
+Olanzapine,Trazodone,The risk or severity of adverse effects can be increased when Olanzapine is combined with Trazodone.
+Pregabalin,Trazodone,The therapeutic efficacy of Trazodone can be increased when used in combination with Pregabalin.
+Mirtazapine,Trazodone,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Trazodone.
+Alprazolam,Trazodone,The risk or severity of adverse effects can be increased when Alprazolam is combined with Trazodone.
+Lorazepam,Trazodone,The risk or severity of adverse effects can be increased when Lorazepam is combined with Trazodone.
+Gabapentin,Trazodone,The risk or severity of adverse effects can be increased when Gabapentin is combined with Trazodone.
+Diazepam,Trazodone,The risk or severity of adverse effects can be increased when Diazepam is combined with Trazodone.
+Risperidone,Trazodone,The risk or severity of adverse effects can be increased when Risperidone is combined with Trazodone.
+Quetiapine,Cetirizine,The risk or severity of adverse effects can be increased when Quetiapine is combined with Cetirizine.
+Ondansetron,Cetirizine,The risk or severity of adverse effects can be increased when Ondansetron is combined with Cetirizine.
+Amphetamine,Cetirizine,Amphetamine may decrease the sedative activities of Cetirizine.
+Fentanyl,Cetirizine,The risk or severity of adverse effects can be increased when Fentanyl is combined with Cetirizine.
+Tramadol,Cetirizine,The risk or severity of adverse effects can be increased when Tramadol is combined with Cetirizine.
+Aripiprazole,Cetirizine,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Cetirizine.
+Morphine,Cetirizine,The risk or severity of adverse effects can be increased when Morphine is combined with Cetirizine.
+Olanzapine,Cetirizine,The risk or severity of adverse effects can be increased when Olanzapine is combined with Cetirizine.
+Pregabalin,Cetirizine,The therapeutic efficacy of Cetirizine can be increased when used in combination with Pregabalin.
+Mirtazapine,Cetirizine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Cetirizine.
+Trazodone,Cetirizine,The risk or severity of adverse effects can be increased when Trazodone is combined with Cetirizine.
+Alprazolam,Cetirizine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Cetirizine.
+Lorazepam,Cetirizine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Cetirizine.
+Cyclobenzaprine,Cetirizine,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Cetirizine.
+Gabapentin,Cetirizine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Cetirizine.
+Diazepam,Cetirizine,The risk or severity of adverse effects can be increased when Diazepam is combined with Cetirizine.
+Risperidone,Cetirizine,The risk or severity of adverse effects can be increased when Risperidone is combined with Cetirizine.
+Fluticasone Propionate,Clonazepam,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Clonazepam.
+Quetiapine,Clonazepam,The risk or severity of adverse effects can be increased when Quetiapine is combined with Clonazepam.
+Ondansetron,Clonazepam,The risk or severity of adverse effects can be increased when Ondansetron is combined with Clonazepam.
+Fentanyl,Clonazepam,The risk or severity of adverse effects can be increased when Fentanyl is combined with Clonazepam.
+Tramadol,Clonazepam,The risk or severity of adverse effects can be increased when Tramadol is combined with Clonazepam.
+Aripiprazole,Clonazepam,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Clonazepam.
+Morphine,Clonazepam,The risk or severity of adverse effects can be increased when Morphine is combined with Clonazepam.
+Pregabalin,Clonazepam,The therapeutic efficacy of Clonazepam can be decreased when used in combination with Pregabalin.
+Mirtazapine,Clonazepam,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Clonazepam.
+Trazodone,Clonazepam,The risk or severity of adverse effects can be increased when Trazodone is combined with Clonazepam.
+Alprazolam,Clonazepam,The risk or severity of adverse effects can be increased when Alprazolam is combined with Clonazepam.
+Lorazepam,Clonazepam,The risk or severity of adverse effects can be increased when Lorazepam is combined with Clonazepam.
+Cetirizine,Clonazepam,The risk or severity of adverse effects can be increased when Cetirizine is combined with Clonazepam.
+Lamotrigine,Clonazepam,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Clonazepam.
+Cyclobenzaprine,Clonazepam,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Clonazepam.
+Gabapentin,Clonazepam,The risk or severity of adverse effects can be increased when Gabapentin is combined with Clonazepam.
+Diazepam,Clonazepam,The risk or severity of adverse effects can be increased when Diazepam is combined with Clonazepam.
+Loratadine,Clonazepam,The risk or severity of adverse effects can be increased when Loratadine is combined with Clonazepam.
+Risperidone,Clonazepam,The risk or severity of adverse effects can be increased when Risperidone is combined with Clonazepam.
+Carvedilol,Lamotrigine,Carvedilol may increase the hypotensive activities of Lamotrigine.
+Metformin,Lamotrigine,The serum concentration of Lamotrigine can be increased when it is combined with Metformin.
+Quetiapine,Lamotrigine,The risk or severity of adverse effects can be increased when Quetiapine is combined with Lamotrigine.
+Ondansetron,Lamotrigine,The risk or severity of adverse effects can be increased when Ondansetron is combined with Lamotrigine.
+Fentanyl,Lamotrigine,The risk or severity of adverse effects can be increased when Fentanyl is combined with Lamotrigine.
+Tramadol,Lamotrigine,The risk or severity of adverse effects can be increased when Tramadol is combined with Lamotrigine.
+Aripiprazole,Lamotrigine,The risk or severity of adverse effects can be increased when Aripiprazole is combined with Lamotrigine.
+Morphine,Lamotrigine,The risk or severity of adverse effects can be increased when Morphine is combined with Lamotrigine.
+Pregabalin,Lamotrigine,The therapeutic efficacy of Lamotrigine can be decreased when used in combination with Pregabalin.
+Mirtazapine,Lamotrigine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Lamotrigine.
+Trazodone,Lamotrigine,The risk or severity of adverse effects can be increased when Trazodone is combined with Lamotrigine.
+Alprazolam,Lamotrigine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Lamotrigine.
+Lorazepam,Lamotrigine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Lamotrigine.
+Cetirizine,Lamotrigine,The risk or severity of adverse effects can be increased when Cetirizine is combined with Lamotrigine.
+Cyclobenzaprine,Lamotrigine,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Lamotrigine.
+Gabapentin,Lamotrigine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Lamotrigine.
+Diazepam,Lamotrigine,The risk or severity of adverse effects can be increased when Diazepam is combined with Lamotrigine.
+Loratadine,Lamotrigine,The risk or severity of adverse effects can be increased when Loratadine is combined with Lamotrigine.
+Risperidone,Lamotrigine,The risk or severity of adverse effects can be increased when Risperidone is combined with Lamotrigine.
+Metoprolol,Loratadine,The serum concentration of Loratadine can be increased when it is combined with Metoprolol.
+Bromocriptine,Loratadine,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Loratadine.
+Quetiapine,Loratadine,The risk or severity of adverse effects can be increased when Quetiapine is combined with Loratadine.
+Pravastatin,Loratadine,The serum concentration of Loratadine can be increased when it is combined with Pravastatin.
+Simvastatin,Loratadine,The serum concentration of Loratadine can be increased when it is combined with Simvastatin.
+Rosuvastatin,Loratadine,The serum concentration of Loratadine can be increased when it is combined with Rosuvastatin.
+Ondansetron,Loratadine,The risk or severity of adverse effects can be increased when Ondansetron is combined with Loratadine.
+Amphetamine,Loratadine,Amphetamine may decrease the sedative activities of Loratadine.
+Fentanyl,Loratadine,The risk or severity of adverse effects can be increased when Fentanyl is combined with Loratadine.
+Tramadol,Loratadine,The risk or severity of adverse effects can be increased when Tramadol is combined with Loratadine.
+Morphine,Loratadine,The risk or severity of adverse effects can be increased when Morphine is combined with Loratadine.
+Olanzapine,Loratadine,The risk or severity of adverse effects can be increased when Olanzapine is combined with Loratadine.
+Pregabalin,Loratadine,The therapeutic efficacy of Loratadine can be increased when used in combination with Pregabalin.
+Mirtazapine,Loratadine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Loratadine.
+Trazodone,Loratadine,The risk or severity of adverse effects can be increased when Trazodone is combined with Loratadine.
+Alprazolam,Loratadine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Loratadine.
+Lorazepam,Loratadine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Loratadine.
+Cetirizine,Loratadine,The risk or severity of adverse effects can be increased when Cetirizine is combined with Loratadine.
+Cyclobenzaprine,Loratadine,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Loratadine.
+Gabapentin,Loratadine,The risk or severity of adverse effects can be increased when Gabapentin is combined with Loratadine.
+Diazepam,Loratadine,The risk or severity of adverse effects can be increased when Diazepam is combined with Loratadine.
+Risperidone,Loratadine,The risk or severity of adverse effects can be increased when Risperidone is combined with Loratadine.
+Citalopram,Fentanyl,The risk or severity of adverse effects can be increased when Citalopram is combined with Fentanyl.
+Fluoxetine,Fentanyl,The risk or severity of adverse effects can be increased when Fluoxetine is combined with Fentanyl.
+Pravastatin,Fentanyl,The serum concentration of Fentanyl can be increased when it is combined with Pravastatin.
+Simvastatin,Fentanyl,The serum concentration of Fentanyl can be increased when it is combined with Simvastatin.
+Rosuvastatin,Fentanyl,The serum concentration of Fentanyl can be increased when it is combined with Rosuvastatin.
+Tramadol,Fentanyl,The risk or severity of adverse effects can be increased when Tramadol is combined with Fentanyl.
+Morphine,Fentanyl,The risk or severity of adverse effects can be increased when Morphine is combined with Fentanyl.
+Duloxetine,Fentanyl,The risk or severity of adverse effects can be increased when Duloxetine is combined with Fentanyl.
+Olanzapine,Fentanyl,The risk or severity of adverse effects can be increased when Olanzapine is combined with Fentanyl.
+Pregabalin,Fentanyl,The therapeutic efficacy of Fentanyl can be increased when used in combination with Pregabalin.
+Mirtazapine,Fentanyl,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Fentanyl.
+Trazodone,Fentanyl,The risk or severity of adverse effects can be increased when Trazodone is combined with Fentanyl.
+Alprazolam,Fentanyl,The risk or severity of adverse effects can be increased when Alprazolam is combined with Fentanyl.
+Lorazepam,Fentanyl,The risk or severity of adverse effects can be increased when Lorazepam is combined with Fentanyl.
+Risperidone,Fentanyl,The risk or severity of adverse effects can be increased when Risperidone is combined with Fentanyl.
+Paroxetine,Fentanyl,The risk or severity of adverse effects can be increased when Paroxetine is combined with Fentanyl.
+Metoprolol,Tramadol,The serum concentration of Tramadol can be increased when it is combined with Metoprolol.
+Warfarin,Tramadol,Warfarin may increase the anticoagulant activities of Tramadol.
+Citalopram,Tramadol,Citalopram may increase the neuroexcitatory activities of Tramadol.
+Fluoxetine,Tramadol,Fluoxetine may increase the neuroexcitatory activities of Tramadol.
+Escitalopram,Tramadol,Escitalopram may increase the neuroexcitatory activities of Tramadol.
+Pravastatin,Tramadol,The serum concentration of Tramadol can be increased when it is combined with Pravastatin.
+Simvastatin,Tramadol,The serum concentration of Tramadol can be increased when it is combined with Simvastatin.
+Rosuvastatin,Tramadol,The serum concentration of Tramadol can be increased when it is combined with Rosuvastatin.
+Duloxetine,Tramadol,Duloxetine may increase the neuroexcitatory activities of Tramadol.
+Pregabalin,Tramadol,The therapeutic efficacy of Tramadol can be increased when used in combination with Pregabalin.
+Mirtazapine,Tramadol,Mirtazapine may increase the neuroexcitatory activities of Tramadol.
+Trazodone,Tramadol,The risk or severity of adverse effects can be increased when Trazodone is combined with Tramadol.
+Lorazepam,Tramadol,The risk or severity of adverse effects can be increased when Lorazepam is combined with Tramadol.
+Cyclobenzaprine,Tramadol,Cyclobenzaprine may increase the neuroexcitatory activities of Tramadol.
+Venlafaxine,Tramadol,Venlafaxine may increase the neuroexcitatory activities of Tramadol.
+Paroxetine,Tramadol,Paroxetine may increase the neuroexcitatory activities of Tramadol.
+Sertraline,Tramadol,Sertraline may increase the neuroexcitatory activities of Tramadol.
+Bupropion,Tramadol,The therapeutic efficacy of Tramadol can be decreased when used in combination with Bupropion.
+Bromocriptine,Morphine,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Morphine.
+Escitalopram,Morphine,Escitalopram may increase the serotonergic activities of Morphine.
+Amphetamine,Morphine,The therapeutic efficacy of Morphine can be increased when used in combination with Amphetamine.
+Tramadol,Morphine,The risk or severity of adverse effects can be increased when Tramadol is combined with Morphine.
+Aripiprazole,Morphine,Aripiprazole may increase the hypotensive activities of Morphine.
+Pregabalin,Morphine,The therapeutic efficacy of Morphine can be increased when used in combination with Pregabalin.
+Mirtazapine,Morphine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Morphine.
+Lorazepam,Morphine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Morphine.
+Metoprolol,Escitalopram,The serum concentration of Escitalopram can be increased when it is combined with Metoprolol.
+Chlorthalidone,Escitalopram,Chlorthalidone may increase the hyponatremic activities of Escitalopram.
+Hydrochlorothiazide,Escitalopram,Hydrochlorothiazide may increase the hyponatremic activities of Escitalopram.
+Warfarin,Escitalopram,Warfarin may increase the anticoagulant activities of Escitalopram.
+Rosiglitazone,Escitalopram,Rosiglitazone may increase the hypoglycemic activities of Escitalopram.
+Pioglitazone,Escitalopram,Pioglitazone may increase the hypoglycemic activities of Escitalopram.
+Metformin,Escitalopram,Metformin may increase the hypoglycemic activities of Escitalopram.
+Fluticasone Propionate,Escitalopram,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Escitalopram.
+Citalopram,Escitalopram,The risk or severity of adverse effects can be increased when Citalopram is combined with Escitalopram.
+Fentanyl,Escitalopram,The risk or severity of adverse effects can be increased when Fentanyl is combined with Escitalopram.
+Duloxetine,Escitalopram,The risk or severity of adverse effects can be increased when Duloxetine is combined with Escitalopram.
+Pregabalin,Escitalopram,The risk or severity of adverse effects can be increased when Pregabalin is combined with Escitalopram.
+Mirtazapine,Escitalopram,The risk or severity of adverse effects can be increased when Mirtazapine is combined with Escitalopram.
+Alprazolam,Escitalopram,The risk or severity of adverse effects can be increased when Alprazolam is combined with Escitalopram.
+Lorazepam,Escitalopram,The risk or severity of adverse effects can be increased when Lorazepam is combined with Escitalopram.
+Cetirizine,Escitalopram,The risk or severity of adverse effects can be increased when Cetirizine is combined with Escitalopram.
+Lamotrigine,Escitalopram,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Escitalopram.
+Cyclobenzaprine,Escitalopram,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Escitalopram.
+Gabapentin,Escitalopram,The risk or severity of adverse effects can be increased when Gabapentin is combined with Escitalopram.
+Diazepam,Escitalopram,The risk or severity of adverse effects can be increased when Diazepam is combined with Escitalopram.
+Loratadine,Escitalopram,The risk or severity of adverse effects can be increased when Loratadine is combined with Escitalopram.
+Risperidone,Escitalopram,The metabolism of Escitalopram can be decreased when combined with Risperidone.
+Clonazepam,Escitalopram,The risk or severity of adverse effects can be increased when Clonazepam is combined with Escitalopram.
+Levetiracetam,Escitalopram,The risk or severity of adverse effects can be increased when Levetiracetam is combined with Escitalopram.
+Bromocriptine,Alprazolam,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Alprazolam.
+Pravastatin,Alprazolam,The serum concentration of Alprazolam can be increased when it is combined with Pravastatin.
+Simvastatin,Alprazolam,The serum concentration of Alprazolam can be increased when it is combined with Simvastatin.
+Rosuvastatin,Alprazolam,The serum concentration of Alprazolam can be increased when it is combined with Rosuvastatin.
+Tramadol,Alprazolam,The risk or severity of adverse effects can be increased when Tramadol is combined with Alprazolam.
+Morphine,Alprazolam,The risk or severity of adverse effects can be increased when Morphine is combined with Alprazolam.
+Pregabalin,Alprazolam,The therapeutic efficacy of Alprazolam can be increased when used in combination with Pregabalin.
+Mirtazapine,Alprazolam,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Alprazolam.
+Lorazepam,Alprazolam,The risk or severity of adverse effects can be increased when Lorazepam is combined with Alprazolam.
+Carvedilol,Gabapentin,Carvedilol may increase the hypotensive activities of Gabapentin.
+Fentanyl,Gabapentin,The risk or severity of adverse effects can be increased when Fentanyl is combined with Gabapentin.
+Tramadol,Gabapentin,The risk or severity of adverse effects can be increased when Tramadol is combined with Gabapentin.
+Morphine,Gabapentin,The risk or severity of adverse effects can be increased when Morphine is combined with Gabapentin.
+Olanzapine,Gabapentin,The risk or severity of adverse effects can be increased when Olanzapine is combined with Gabapentin.
+Pregabalin,Gabapentin,The therapeutic efficacy of Gabapentin can be decreased when used in combination with Pregabalin.
+Mirtazapine,Gabapentin,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Gabapentin.
+Alprazolam,Gabapentin,The risk or severity of adverse effects can be increased when Alprazolam is combined with Gabapentin.
+Lorazepam,Gabapentin,The risk or severity of adverse effects can be increased when Lorazepam is combined with Gabapentin.
+Cyclobenzaprine,Gabapentin,The risk or severity of adverse effects can be increased when Cyclobenzaprine is combined with Gabapentin.
+Diazepam,Gabapentin,The risk or severity of adverse effects can be increased when Diazepam is combined with Gabapentin.
+Risperidone,Gabapentin,The risk or severity of adverse effects can be increased when Risperidone is combined with Gabapentin.
+Metoprolol,Mirtazapine,The serum concentration of Mirtazapine can be increased when it is combined with Metoprolol.
+Ciprofloxacin,Mirtazapine,Ciprofloxacin may increase the QTc-prolonging activities of Mirtazapine.
+Levofloxacin,Mirtazapine,Levofloxacin may increase the QTc-prolonging activities of Mirtazapine.
+Warfarin,Mirtazapine,Warfarin may increase the anticoagulant activities of Mirtazapine.
+Bromocriptine,Mirtazapine,Bromocriptine may decrease the antihypertensive activities of Mirtazapine.
+Fluoxetine,Mirtazapine,The risk or severity of adverse effects can be increased when Fluoxetine is combined with Mirtazapine.
+Pravastatin,Mirtazapine,The serum concentration of Mirtazapine can be increased when it is combined with Pravastatin.
+Simvastatin,Mirtazapine,The serum concentration of Mirtazapine can be increased when it is combined with Simvastatin.
+Rosuvastatin,Mirtazapine,The serum concentration of Mirtazapine can be increased when it is combined with Rosuvastatin.
+Amphetamine,Mirtazapine,The risk or severity of adverse effects can be increased when Amphetamine is combined with Mirtazapine.
+Risperidone,Mirtazapine,Risperidone may decrease the antihypertensive activities of Mirtazapine.
+Venlafaxine,Mirtazapine,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Mirtazapine.
+Paroxetine,Mirtazapine,The risk or severity of adverse effects can be increased when Paroxetine is combined with Mirtazapine.
+Sertraline,Mirtazapine,The risk or severity of adverse effects can be increased when Sertraline is combined with Mirtazapine.
+Methylphenidate,Mirtazapine,The risk or severity of adverse effects can be increased when Methylphenidate is combined with Mirtazapine.
+Warfarin,Cyclobenzaprine,Warfarin may increase the anticoagulant activities of Cyclobenzaprine.
+Bromocriptine,Cyclobenzaprine,Bromocriptine may decrease the antihypertensive activities of Cyclobenzaprine.
+Fluoxetine,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Fluoxetine is combined with Cyclobenzaprine.
+Amphetamine,Cyclobenzaprine,Amphetamine may increase the serotonergic activities of Cyclobenzaprine.
+Fentanyl,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Fentanyl is combined with Cyclobenzaprine.
+Morphine,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Morphine is combined with Cyclobenzaprine.
+Olanzapine,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Olanzapine is combined with Cyclobenzaprine.
+Pregabalin,Cyclobenzaprine,The therapeutic efficacy of Cyclobenzaprine can be increased when used in combination with Pregabalin.
+Mirtazapine,Cyclobenzaprine,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Cyclobenzaprine.
+Trazodone,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Trazodone is combined with Cyclobenzaprine.
+Alprazolam,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Alprazolam is combined with Cyclobenzaprine.
+Lorazepam,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Lorazepam is combined with Cyclobenzaprine.
+Diazepam,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Diazepam is combined with Cyclobenzaprine.
+Risperidone,Cyclobenzaprine,Risperidone may decrease the antihypertensive activities of Cyclobenzaprine.
+Venlafaxine,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Cyclobenzaprine.
+Paroxetine,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Paroxetine is combined with Cyclobenzaprine.
+Sertraline,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Sertraline is combined with Cyclobenzaprine.
+Methylphenidate,Cyclobenzaprine,The risk or severity of adverse effects can be increased when Methylphenidate is combined with Cyclobenzaprine.
+Bromocriptine,Diazepam,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Diazepam.
+Pravastatin,Diazepam,The serum concentration of Diazepam can be increased when it is combined with Pravastatin.
+Simvastatin,Diazepam,The serum concentration of Diazepam can be increased when it is combined with Simvastatin.
+Rosuvastatin,Diazepam,The serum concentration of Diazepam can be increased when it is combined with Rosuvastatin.
+Fentanyl,Diazepam,The risk or severity of adverse effects can be increased when Fentanyl is combined with Diazepam.
+Tramadol,Diazepam,The risk or severity of adverse effects can be increased when Tramadol is combined with Diazepam.
+Morphine,Diazepam,The risk or severity of adverse effects can be increased when Morphine is combined with Diazepam.
+Pregabalin,Diazepam,The therapeutic efficacy of Diazepam can be decreased when used in combination with Pregabalin.
+Mirtazapine,Diazepam,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Diazepam.
+Alprazolam,Diazepam,The risk or severity of adverse effects can be increased when Alprazolam is combined with Diazepam.
+Lorazepam,Diazepam,The risk or severity of adverse effects can be increased when Lorazepam is combined with Diazepam.
+Risperidone,Diazepam,The risk or severity of adverse effects can be increased when Risperidone is combined with Diazepam.
+Carvedilol,Pregabalin,Carvedilol may increase the hypotensive activities of Pregabalin.
+Rosiglitazone,Pregabalin,The risk or severity of heart failure can be increased when Pregabalin is combined with Rosiglitazone.
+Pioglitazone,Pregabalin,The risk or severity of heart failure can be increased when Pregabalin is combined with Pioglitazone.
+Metformin,Pregabalin,The risk or severity of heart failure can be increased when Pregabalin is combined with Metformin.
+Lisinopril,Pregabalin,The risk or severity of adverse effects can be increased when Lisinopril is combined with Pregabalin.
+Enalapril,Pregabalin,The risk or severity of adverse effects can be increased when Enalapril is combined with Pregabalin.
+Mirtazapine,Pregabalin,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Pregabalin.
+Ciprofloxacin,Metronidazole,Ciprofloxacin may increase the QTc-prolonging activities of Metronidazole.
+Levofloxacin,Metronidazole,Levofloxacin may increase the QTc-prolonging activities of Metronidazole.
+Warfarin,Metronidazole,The serum concentration of Metronidazole can be increased when it is combined with Warfarin.
+Bromocriptine,Metronidazole,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Metronidazole.
+Citalopram,Metronidazole,Citalopram may increase the QTc-prolonging activities of Metronidazole.
+Fluoxetine,Metronidazole,Fluoxetine may increase the QTc-prolonging activities of Metronidazole.
+Quetiapine,Metronidazole,Quetiapine may increase the QTc-prolonging activities of Metronidazole.
+Escitalopram,Metronidazole,Escitalopram may increase the QTc-prolonging activities of Metronidazole.
+Pravastatin,Metronidazole,The serum concentration of Metronidazole can be increased when it is combined with Pravastatin.
+Simvastatin,Metronidazole,The serum concentration of Metronidazole can be increased when it is combined with Simvastatin.
+Rosuvastatin,Metronidazole,The serum concentration of Metronidazole can be increased when it is combined with Rosuvastatin.
+Ondansetron,Metronidazole,Ondansetron may increase the QTc-prolonging activities of Metronidazole.
+Metoprolol,Pravastatin,The serum concentration of Pravastatin can be increased when it is combined with Metoprolol.
+Warfarin,Pravastatin,Warfarin may increase the anticoagulant activities of Pravastatin.
+Rosuvastatin,Pravastatin,The serum concentration of Pravastatin can be increased when it is combined with Rosuvastatin.
+Pregabalin,Pravastatin,The risk or severity of adverse effects can be increased when Pregabalin is combined with Pravastatin.
+Lamotrigine,Pravastatin,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Pravastatin.
+Gabapentin,Pravastatin,The risk or severity of adverse effects can be increased when Gabapentin is combined with Pravastatin.
+Warfarin,Rosuvastatin,Warfarin may increase the anticoagulant activities of Rosuvastatin.
+Pregabalin,Rosuvastatin,The risk or severity of adverse effects can be increased when Pregabalin is combined with Rosuvastatin.
+Lamotrigine,Rosuvastatin,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Rosuvastatin.
+Gabapentin,Rosuvastatin,The risk or severity of adverse effects can be increased when Gabapentin is combined with Rosuvastatin.
+Metoprolol,Simvastatin,The serum concentration of Simvastatin can be increased when it is combined with Metoprolol.
+Warfarin,Simvastatin,Warfarin may increase the anticoagulant activities of Simvastatin.
+Pravastatin,Simvastatin,The serum concentration of Simvastatin can be increased when it is combined with Pravastatin.
+Rosuvastatin,Simvastatin,The serum concentration of Simvastatin can be increased when it is combined with Rosuvastatin.
+Pregabalin,Simvastatin,The risk or severity of adverse effects can be increased when Pregabalin is combined with Simvastatin.
+Lamotrigine,Simvastatin,The risk or severity of adverse effects can be increased when Lamotrigine is combined with Simvastatin.
+Gabapentin,Simvastatin,The risk or severity of adverse effects can be increased when Gabapentin is combined with Simvastatin.
+Ciprofloxacin,Levothyroxine,The serum concentration of Levothyroxine can be decreased when it is combined with Ciprofloxacin.
+Warfarin,Levothyroxine,Warfarin may increase the anticoagulant activities of Levothyroxine.
+Citalopram,Levothyroxine,The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Citalopram.
+Fluoxetine,Levothyroxine,The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Fluoxetine.
+Escitalopram,Levothyroxine,The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Escitalopram.
+Duloxetine,Levothyroxine,The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Duloxetine.
+Mirtazapine,Levothyroxine,Mirtazapine may increase the arrhythmogenic activities of Levothyroxine.
+Cyclobenzaprine,Levothyroxine,Cyclobenzaprine may increase the arrhythmogenic activities of Levothyroxine.
+Paroxetine,Levothyroxine,The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Paroxetine.
+Sertraline,Levothyroxine,The therapeutic efficacy of Levothyroxine can be decreased when used in combination with Sertraline.
+Venlafaxine,Warfarin,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Warfarin.
+Citalopram,Bromocriptine,The risk or severity of adverse effects can be increased when Citalopram is combined with Bromocriptine.
+Fluoxetine,Bromocriptine,The risk or severity of adverse effects can be increased when Fluoxetine is combined with Bromocriptine.
+Quetiapine,Bromocriptine,The therapeutic efficacy of Bromocriptine can be decreased when used in combination with Quetiapine.
+Escitalopram,Bromocriptine,The risk or severity of adverse effects can be increased when Escitalopram is combined with Bromocriptine.
+Pravastatin,Bromocriptine,The serum concentration of Bromocriptine can be increased when it is combined with Pravastatin.
+Simvastatin,Bromocriptine,The serum concentration of Bromocriptine can be increased when it is combined with Simvastatin.
+Rosuvastatin,Bromocriptine,The serum concentration of Bromocriptine can be increased when it is combined with Rosuvastatin.
+Fentanyl,Bromocriptine,The risk or severity of adverse effects can be increased when Fentanyl is combined with Bromocriptine.
+Tramadol,Bromocriptine,The risk or severity of adverse effects can be increased when Tramadol is combined with Bromocriptine.
+Aripiprazole,Bromocriptine,Aripiprazole may increase the hypotensive activities of Bromocriptine.
+Olanzapine,Bromocriptine,The therapeutic efficacy of Bromocriptine can be decreased when used in combination with Olanzapine.
+Trazodone,Bromocriptine,The risk or severity of adverse effects can be increased when Trazodone is combined with Bromocriptine.
+Venlafaxine,Bromocriptine,The risk or severity of adverse effects can be increased when Venlafaxine is combined with Bromocriptine.
+Paroxetine,Bromocriptine,The risk or severity of adverse effects can be increased when Paroxetine is combined with Bromocriptine.
+Sertraline,Bromocriptine,The risk or severity of adverse effects can be increased when Sertraline is combined with Bromocriptine.
+Methylphenidate,Bromocriptine,The risk or severity of adverse effects can be increased when Methylphenidate is combined with Bromocriptine.
+Warfarin,Cephalexin,Warfarin may increase the anticoagulant activities of Cephalexin.
+Metformin,Cephalexin,The serum concentration of Cephalexin can be increased when it is combined with Metformin.
+Pregabalin,Lorazepam,The therapeutic efficacy of Lorazepam can be decreased when used in combination with Pregabalin.
+Mirtazapine,Lorazepam,Mirtazapine may increase the central nervous system depressant (CNS depressant) activities of Lorazepam.
+Methotrexate,Amoxicillin,The serum concentration of Amoxicillin can be increased when it is combined with Methotrexate.
+Warfarin,Amoxicillin,Warfarin may increase the anticoagulant activities of Amoxicillin.
+Atenolol,Naproxen,Atenolol may decrease the antihypertensive activities of Naproxen.
+Metoprolol,Naproxen,Metoprolol may decrease the antihypertensive activities of Naproxen.
+Methotrexate,Naproxen,The serum concentration of Naproxen can be increased when it is combined with Methotrexate.
+Carvedilol,Naproxen,Carvedilol may decrease the antihypertensive activities of Naproxen.
+Propranolol,Naproxen,Propranolol may decrease the antihypertensive activities of Naproxen.
+Warfarin,Naproxen,Warfarin may increase the anticoagulant activities of Naproxen.
+Lisinopril,Naproxen,The risk or severity of adverse effects can be increased when Lisinopril is combined with Naproxen.
+Enalapril,Naproxen,The risk or severity of adverse effects can be increased when Enalapril is combined with Naproxen.
+Metoprolol,Ranitidine,The serum concentration of Ranitidine can be increased when it is combined with Metoprolol.
+Warfarin,Ranitidine,The serum concentration of Ranitidine can be increased when it is combined with Warfarin.
+Bromocriptine,Ranitidine,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Ranitidine.
+Lovastatin,Ranitidine,The serum concentration of Ranitidine can be increased when it is combined with Lovastatin.
+Pravastatin,Ranitidine,The serum concentration of Ranitidine can be increased when it is combined with Pravastatin.
+Simvastatin,Ranitidine,The serum concentration of Ranitidine can be increased when it is combined with Simvastatin.
+Rosuvastatin,Ranitidine,The serum concentration of Ranitidine can be increased when it is combined with Rosuvastatin.
+Amphetamine,Ranitidine,Amphetamine may decrease the sedative activities of Ranitidine.
+Cefuroxime,Ranitidine,Cefuroxime can cause a decrease in the absorption of Ranitidine resulting in a reduced serum concentration and potentially a decrease in efficacy.
+Metoprolol,Amphetamine,The serum concentration of Amphetamine can be increased when it is combined with Metoprolol.
+Rosiglitazone,Amphetamine,Rosiglitazone may increase the hypoglycemic activities of Amphetamine.
+Pioglitazone,Amphetamine,Pioglitazone may increase the hypoglycemic activities of Amphetamine.
+Metformin,Amphetamine,Metformin may increase the hypoglycemic activities of Amphetamine.
+Bromocriptine,Amphetamine,Bromocriptine may increase the hypoglycemic activities of Amphetamine.
+Escitalopram,Amphetamine,The risk or severity of adverse effects can be increased when Escitalopram is combined with Amphetamine.
+Fentanyl,Amphetamine,Fentanyl may increase the analgesic activities of Amphetamine.
+Tramadol,Amphetamine,Tramadol may increase the neuroexcitatory activities of Amphetamine.
+Esomeprazole,Amphetamine,Esomeprazole can cause an increase in the absorption of Amphetamine resulting in an increased serum concentration and potentially a worsening of adverse effects.
+Omeprazole,Amphetamine,Omeprazole can cause an increase in the absorption of Amphetamine resulting in an increased serum concentration and potentially a worsening of adverse effects.
+Trazodone,Amphetamine,Trazodone may increase the serotonergic activities of Amphetamine.
+Methylphenidate,Amphetamine,Methylphenidate may increase the hypertensive activities of Amphetamine.
+Furosemide,Allopurinol,The risk or severity of adverse effects can be increased when Furosemide is combined with Allopurinol.
+Warfarin,Allopurinol,Warfarin may increase the anticoagulant activities of Allopurinol.
+Amoxicillin,Allopurinol,The risk of a hypersensitivity reaction to Allopurinol is increased when it is combined with Amoxicillin.
+Bromocriptine,Ezetimibe,The risk or severity of adverse effects can be increased when Bromocriptine is combined with Ezetimibe.
+Lovastatin,Ezetimibe,The serum concentration of Ezetimibe can be increased when it is combined with Lovastatin.
+Pravastatin,Ezetimibe,The serum concentration of Ezetimibe can be increased when it is combined with Pravastatin.
+Simvastatin,Ezetimibe,The serum concentration of Ezetimibe can be increased when it is combined with Simvastatin.
+Rosuvastatin,Ezetimibe,The serum concentration of Ezetimibe can be increased when it is combined with Rosuvastatin.
+Furosemide,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Furosemide.
+Prednisone,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Prednisone.
+Chlorthalidone,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Chlorthalidone.
+Hydrochlorothiazide,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Hydrochlorothiazide.
+Quetiapine,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Quetiapine.
+Aripiprazole,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Aripiprazole.
+Olanzapine,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Olanzapine.
+Risperidone,Metformin,The therapeutic efficacy of Metformin can be decreased when used in combination with Risperidone.
+Prednisone,Memantine,The risk or severity of adverse effects can be increased when Prednisone is combined with Memantine.
+Fluticasone Propionate,Memantine,The risk or severity of adverse effects can be increased when Fluticasone propionate is combined with Memantine.
+Warfarin,Cefuroxime,Warfarin may increase the anticoagulant activities of Cefuroxime.
+Warfarin,Ceftriaxone,Warfarin may increase the anticoagulant activities of Ceftriaxone.
