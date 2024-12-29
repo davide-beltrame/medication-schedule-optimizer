@@ -74,7 +74,14 @@ def drug_requires_food(drug_name, drug_data): #I've added another function to ac
 
 def create_schedule(prescriptions, interactions, drug_data, diet):
     model = cp_model.CpModel()
-    times = ["06:00","08:00", "12:00", "16:00", "20:00","22:00"]
+
+    # Base times and meal times
+    base_times = ["06:00", "08:00", "12:00", "16:00", "20:00", "22:00"]
+    meal_times = set(diet.values()) if diet else set()
+
+    # Combine base times and meal times
+    times = sorted(set(base_times).union(meal_times))
+
     drug_vars = {}
 
     # Create variables: each dose of each prescription
@@ -87,18 +94,18 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
     for i, pres in enumerate(prescriptions):
         for d_idx in range(pres['frequency']):
             model.Add(sum(drug_vars[(i, d_idx, t)] for t in times) == 1)
-
+    
     # Interaction constraints:
     # All unknown risk => no special constraint for now.
     # If in the future you want to impose a constraint for unknown, you can add logic here.
 
-    # Preferred times modified 
+    # Preferred times constraints
     pref_map = {
-    "morning": ["06:00", "08:00"],  # I have slightly modified the logic to add multiple time slots.
-    "noon": ["12:00"],    
-    "evening": ["16:00"],
-    "night": ["20:00","22:00"]
-                }
+        "morning": ["06:00", "08:00"], # I've not modified the logic of the function that still woks on set times 
+        "noon": ["12:00"],
+        "evening": ["16:00"],
+        "night": ["20:00", "22:00"]
+    }
     for i, pres in enumerate(prescriptions):
         if pres.get('preferred_times'):
             for pt in pres['preferred_times']:
@@ -109,32 +116,32 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
                         sum(drug_vars[(i, d, slot)] for d in range(pres['frequency']) for slot in slots) >= 1
                     )
 
-
     # Without food constraints
-    meal_times = set(diet.values()) if diet else set()
     for i, pres in enumerate(prescriptions):
         if drug_requires_without_food(pres['name'], drug_data):
             for d_idx in range(pres['frequency']):
                 for mt in meal_times:
-                    if mt in times:
-                        model.Add(drug_vars[(i, d_idx, mt)] == 0)
+                    model.Add(drug_vars[(i, d_idx, mt)] == 0)
 
     # With food constraints
-    for i, pres in enumerate(prescriptions): # I don't know if it is ok (I think it may cause problems if my is not in times)
+    for i, pres in enumerate(prescriptions):
         if drug_requires_food(pres['name'], drug_data):
             for d_idx in range(pres['frequency']):
-                model.Add(sum(drug_vars[(i, d_idx, mt)] for mt in meal_times if mt in times) == 1)
+                model.Add(sum(drug_vars[(i, d_idx, mt)] for mt in meal_times) == 1)
 
     # No two doses of the same drug at the same time (already ensured by each dose once, but let's keep it)
     for i, pres in enumerate(prescriptions):
         freq = pres['frequency']
         if freq > 1:
             for d1 in range(freq):
-                for d2 in range(d1+1, freq):
+                for d2 in range(d1 + 1, freq):
                     for t in times:
                         model.Add(drug_vars[(i, d1, t)] + drug_vars[(i, d2, t)] <= 1)
 
+    # Objective 
     model.Minimize(0)
+
+    # Solve the model
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
 
@@ -143,7 +150,7 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
         for t in times:
             for i, pres in enumerate(prescriptions):
                 for d_idx in range(pres['frequency']):
-                    if solver.Value(drug_vars[(i,d_idx,t)]) == 1:
+                    if solver.Value(drug_vars[(i, d_idx, t)]) == 1:
                         schedule[t].append(pres['name'])
         return {t: v for t, v in schedule.items() if v}
     else:
