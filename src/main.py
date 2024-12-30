@@ -89,20 +89,35 @@ class MedicationScheduleOptimizer:
                 self.parse_input_prescriptions(input_str=input_str)
                 break
             elif choice in ['n', 'no']:
+                self.load_and_prepare_data()        # <--- load data FIRST
+                self.parse_input_prescriptions()   # <--- parse input SECOND
                 print("Using input from file: \n")
+                # Print input file content if using file-based input
                 with open(f"{self.input_dir}/input.txt", "r") as f:
                     print(f.read())
-                self.load_and_prepare_data()
-                self.parse_input_prescriptions()
                 break
             elif choice in ['quit', 'q']:
                 print("Exiting.")
                 sys.exit(0)
             else:
                 print("Invalid input. Please type 'y', 'n', or 'quit'.")
+                
+        if not self.interactions:
+            print("No interactions found between prescribed drugs.")
+        else:
+            print("Interactions between drugs are: \n")
+            for pair, interaction in self.interactions.items():
+                # Check if both drugs in the interaction pair are in the prescription list
+                drug1, drug2 = pair
+                prescribed_drugs = {pres['name'].title() for pres in self.prescriptions}
+                if drug1 in prescribed_drugs and drug2 in prescribed_drugs:
+                    print(f"{drug1} and {drug2}: {interaction['description']}")
+        print("\n")
 
+        # Optimize and display schedule
         self.optimize_schedule()
         self.display_schedule()
+
 
 if __name__ == "__main__":
     optimizer = MedicationScheduleOptimizer()

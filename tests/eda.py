@@ -136,8 +136,6 @@ def merged_drug_info(df_drug: pd.DataFrame, df_interactions: pd.DataFrame) -> No
         print(f"\nNumber of unique descriptions in 'Interactions' column (drug_data_1.csv): {num_unique}")
 
 
-import pandas as pd
-
 def build_merged_csv(
     drug_data_path: str,
     interactions_path: str,
@@ -191,22 +189,58 @@ def build_merged_csv(
     print(f"Wrote merged interaction data to '{output_interactions_csv}'.")
 
 
+def build_subset_1(drugs_csv, interactions_csv, output_csv="data/subset_1.csv"):
+    df_d = pd.read_csv(drugs_csv).head(3)
+    df_i = pd.read_csv(interactions_csv)
+    chosen_drugs = set(df_d["Drug Name"])
+    d_contra = {r["Drug Name"]: r["Contraindications"] for _, r in df_d.iterrows()}
+    df_i = df_i[(df_i["Drug 1"].isin(chosen_drugs)) | (df_i["Drug 2"].isin(chosen_drugs))]
+    rows = []
+    for _, row in df_i.iterrows():
+        d1, d2 = row["Drug 1"], row["Drug 2"]
+        rows.append({
+            "Drug 1": d1,
+            "Drug 2": d2,
+            "Interaction Description": row["Interaction Description"],
+            "Drug 1 Contraindications": d_contra.get(d1, "Unknown"),
+            "Drug 2 Contraindications": d_contra.get(d2, "Unknown")
+        })
+    subset_1 = pd.DataFrame(rows)
+    subset_1.to_csv(output_csv, index=False)
+
+    # subset_1 is a DataFrame with the following columns:
+    #   - Drug 1
+    #   - Drug 2
+    #   - Interaction Description
+    #   - Drug 1 Contraindications
+    #   - Drug 2 Contraindications
+
+    # the drugs in the subset are the ones from the first 3 rows of the drugs_csv file
+
+
+    return subset_1
+
+
 if __name__ == "__main__":
     # Adjust paths as needed
-    drug_data_path = "data/drug_data_1.csv"
-    interactions_path = "data/interactions_text.csv"
+    drug_data_path = "data/common_drugs.csv"
+    interactions_path = "data/common_interactions.csv"
 
     df_drug, df_interactions = load_data(drug_data_path, interactions_path)
     #basic_dataset_info(df_drug, df_interactions)
-    #analyze_interactions(df_interactions)
+    analyze_interactions(df_interactions)
     #interaction_description_stats(df_interactions)
     #merged_drug_info(df_drug, df_interactions)
 
-    build_merged_csv(
-    drug_data_path="data/drug_data_1.csv",
-    interactions_path="data/interactions_text.csv",
-    output_drug_csv="data/common_drugs.csv",
-    output_interactions_csv="data/common_interactions.csv"
-)
+#     build_merged_csv(
+#     drug_data_path="data/drug_data_1.csv",
+#     interactions_path="data/interactions_text.csv",
+#     output_drug_csv="data/common_drugs.csv",
+#     output_interactions_csv="data/common_interactions.csv"
+# )
+
+    subset_df = build_subset_1("data/common_drugs.csv", "data/common_interactions.csv")
+    print(subset_df)
+
 
     print("\n--- EDA COMPLETE ---\n")
