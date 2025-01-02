@@ -2,17 +2,24 @@
 ## 20875 – Software Engineering 2024
 ### MSc in Artificial Intelligence Bocconi
 
-This project optimizes medication schedules based on input prescriptions and interaction data.
+## Overview 
+## Overview  
+The **Medication Schedule Optimizer** is a tool designed to streamline medication scheduling for patients by avoiding harmful drug interactions and considering dietary constraints. By leveraging detailed drug interaction datasets and constraint-solving algorithms, this project aims to:  
+- Provide optimal medication schedules tailored to individual patient needs and dietary indications.  
+- Minimize the risk associated with drug-drug interactions.  
+- Incorporate food-related constraints for drugs that require specific consumption conditions.  
+
+The overarching objective of this project is to assist healthcare professionals and patients in managing the challenges of complex medication regimens.
 
 ## Directory Structure
 
-- `data/`: Contains the data files (`interactions.xlsx`, `db_drug_interactions.csv`, `drug_data.csv`)
-- `inputs/`: Input files (e.g., `input.txt`) describing the patient's prescriptions
+- `data/`: Contains the data files ( `interactions_text.csv`, `drug_data_1.csv`),sourced from external databases.
+- `inputs/`: Contains example patient prescription input files (e.g., `input.txt`).
 - `src/`:
   - `main.py`: Contains the `MedicationScheduleOptimizer` class which orchestrates the solution.
   - `parser.py`: Parsing functions.
   - `utils.py`: Helper functions for data loading, interaction modeling, scheduling, and output.
-- `tests/`: Contains unit tests and test files such as eda.py
+- `tests/`: Includes unit tests and exploratory data analysis (`eda.py`) to understand dataset properties and structure.
 
 
 ```text
@@ -32,16 +39,38 @@ swe-project/
 └─ readme.md
 ```
 
-## Usage
+## Usage  
 
-1. Install requirements:
+Before running the program, ensure that all required dependencies are installed. Follow these steps:  
+
+1. Install Requirements  
+  Open a terminal in the project directory.  
+  Run the following command to install all necessary Python packages:  
    ```bash
    pip install -r requirements.txt
    ```
 
+2. Run the program 
+  To start the application, execute the main script using Python. A user-friendly interface will guide you through the process.
+  Run the following command: 
+   ```python src/main.py
+   ```
+
+After running the command, the program will display the following prompt:
+  Do you want to enter prescriptions now? (y/n/quit) 
+If you enter y:
+   You will be prompted to input prescription details. The program will display instructions about the required format before collecting the input.
+If you enter n:
+  A default input file from the inputs/ directory will be used to test the functionality of the application.
+If you enter quit:
+  The program will terminate without processing any input.
+
+  Once the input is processed, the program generates an optimized medication schedule that will be displayed in the terminal.
+
+
 ## Codebase Summary
 
-**main.py**  
+**main.py**: Orchestrates the entire scheduling process, from data preparation to displaying results..    
 - Contains `MedicationScheduleOptimizer` class, the main entry point for running the workflow:
   - `run()`: Handles user interaction and triggers all steps.
   - `load_and_prepare_data()`: Loads datasets and preprocesses them.
@@ -52,11 +81,14 @@ swe-project/
 **parser.py**  
 - `parse_prescriptions(input_str: str)`: Converts raw textual prescriptions into structured data (a list of dictionaries).
 
-**utils.py**  
-- `load_data(interactions_xlsx, db_interactions_csv, drug_data_csv)`: Loads drug and interaction data.
-- `build_interaction_dict(df1, df2)`: Builds a dictionary of drug-to-drug interactions.
-- `create_schedule(prescriptions, interactions)`: Uses a constraint solver to assign times to each prescription, avoiding conflicts.
-- `print_schedule(schedule, drug_data)`: Formats and prints the resulting schedule as a table, including warnings.
+**utils.py**: Houses supporting functions for data handling, interaction modeling, and schedule optimization.
+
+- `load_data(interactions_xlsx, db_interactions_csv, drug_data_csv)`: Loads drug and interaction data.  
+- `build_interaction_dict(df1, df2)`: Builds a dictionary of drug-to-drug interactions.  
+- `get_warnings_map(drug_data)`: Extracts warnings from the dataset for each drug.  
+- `drug_requires_without_food(drug_name, drug_data)`, `drug_requires_food(drug_name, drug_data)`: Handles food interaction constraints by identifying drugs that require consumption with or without food.  
+- `create_schedule(prescriptions, interactions)`: Uses a constraint solver to assign times to each prescription, avoiding conflicts.  
+- `print_schedule(schedule, drug_data)`: Formats and prints the resulting schedule as a table, including warnings.  
 
 **tests/test_parser.py**  
 - Tests the parser functionality, e.g.:
