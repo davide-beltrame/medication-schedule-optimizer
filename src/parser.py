@@ -4,22 +4,22 @@ def parse_prescriptions(input_str: str):
     lines = input_str.strip().split('\n')
     prescriptions = []
     diet = {}
-    freq_map = {"once":1, "twice":2, "thrice":3}
+    freq_map = {"once": 1, "twice": 2, "thrice": 3}
     pattern = r"^(.*?):\s*(once|twice|thrice)\s+daily(?:\s*\((.*?)\))?$"
 
     for line in lines:
         line = line.strip()
         if line.startswith('#'):
-            continue # Ignore comment lines
+            continue  # Ignore comment lines
         if line.lower().startswith("diet:"):
-            diet_line = line[len("Diet:"):].strip()
-            meal_entries = [m.strip() for m in diet_line.split(';')]
-            for m in meal_entries: # Format: "breakfast 8 am"
+            diet_line = line[len("Diet:"):].strip()    
+            meal_entries = [m.strip() for m in diet_line.split(';') if m.strip()]  # Filter out empty entries
+            for m in meal_entries:  # Format: "breakfast 8 am"
                 parts = m.split()
                 meal_name = parts[0].lower()
                 meal_time = " ".join(parts[1:]).strip()
                 diet[meal_name] = convert_time_to_24h(meal_time)
-        else: # Drug line
+        else:  # Drug line
             match = re.match(pattern, line, re.IGNORECASE)
             if match:
                 drug = match.group(1).strip()
