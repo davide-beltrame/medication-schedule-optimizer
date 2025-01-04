@@ -13,8 +13,8 @@ def build_interaction_dict(df_db_interactions):
     df_db_interactions['Drug 1'] = df_db_interactions['Drug 1'].str.title()
     df_db_interactions['Drug 2'] = df_db_interactions['Drug 2'].str.title()
 
-    # Partial matching for risky keywords
-    risk_keywords = ["increase", "increased", "contraindicated", "severe", "serious", "major", "fatal"]
+    # Exact phrase for adverse effects
+    risk_phrase = "the risk or severity of adverse effects can be increased when"
 
     interactions = {}
     for _, row in df_db_interactions.iterrows():
@@ -24,13 +24,14 @@ def build_interaction_dict(df_db_interactions):
         desc = row['Interaction Description']
         desc_lower = desc.lower()
 
-        # Flag as risky if any keyword is matched
-        is_risky = any(kw in desc_lower for kw in risk_keywords)
+        # Flag as risky only if the exact phrase is present
+        is_risky = risk_phrase in desc_lower
         interactions[pair] = {
             "risk": 1 if is_risky else 0,
             "description": desc
         }
     return interactions
+
 
 def get_warnings_map(drug_data):
     warnings_map = {}
