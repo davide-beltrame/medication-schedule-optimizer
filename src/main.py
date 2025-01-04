@@ -94,6 +94,7 @@ class MedicationScheduleOptimizer:
             if choice == '2':
                 print("\nEnter prescriptions in the format:")
                 print('"DrugName: once/twice/thrice daily (optional_times)"')
+                print("Allowed optional_times are: morning, afternoon, evening ")
                 print("For example:")
                 print('  Aspirin: once daily (morning)')
                 print('  Ibuprofen: twice daily')
