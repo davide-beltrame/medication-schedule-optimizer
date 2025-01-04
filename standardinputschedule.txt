@@ -1,0 +1,35 @@
+Medication Schedule
+====================
+
+Time: 06:00
+Drugs: Levofloxacin, Ibuprofen
+Warnings:
+  Levofloxacin: Take 2 hours before or 6 hours after antacids
+  Ibuprofen: Anticoagulants: increased bleeding risk
+
+
+Time: 10:00
+Drugs: Prednisone, Metformin
+Warnings:
+  Prednisone: Take with food or milk
+  Metformin: Take with meals
+
+
+Time: 11:00
+Drugs: Levofloxacin
+Warnings:
+  Levofloxacin: Take 2 hours before or 6 hours after antacids
+
+
+Time: 20:00
+Drugs: Prednisone, Metformin
+Warnings:
+  Prednisone: Take with food or milk
+  Metformin: Take with meals
+
+
+Time: 22:00
+Drugs: Levofloxacin
+Warnings:
+  Levofloxacin: Take 2 hours before or 6 hours after antacids
+
