@@ -1,7 +1,10 @@
 # Medication Schedule Optimizer
 ## 20875 – Software Engineering 2024
-### MSc in Artificial Intelligence Bocconi
-
+### MSc in Artificial Intelligence – Bocconi University
+### Final Project by:
+- **Davide Beltrame 3306906**
+- **Francesca Dessalvi 3325685**
+---
 ## Overview
 The **Medication Schedule Optimizer** is a tool designed to streamline medication scheduling for patients by avoiding harmful drug interactions and considering dietary constraints. By leveraging detailed drug interaction datasets and constraint-solving algorithms, this project aims to:
 - Provide optimal medication schedules tailored to individual patient needs and dietary indications.
@@ -12,7 +15,7 @@ The overarching objective of this project is to assist healthcare professionals 
 
 ## Directory Structure
 
-- `data/`: Contains the data files (`interactions_text.csv`, `drug_data_1.csv`), sourced from external databases.
+- `data/`: Contains the data files (`interactions_text.csv`, `drug_data_1.csv`), sourced from external databases, and the reduced working versions (`common_interactions.csv`, `common_drugs.csv`).
 - `inputs/`: Contains example patient prescription input files (e.g., `input.txt`).
 - `src/`:
   - `main.py`: Contains the `MedicationScheduleOptimizer` class which orchestrates the solution.
@@ -42,6 +45,7 @@ swe-project/
 Before running the program, ensure that all required dependencies are installed. Follow these steps:  
 
 1. Install Requirements  
+
   Open a terminal in the project directory.  
   Run the following command to install all necessary Python packages:  
    ```bash
@@ -49,21 +53,12 @@ Before running the program, ensure that all required dependencies are installed.
    ```
 
 2. Run the program 
+
   To start the application, execute the main script using Python. A user-friendly interface will guide you through the process.
-  Run the following command: 
-   ```python src/main.py
+  Run the following command in the repo directory: 
+   ```bash
+   python src/main.py
    ```
-
-After running the command, the program will display the following prompt:
-  Do you want to enter prescriptions now? (y/n/quit) 
-If you enter y:
-   You will be prompted to input prescription details. The program will display instructions about the required format before collecting the input.
-If you enter n:
-  A default input file from the inputs/ directory will be used to test the functionality of the application.
-If you enter quit:
-  The program will terminate without processing any input.
-
-  Once the input is processed, the program generates an optimized medication schedule that will be displayed in the terminal.
 
 ## Codebase Summary
 

@@ -59,7 +59,7 @@ class MedicationScheduleOptimizer:
     def display_schedule(self):
      if self.schedule:
         print_schedule(self.schedule, self.drug_data)
-        choice = input("Do you want the schedule to be saved in a .txt file? (y/n): ").strip().lower()
+        choice = 'n' #input("Do you want the schedule to be saved in a .txt file? (y/n): ").strip().lower()
         if choice in ['y', 'yes']:
             filename = input("Please write the desired name for the file (include .txt): ").strip()
             if not filename.endswith(".txt"):
@@ -73,18 +73,13 @@ class MedicationScheduleOptimizer:
      else:
         print("No schedule available to display.")
 
-
-
     def run(self):
         while True:
-            # print("Please choose:")
-            # print("[1] Use input.txt")
-            # print("[2] Enter prescriptions manually")
-            # print("[q] Quit")
-
-            # choice = input("> ").strip().lower()
-
-            choice = '1' # temporarily disable user input
+            print("Please choose:")
+            print("[1] Use input.txt")
+            print("[2] Enter prescriptions manually")
+            print("[q] Quit")
+            choice = '1' # input("> ").strip().lower()
 
             if choice == '2':
                 print("\nEnter prescriptions in the format:")
@@ -128,29 +123,38 @@ class MedicationScheduleOptimizer:
 
         # Display interactions
         risky_pairs = []
+        undesirable_pairs = []
         if not self.interactions:
-            print("No interactions found between prescribed drugs.")
+            print("\nNo interactions found between prescribed drugs.")
         else:
-            print("Interactions between drugs:")
+            print("\nInteractions between drugs:")
             for pair, interaction in self.interactions.items():
                 drug1, drug2 = pair
                 prescribed_drugs = {pres['name'].title() for pres in self.prescriptions}
                 if drug1 in prescribed_drugs and drug2 in prescribed_drugs:
-                    print(f" - {drug1} and {drug2}: {interaction['description']}")
+                    description = interaction['description']
+                    # Make drug names bold in the description
+                    description = description.replace(drug1, f"\033[1m{drug1}\033[0m")
+                    description = description.replace(drug2, f"\033[1m{drug2}\033[0m")
+                    print(f" - {description}")
                     if interaction['risk'] == 1:  # Check for risky interactions
                         risky_pairs.append(f"{drug1} and {drug2}")
+                    elif interaction['undesirable'] == 1:
+                        undesirable_pairs.append(f"{drug1} and {drug2}")  
 
-        # Print risky combinations if any
         if risky_pairs:
             print("\nRisky drug combinations are:")
             for pair in risky_pairs:
                 print(f" - {pair}")
-        else:
-            print("\nNo risky drug combinations identified.")
+        if undesirable_pairs:
+            print("\nUndesirable drug combinations are:")
+            for pair in undesirable_pairs:
+                print(f" - {pair}")
+        if not risky_pairs and not undesirable_pairs:
+            print("\nNo risky or undesirable drug combinations identified.")
 
         self.optimize_schedule()
         self.display_schedule()
-
 
 if __name__ == "__main__":
     optimizer = MedicationScheduleOptimizer()
