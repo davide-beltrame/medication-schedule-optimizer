@@ -43,14 +43,13 @@ def get_warnings_map(drug_data):
             warnings_map[drug_name] = w if isinstance(w, str) else "None"
     return warnings_map
 
-def drug_requires_without_food(drug_name, drug_data):
-    if drug_data is not None and 'Drug Name' in drug_data.columns and 'Instructions' in drug_data.columns:
+def drug_requires_no_food(drug_name, drug_data):
+    if drug_data is not None and 'Drug Name' in drug_data.columns and 'Warnings and Precautions' in drug_data.columns:
         row = drug_data[drug_data['Drug Name'].str.title() == drug_name.title()]
         if not row.empty:
             instructions = row.iloc[0]['Warnings and Precautions']
             if isinstance(instructions, str):
                 instructions_lower = instructions.lower()
-                # If *any* of these phrases is in the instructions, True
                 if "without food" in instructions_lower or \
                    "empty stomach" in instructions_lower or \
                    "before a meal" in instructions_lower:
@@ -84,41 +83,69 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
             for t in times:
                 drug_vars[(i, d_idx, t)] = model.NewBoolVar(f"drug_{i}_dose_{d_idx}_{t}")
 
-    # Each dose must be placed exactly once
-    for i, pres in enumerate(prescriptions):
-        freq = pres['frequency']
-        for d_idx in range(freq):
-            model.Add(sum(drug_vars[(i, d_idx, t)] for t in times) == 1)
+        # Time-of-day preferences (pre-defined slots)
+    time_preferences = {
+        "morning": [t for t in times if "06:00" <= t <= "12:00"],
+        "afternoon": [t for t in times if "12:01" <= t <= "17:59"],
+        "evening": [t for t in times if "18:00" <= t <= "22:00"]
+    }
 
-    # Ensure doses of the same drug are spaced evenly
+    # Ensure doses of the same drug are spaced evenly within time preferences
     for i, pres in enumerate(prescriptions):
+        time_of_day = pres.get("preferred_times", [])  # Check for preferred time of day
+        time_window = time_preferences.get(time_of_day[0].lower(), times) if time_of_day else times
+
         freq = pres['frequency']
-        interval = len(times) // freq
-        for d_idx in range(freq - 1):
+        num_slots = len(time_window)
+
+        if freq > num_slots:
+            print(f"Warning: Not enough time slots for {pres['name']} in {time_of_day[0]}.")
+            continue
+
+        interval = num_slots // freq  # Calculate interval based on slots within the window
+
+        # Enforce doses within the chosen window and evenly spaced
+        for d_idx in range(freq):
+            first_slot_idx = d_idx * interval  # Calculate index for each dose based on interval
             model.Add(
                 sum(
-                    drug_vars[(i, d_idx, t)] * times.index(t)
-                    for t in times
+                    drug_vars[(i, d_idx, t)] * time_window.index(t)
+                    for t in time_window
                 )
-                + interval <=
-                sum(
-                    drug_vars[(i, d_idx + 1, t)] * times.index(t)
-                    for t in times
-                )
+                == first_slot_idx
             )
+
+        # Ensure each dose is placed exactly once
+        for d_idx in range(freq):
+            model.Add(sum(drug_vars[(i, d_idx, t)] for t in time_window) == 1)
+
+
+    # Add default meal times if diet is not provided
+    meal_times = set(diet.values()) if diet else {"08:00", "13:00", "19:00"}
+    food_drugs = []  # Collect drugs that require food
+    no_food_drugs = []  # Collect drugs that require no food
 
     # With food => must align with meal times
     for i, pres in enumerate(prescriptions):
         if drug_requires_food(pres['name'], drug_data):
             for d_idx in range(pres['frequency']):
                 model.Add(sum(drug_vars[(i, d_idx, t)] for t in meal_times) == 1)
+            if not diet:  # Add drug name only if default meal times are being used
+                food_drugs.append(pres['name'])
 
-    # Without food => avoid meal times
+    # Without food => must avoid meal times
     for i, pres in enumerate(prescriptions):
-        if drug_requires_without_food(pres['name'], drug_data):
+        if drug_requires_no_food(pres['name'], drug_data):
             for d_idx in range(pres['frequency']):
-                for t in meal_times:
-                    model.Add(drug_vars[(i, d_idx, t)] == 0)
+                model.Add(sum(drug_vars[(i, d_idx, t)] for t in meal_times) == 0)  # No dose should happen at meal times
+            if not diet: # Add drug name only if default meal times are being used
+                no_food_drugs.append(pres['name']) 
+
+    # Print notes with all food-related and no-food-related drugs
+    if food_drugs:
+        print(f"\n\033[1mNote:\033[0m Using default meal times (08:00, 13:00, 19:00) for drugs that require food: {', '.join(food_drugs)}.")
+    if no_food_drugs:
+        print(f"\033[1mNote:\033[0m Avoiding default meal times (08:00, 13:00, 19:00) for drugs that require no food: {', '.join(no_food_drugs)}.")
 
     # Avoid scheduling risky drugs at the same time
     for pair, interaction in interactions.items():
@@ -126,11 +153,11 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
             drug1, drug2 = pair
             drug1_indices = [i for i, pres in enumerate(prescriptions) if pres['name'] == drug1]
             drug2_indices = [i for i, pres in enumerate(prescriptions) if pres['name'] == drug2]
-
             for i1 in drug1_indices:
                 for i2 in drug2_indices:
                     for t in times:
                         model.Add(drug_vars[(i1, 0, t)] + drug_vars[(i2, 0, t)] <= 1)
+        # if interaction['undesirable'] == 1: we will implement this later
 
     # Solve
     solver = cp_model.CpSolver()

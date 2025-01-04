@@ -1,5 +1,3 @@
-Prednisone: twice daily (morning)
-Metformin: twice daily (morning)
-Levofloxacin: thrice daily
-Ibuprofen: once daily (afternoon)
-Diet: breakfast 10 am; lunch 1 pm; dinner 8 pm;
+Prednisone: once daily (morning)
+Ibuprofen: twice daily (afternoon)
+# Diet: breakfast 10 am; lunch 1 pm; dinner 8 pm;
