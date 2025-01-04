@@ -51,6 +51,48 @@ class MedicationScheduleOptimizer:
             print("Warning: Drug data not available or missing 'Drug Name' column, cannot validate drug names.")
             # Not exiting here, but we could if desired.
 
+    def parse_input_prescriptions(self, input_str=None):
+        if input_str is None:
+            input_file = f"{self.input_dir}/input.txt"
+            try:
+                with open(input_file, 'r') as f:
+                    input_str = f.read()
+            except FileNotFoundError:
+                print(f"Input file {input_file} not found.")
+                sys.exit(1)
+
+        self.prescriptions, self.diet = parse_prescriptions(input_str)
+        
+        # Validate meal times after parsing the diet
+        self.validate_meal_times()
+
+        for pres in self.prescriptions:
+            pres['name'] = pres['name'].title()  # Normalize drug names by capitalizing the first letter
+        if not self.prescriptions:
+            print("No prescriptions found in input. Please check the format.")
+            sys.exit(1)
+        self.validate_drug_names()  # Validate drug names against known drugs
+
+    def validate_meal_times(self):
+        """ Ensure that meals are placed in the correct time categories. """
+        time_preferences = {
+            "morning": ("06:00", "12:00"),
+            "afternoon": ("12:01", "17:59"),
+            "evening": ("18:00", "22:00")
+        }
+
+        for meal, time in self.diet.items():
+            if meal == "breakfast" and not (time_preferences["morning"][0] <= time <= time_preferences["morning"][1]):
+                print(f"Invalid breakfast time {time}. Breakfast must be in the morning (06:00 - 12:00).")
+                sys.exit(1)
+            elif meal == "lunch" and not (time_preferences["afternoon"][0] <= time <= time_preferences["afternoon"][1]):
+                print(f"Invalid lunch time {time}. Lunch must be in the afternoon (12:01 - 17:59).")
+                sys.exit(1)
+            elif meal == "dinner" and not (time_preferences["evening"][0] <= time <= time_preferences["evening"][1]):
+                print(f"Invalid dinner time {time}. Dinner must be in the evening (18:00 - 22:00).")
+                sys.exit(1)
+
+
     def optimize_schedule(self):
         self.schedule = create_schedule(self.prescriptions, self.interactions, self.drug_data, self.diet)
         if self.schedule is None:

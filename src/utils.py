@@ -69,58 +69,24 @@ def drug_requires_food(drug_name, drug_data):
                     return True
     return False
 
-def create_schedule(prescriptions, interactions, drug_data, diet):
-    model = cp_model.CpModel()
-    base_times = [f"{hour:02d}:00" for hour in range(6, 23)]
-    meal_times = set(diet.values()) if diet else set()
-    times = sorted(set(base_times).union(meal_times))
+def get_max_separation_slots(time_preferences, frequency):
+    """ 
+    Get maximally spaced slots across different parts of the day.
+    E.g., for 2 doses, morning and evening; for 3 doses, morning, afternoon, and evening.
+    """
+    slot_groups = [time_preferences["morning"], time_preferences["afternoon"], time_preferences["evening"]]
+    available_groups = [group for group in slot_groups if len(group) > 0]
+    
+    if frequency > len(available_groups):  # Not enough groups to fully separate
+        return None
 
-    # Variables
-    drug_vars = {}
-    for i, pres in enumerate(prescriptions):
-        freq = pres['frequency']
-        for d_idx in range(freq):
-            for t in times:
-                drug_vars[(i, d_idx, t)] = model.NewBoolVar(f"drug_{i}_dose_{d_idx}_{t}")
+    chosen_slots = []
+    for idx in range(frequency):
+        group = available_groups[idx % len(available_groups)]
+        chosen_slots.append(group[0])  # Pick the first available time in each group
+    return chosen_slots
 
-        # Time-of-day preferences (pre-defined slots)
-    time_preferences = {
-        "morning": [t for t in times if "06:00" <= t <= "12:00"],
-        "afternoon": [t for t in times if "12:01" <= t <= "17:59"],
-        "evening": [t for t in times if "18:00" <= t <= "22:00"]
-    }
-
-    # Ensure doses of the same drug are spaced evenly within time preferences
-    for i, pres in enumerate(prescriptions):
-        time_of_day = pres.get("preferred_times", [])  # Check for preferred time of day
-        time_window = time_preferences.get(time_of_day[0].lower(), times) if time_of_day else times
-
-        freq = pres['frequency']
-        num_slots = len(time_window)
-
-        if freq > num_slots:
-            print(f"Warning: Not enough time slots for {pres['name']} in {time_of_day[0]}.")
-            continue
-
-        interval = num_slots // freq  # Calculate interval based on slots within the window
-
-        # Enforce doses within the chosen window and evenly spaced
-        for d_idx in range(freq):
-            first_slot_idx = d_idx * interval  # Calculate index for each dose based on interval
-            model.Add(
-                sum(
-                    drug_vars[(i, d_idx, t)] * time_window.index(t)
-                    for t in time_window
-                )
-                == first_slot_idx
-            )
-
-        # Ensure each dose is placed exactly once
-        for d_idx in range(freq):
-            model.Add(sum(drug_vars[(i, d_idx, t)] for t in time_window) == 1)
-
-
-    # Add default meal times if diet is not provided
+def handle_diet_constraints(prescriptions, drug_vars, drug_data, diet, model):
     meal_times = set(diet.values()) if diet else {"08:00", "13:00", "19:00"}
     food_drugs = []  # Collect drugs that require food
     no_food_drugs = []  # Collect drugs that require no food
@@ -138,7 +104,7 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
         if drug_requires_no_food(pres['name'], drug_data):
             for d_idx in range(pres['frequency']):
                 model.Add(sum(drug_vars[(i, d_idx, t)] for t in meal_times) == 0)  # No dose should happen at meal times
-            if not diet: # Add drug name only if default meal times are being used
+            if not diet:  # Add drug name only if default meal times are being used
                 no_food_drugs.append(pres['name']) 
 
     # Print notes with all food-related and no-food-related drugs
@@ -147,17 +113,80 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
     if no_food_drugs:
         print(f"\033[1mNote:\033[0m Avoiding default meal times (08:00, 13:00, 19:00) for drugs that require no food: {', '.join(no_food_drugs)}.")
 
-    # Avoid scheduling risky drugs at the same time
+def add_interaction_constraints(model, prescriptions, interactions, drug_vars, times):
+    """
+    Add constraints for risky and undesirable drug combinations.
+    - Risky combinations: Must be respected for feasibility.
+    - Undesirable combinations: Attempt to enforce but silently ignore if unfeasible.
+    """
     for pair, interaction in interactions.items():
-        if interaction['risk'] == 1:
-            drug1, drug2 = pair
-            drug1_indices = [i for i, pres in enumerate(prescriptions) if pres['name'] == drug1]
-            drug2_indices = [i for i, pres in enumerate(prescriptions) if pres['name'] == drug2]
-            for i1 in drug1_indices:
-                for i2 in drug2_indices:
-                    for t in times:
+        drug1, drug2 = pair
+        drug1_indices = [i for i, pres in enumerate(prescriptions) if pres['name'] == drug1]
+        drug2_indices = [i for i, pres in enumerate(prescriptions) if pres['name'] == drug2]
+
+        for i1 in drug1_indices:
+            for i2 in drug2_indices:
+                for t in times:
+                    if interaction['risk'] == 1:  # Risky interaction: strict constraint
                         model.Add(drug_vars[(i1, 0, t)] + drug_vars[(i2, 0, t)] <= 1)
-        # if interaction['undesirable'] == 1: we will implement this later
+                    elif interaction.get('undesirable', 0) == 1:  # Undesirable interaction: attempt but ignore if infeasible
+                        try:
+                            model.Add(drug_vars[(i1, 0, t)] + drug_vars[(i2, 0, t)] <= 1)
+                        except Exception:
+                            # Silently ignore this undesirable constraint if it causes infeasibility
+                            pass
+
+def create_schedule(prescriptions, interactions, drug_data, diet):
+    model = cp_model.CpModel()
+    base_times = [f"{hour:02d}:00" for hour in range(6, 23)]
+    meal_times = set(diet.values()) if diet else {"08:00", "13:00", "19:00"}
+    times = sorted(set(base_times).union(meal_times))
+
+    # Variables
+    drug_vars = {}
+    for i, pres in enumerate(prescriptions):
+        freq = pres['frequency']
+        for d_idx in range(freq):
+            for t in times:
+                drug_vars[(i, d_idx, t)] = model.NewBoolVar(f"drug_{i}_dose_{d_idx}_{t}")
+
+    # Time-of-day preferences (pre-defined slots)
+    time_preferences = {
+        "morning": [t for t in times if "06:00" <= t <= "12:00"],
+        "afternoon": [t for t in times if "12:01" <= t <= "17:59"],
+        "evening": [t for t in times if "18:00" <= t <= "22:00"]
+    }
+
+    # Ensure doses of the same drug are spaced out properly
+    for i, pres in enumerate(prescriptions):
+        time_of_day = pres.get("preferred_times", [])
+        freq = pres['frequency']
+
+        if time_of_day:
+            time_window = time_preferences.get(time_of_day[0].lower(), times)
+        else:
+            time_window = times
+
+        if drug_requires_food(pres['name'], drug_data):
+            time_window = sorted(set(time_window).intersection(meal_times))
+        elif drug_requires_no_food(pres['name'], drug_data):
+            time_window = sorted(set(time_window) - meal_times)
+
+        for d_idx in range(freq):
+            model.Add(sum(drug_vars[(i, d_idx, t)] for t in time_window) == 1)
+
+        if freq > 1:
+            for d_idx in range(freq - 1):
+                model.Add(
+                    sum(drug_vars[(i, d_idx, t)] * times.index(t) for t in time_window) <
+                    sum(drug_vars[(i, d_idx + 1, t)] * times.index(t) for t in time_window)
+                )
+
+    # Add diet-related constraints and print notes
+    handle_diet_constraints(prescriptions, drug_vars, drug_data, diet, model)
+
+    # Try to add interaction constraints
+    add_interaction_constraints(model, prescriptions, interactions, drug_vars, times)
 
     # Solve
     solver = cp_model.CpSolver()

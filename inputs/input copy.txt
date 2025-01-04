@@ -1,3 +1,6 @@
-Aspirin: once daily (morning)
-Ibuprofen: twice daily
-Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm;
+Prednisone: twice daily (morning)
+Metformin: twice daily (morning)
+Levofloxacin: thrice daily
+Ibuprofen: twice daily (afternoon)
+Enalapril: once daily
+# Diet: breakfast 10 am; lunch 1 pm; dinner 8 pm;
