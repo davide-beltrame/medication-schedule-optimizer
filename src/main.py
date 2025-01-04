@@ -2,6 +2,8 @@ import sys
 from parser import parse_prescriptions
 from utils import load_data, build_interaction_dict, create_schedule, print_schedule, save_schedule_to_file
 
+choices_enabled = 0
+
 class MedicationScheduleOptimizer:
     def __init__(self, data_dir="data", input_dir="inputs"):
         self.data_dir = data_dir
@@ -59,7 +61,10 @@ class MedicationScheduleOptimizer:
     def display_schedule(self):
      if self.schedule:
         print_schedule(self.schedule, self.drug_data)
-        choice = 'n' #input("Do you want the schedule to be saved in a .txt file? (y/n): ").strip().lower()
+        if choices_enabled == 1:
+            choice = input("Do you want the schedule to be saved in a .txt file? (y/n): ").strip().lower()
+        else:
+            choice = 'n'
         if choice in ['y', 'yes']:
             filename = input("Please write the desired name for the file (include .txt): ").strip()
             if not filename.endswith(".txt"):
@@ -75,11 +80,16 @@ class MedicationScheduleOptimizer:
 
     def run(self):
         while True:
+            # the following text is to be bold
+            print("\033[1mWelcome to the Medication Schedule Optimizer!\033[0m")
             print("Please choose:")
             print("[1] Use input.txt")
             print("[2] Enter prescriptions manually")
             print("[q] Quit")
-            choice = '1' # input("> ").strip().lower()
+            if choices_enabled == 1:
+                choice = input("> ").strip().lower()
+            else:
+                choice = '1'
 
             if choice == '2':
                 print("\nEnter prescriptions in the format:")
@@ -109,7 +119,7 @@ class MedicationScheduleOptimizer:
             elif choice == '1':
                 self.load_and_prepare_data()
                 self.parse_input_prescriptions()
-                print("Using input from file:\n")
+                print("\033[1mUsing input from file:\n\033[0m")
                 with open(f"{self.input_dir}/input.txt", "r") as f:
                     print(f.read())  # Print input file content if using file-based input
                 break
@@ -145,10 +155,14 @@ class MedicationScheduleOptimizer:
         if risky_pairs:
             print("\nRisky drug combinations are:")
             for pair in risky_pairs:
+                pair = pair.replace(pair.split()[0], f"\033[1m{pair.split()[0]}\033[0m")    
+                pair = pair.replace(pair.split()[2], f"\033[1m{pair.split()[2]}\033[0m")
                 print(f" - {pair}")
         if undesirable_pairs:
             print("\nUndesirable drug combinations are:")
             for pair in undesirable_pairs:
+                pair = pair.replace(pair.split()[0], f"\033[1m{pair.split()[0]}\033[0m")    
+                pair = pair.replace(pair.split()[2], f"\033[1m{pair.split()[2]}\033[0m")
                 print(f" - {pair}")
         if not risky_pairs and not undesirable_pairs:
             print("\nNo risky or undesirable drug combinations identified.")
