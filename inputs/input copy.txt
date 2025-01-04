@@ -1,6 +1,6 @@
-Prednisone: twice daily (morning)
-Metformin: twice daily (morning)
-Levofloxacin: thrice daily
-Ibuprofen: twice daily (afternoon)
-Enalapril: once daily
-# Diet: breakfast 10 am; lunch 1 pm; dinner 8 pm;
+Citalopram: once daily (morning)  
+Prednisone: twice daily  
+Simvastatin: once daily (evening)  
+Esomeprazole: once daily (morning)  
+Warfarin: once daily (evening)  
+Diet: breakfast 9 am; lunch 1 pm; dinner 8 pm;  

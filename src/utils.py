@@ -175,10 +175,15 @@ def create_schedule(prescriptions, interactions, drug_data, diet):
         for d_idx in range(freq):
             model.Add(sum(drug_vars[(i, d_idx, t)] for t in time_window) == 1)
 
+        # Ensure no more than one dose of the same drug in a single time slot
+        for t in times:
+            model.Add(sum(drug_vars[(i, d_idx, t)] for d_idx in range(freq)) <= 1)
+
+        # Ensure spacing between doses
         if freq > 1:
             for d_idx in range(freq - 1):
                 model.Add(
-                    sum(drug_vars[(i, d_idx, t)] * times.index(t) for t in time_window) <
+                    sum(drug_vars[(i, d_idx, t)] * times.index(t) for t in time_window) + 2 <=
                     sum(drug_vars[(i, d_idx + 1, t)] * times.index(t) for t in time_window)
                 )
 
@@ -270,7 +275,6 @@ def save_schedule_to_file(schedule, drug_data, filename="schedule.txt"):
     with open(filename, 'w') as f:
         f.write("Medication Schedule\n")
         f.write("=" * 20 + "\n")
-
         for t, drugs in schedule.items():
             f.write(f"\nTime: {t}\n")
             f.write(f"Drugs: {', '.join(drugs)}\n")

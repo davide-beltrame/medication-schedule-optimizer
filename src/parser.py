@@ -63,7 +63,6 @@ def parse_prescriptions(input_str: str):
 
     return prescriptions, diet
 
-
 def convert_time_to_24h(time_str):  # Simple conversion assuming format like "8 am", "1 pm"
     parts = time_str.split()
     if len(parts) != 2 or not parts[0].isdigit() or parts[1].lower() not in {"am", "pm"}:

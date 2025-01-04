@@ -17,7 +17,6 @@ class MedicationScheduleOptimizer:
     def load_and_prepare_data(self):
         db_interactions_csv = "data/common_interactions.csv"
         drug_data_csv = "data/common_drugs.csv"
-        #interactions_effects = "data/interactions_effects.csv"
         df_db_interactions, df_drug_data = load_data(db_interactions_csv, drug_data_csv)
         self.interactions = build_interaction_dict(df_db_interactions)
         self.drug_data = df_drug_data
@@ -31,7 +30,6 @@ class MedicationScheduleOptimizer:
             except FileNotFoundError:
                 print(f"Input file {input_file} not found.")
                 sys.exit(1)
-
         self.prescriptions, self.diet = parse_prescriptions(input_str)
         for pres in self.prescriptions:
             pres['name'] = pres['name'].title() # normalising drug names by capitalising the first letter
@@ -49,7 +47,6 @@ class MedicationScheduleOptimizer:
                     sys.exit(1)
         else:
             print("Warning: Drug data not available or missing 'Drug Name' column, cannot validate drug names.")
-            # Not exiting here, but we could if desired.
 
     def parse_input_prescriptions(self, input_str=None):
         if input_str is None:
@@ -60,12 +57,8 @@ class MedicationScheduleOptimizer:
             except FileNotFoundError:
                 print(f"Input file {input_file} not found.")
                 sys.exit(1)
-
         self.prescriptions, self.diet = parse_prescriptions(input_str)
-        
-        # Validate meal times after parsing the diet
         self.validate_meal_times()
-
         for pres in self.prescriptions:
             pres['name'] = pres['name'].title()  # Normalize drug names by capitalizing the first letter
         if not self.prescriptions:
@@ -80,7 +73,6 @@ class MedicationScheduleOptimizer:
             "afternoon": ("12:01", "17:59"),
             "evening": ("18:00", "22:00")
         }
-
         for meal, time in self.diet.items():
             if meal == "breakfast" and not (time_preferences["morning"][0] <= time <= time_preferences["morning"][1]):
                 print(f"Invalid breakfast time {time}. Breakfast must be in the morning (06:00 - 12:00).")
@@ -91,7 +83,6 @@ class MedicationScheduleOptimizer:
             elif meal == "dinner" and not (time_preferences["evening"][0] <= time <= time_preferences["evening"][1]):
                 print(f"Invalid dinner time {time}. Dinner must be in the evening (18:00 - 22:00).")
                 sys.exit(1)
-
 
     def optimize_schedule(self):
         self.schedule = create_schedule(self.prescriptions, self.interactions, self.drug_data, self.diet)
@@ -143,7 +134,6 @@ class MedicationScheduleOptimizer:
                 print("\nInclude a 'Diet:' line if desired, e.g.:")
                 print('  Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm')
                 print("Press Enter on an empty line to run.\n")
-
                 lines = []
                 while True:
                     line = input("> ").strip()
@@ -157,7 +147,6 @@ class MedicationScheduleOptimizer:
                 self.load_and_prepare_data()
                 self.parse_input_prescriptions(input_str=input_str)
                 break
-
             elif choice == '1':
                 self.load_and_prepare_data()
                 self.parse_input_prescriptions()
@@ -165,15 +154,12 @@ class MedicationScheduleOptimizer:
                 with open(f"{self.input_dir}/input.txt", "r") as f:
                     print(f.read())  # Print input file content if using file-based input
                 break
-
             elif choice in ['quit', 'q']:
                 print("Exiting.")
                 sys.exit(0)
-
             else:
                 print("Invalid input. Please type '1', '2', or 'q'.")
 
-        # Display interactions
         risky_pairs = []
         undesirable_pairs = []
         if len(self.prescriptions) > 1:
