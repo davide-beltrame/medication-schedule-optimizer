@@ -202,3 +202,28 @@ def print_schedule(schedule, drug_data):
                 line += " " + cell_line + " "*(col_widths[i] - len(cell_line) + 1) + "|"
             print(line)
         print(sep_line())
+
+def save_schedule_to_file(schedule, drug_data, filename="schedule.txt"):
+    if not schedule:
+        print("No schedule available to save.")
+        return
+    warnings_map = get_warnings_map(drug_data)
+    max_width = 60
+
+    with open(filename, 'w') as f:
+        f.write("Medication Schedule\n")
+        f.write("=" * 20 + "\n")
+
+        for t, drugs in schedule.items():
+            f.write(f"\nTime: {t}\n")
+            f.write(f"Drugs: {', '.join(drugs)}\n")
+            f.write("Warnings:\n")
+            for d in drugs:
+                d_title = d.title()
+                warnings = warnings_map.get(d_title, "None")
+                wrapped = textwrap.wrap(warnings, width=max_width) or ["None"]
+                f.write(f"  {d_title}: {wrapped[0]}\n")
+                for line in wrapped[1:]:
+                    f.write(f"    {line}\n")
+            f.write("\n")
+        print(f"Schedule saved to {filename}")

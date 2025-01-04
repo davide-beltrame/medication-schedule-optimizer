@@ -1,6 +1,6 @@
 import sys
 from parser import parse_prescriptions
-from utils import load_data, build_interaction_dict, create_schedule, print_schedule
+from utils import load_data, build_interaction_dict, create_schedule, print_schedule, save_schedule_to_file
 
 class MedicationScheduleOptimizer:
     def __init__(self, data_dir="data", input_dir="inputs"):
@@ -55,12 +55,25 @@ class MedicationScheduleOptimizer:
             print("\nUnable to find a feasible schedule. Please adjust constraints or inputs.")
         else:
             print("\nSchedule optimised successfully.")
-
+    
     def display_schedule(self):
-        if self.schedule:
-            print_schedule(self.schedule, self.drug_data)
+     if self.schedule:
+        print_schedule(self.schedule, self.drug_data)
+        choice = input("Do you want the schedule to be saved in a .txt file? (y/n): ").strip().lower()
+        if choice in ['y', 'yes']:
+            filename = input("Please write the desired name for the file (include .txt): ").strip()
+            if not filename.endswith(".txt"):
+                print("Invalid file name. The schedule was not saved.")
+            else:
+                save_schedule_to_file(self.schedule, self.drug_data, filename=filename)
+        elif choice in ['n', 'no']:
+            print("Schedule not saved.")
         else:
-            print("\nNo schedule available to display.")
+            print("Invalid choice. Schedule not saved.")
+     else:
+        print("No schedule available to display.")
+
+
 
     def run(self):
         while True:
