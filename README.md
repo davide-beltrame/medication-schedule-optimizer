@@ -6,22 +6,23 @@
 - **Francesca Dessalvi 3325685**
 ---
 ## Overview
-The **Medication Schedule Optimizer** is a tool designed to streamline medication scheduling for patients by avoiding harmful drug interactions and considering dietary constraints. By leveraging detailed drug interaction datasets and constraint-solving algorithms, this project aims to:
-- Provide optimal medication schedules tailored to individual patient needs and dietary indications.
-- Minimize the risk associated with drug-drug interactions.
-- Incorporate food-related constraints for drugs that require specific consumption conditions.
+The **Medication Schedule Optimizer** is a practical tool designed to simplify the process of creating medication schedules for patients. It helps avoid harmful drug interactions and respects dietary requirements. Using drug interaction data and a constraint-solving approach, the project aims to:
 
-The overarching objective of this project is to assist healthcare professionals and patients in managing the challenges of complex medication regimens.
+- Create personalized medication schedules based on patient prescriptions and meal times.
+- Reduce the risk of adverse drug-drug interactions.
+- Handle medications that need to be taken with or without food.
+
+The goal is to support healthcare providers and patients in managing complex medication plans more easily and safely.
 
 ## Directory Structure
 
-- `data/`: Contains the data files (`interactions_text.csv`, `drug_data_1.csv`), sourced from external databases, and the reduced working versions (`common_interactions.csv`, `common_drugs.csv`).
-- `inputs/`: Contains example patient prescription input files (e.g., `input.txt`).
+- `data/`: Contains the drug interaction data files (`interactions_text.csv`, `drug_data_1.csv`) sourced from external databases, as well as simplified versions (`common_interactions.csv`, `common_drugs.csv`) for testing and debugging.
+- `inputs/`: Includes sample patient prescription files (e.g., `input.txt`) to test the program.
 - `src/`:
-  - `main.py`: Contains the `MedicationScheduleOptimizer` class which orchestrates the solution.
-  - `parser.py`: Parsing functions.
-  - `utils.py`: Helper functions for data loading, interaction modeling, scheduling, and output.
-- `tests/`: Includes unit tests and exploratory data analysis (`eda.py`) to understand dataset properties and structure.
+  - `main.py`: The main script that runs the program, containing the `MedicationScheduleOptimizer` class, which manages the entire process.
+  - `parser.py`: Handles the parsing of prescription inputs.
+  - `utils.py`: Provides helper functions for loading data, managing drug interactions, creating schedules, and formatting the output.
+- `tests/`: Contains unit tests and exploratory scripts (`eda.py`) for analyzing and validating the datasets.
 
 ```text
 swe-project/
@@ -31,72 +32,78 @@ swe-project/
 ├─ inputs/
 │  └─ input.txt
 ├─ src/
-│  ├─ main.py      # Contains the main class
-│  ├─ parser.py    # Parsing functions
-│  ├─ utils.py     # Helper functions (data loading, interaction building, scheduling, output formatting)
+│  ├─ main.py    
+│  ├─ parser.py 
+│  ├─ utils.py     
 ├─ tests/
-│  ├─ test_parser.py
+│  ├─ eda.py
 │  └─ ...
-└─ readme.md
+└─ README.md
 ```
 
 ## Usage  
 
-Before running the program, ensure that all required dependencies are installed. Follow these steps:  
+Before running the program, make sure you have installed all the required dependencies. Follow these steps:
 
 1. Install Requirements  
 
-  Open a terminal in the project directory.  
-  Run the following command to install all necessary Python packages:  
+  Open a terminal in the project directory and run the following command to install the necessary Python packages:
    ```bash
    pip install -r requirements.txt
    ```
 
 2. Run the program 
 
-  To start the application, execute the main script using Python. A user-friendly interface will guide you through the process.
-  Run the following command in the repo directory: 
+  To start the application, run the main script using Python. The program will guide you through the steps with a user-friendly interface:
    ```bash
    python src/main.py
    ```
 
 ## Codebase Summary
 
-**main.py**: Orchestrates the entire scheduling process, from data preparation to displaying results.    
-- Contains `MedicationScheduleOptimizer` class, the main entry point for running the workflow:
-  - `run()`: Handles user interaction and triggers all steps.
-  - `load_and_prepare_data()`: Loads datasets and preprocesses them.
-  - `parse_input_prescriptions(input_str=None)`: Parses user input or file input for prescriptions.
-  - `optimize_schedule()`: Runs the constraint solver to find a feasible medication schedule.
-  - `display_schedule()`: Prints the optimized schedule with formatting and warnings.
+### **`main.py`**
+This script orchestrates the entire medication scheduling process, from loading data to displaying the results.  
+Key components:
+- **`MedicationScheduleOptimizer`**: The main class that handles the workflow.
+  - `__init__(self, data_dir="data", input_dir="inputs")`: Initializes directories and variables for data and prescriptions.
+  - `load_and_prepare_data()`: Loads datasets (drug information and interactions) and prepares them for use.
+  - `parse_input_prescriptions(input_str=None)`: Reads prescriptions either from `input.txt` or a manual input.
+  - `validate_drug_names()`: Checks if prescribed drug names exist in the loaded dataset.
+  - `validate_meal_times()`: Ensures that meal times (breakfast, lunch, dinner) are within valid ranges.
+  - `optimize_schedule()`: Uses the constraint solver to create an optimized medication schedule.
+  - `display_schedule()`: Prints the generated schedule, formatted with relevant warnings.
+  - `run()`: Main method that handles user interactions, runs the full optimization, and manages the program flow.
 
-**parser.py**  
-- `parse_prescriptions(input_str: str)`: Converts raw textual prescriptions into structured data (a list of dictionaries).
+---
 
-**utils.py**: Houses supporting functions for data handling, interaction modeling, and schedule optimization.
+### **`parser.py`**
+This module parses the prescription input and extracts prescription details and dietary information.
+- `parse_prescriptions(input_str: str)`: Converts raw prescription text into structured data (a list of dictionaries with drug names, frequencies, and preferred times).
+- `convert_time_to_24h(time_str: str)`: Converts "8 am" or "1 pm" formats to 24-hour times ("08:00", "13:00").
 
-- `load_data(interactions_xlsx, db_interactions_csv, drug_data_csv)`: Loads drug and interaction data.  
-- `build_interaction_dict(df1, df2)`: Builds a dictionary of drug-to-drug interactions.  
-- `get_warnings_map(drug_data)`: Extracts warnings from the dataset for each drug.  
-- `drug_requires_without_food(drug_name, drug_data)`, `drug_requires_food(drug_name, drug_data)`: Handles food interaction constraints by identifying drugs that require consumption with or without food.  
-- `create_schedule(prescriptions, interactions)`: Uses a constraint solver to assign times to each prescription, avoiding conflicts.  
-- `print_schedule(schedule, drug_data)`: Formats and prints the resulting schedule as a table, including warnings.  
+---
 
-**tests/test_parser.py**  
-- Tests the parser functionality, e.g.:
-  - `TestParser.test_parse_prescriptions()`: Verifies correct parsing of textual input into prescription objects.
+### **`utils.py`**
+Contains helper functions for loading data, handling interactions, and creating the schedule.
+- `load_data(db_interactions_csv, drug_data_csv)`: Reads CSV files containing drug information and interaction data.
+- `build_interaction_dict(df_db_interactions)`: Creates a dictionary mapping drug pairs to their interaction details.
+- `get_warnings_map(drug_data)`: Maps drug names to their warnings and precautions.
+- `drug_requires_no_food(drug_name, drug_data)`, `drug_requires_food(drug_name, drug_data)`: Determine if a drug must be taken without or with food.
+- `handle_diet_constraints(prescriptions, drug_vars, drug_data, diet, model)`: Ensures that food-related drug constraints align with meal times.
+- `add_interaction_constraints(model, prescriptions, interactions, drug_vars, times)`: Adds constraints to avoid risky or undesirable drug combinations.
+- `create_schedule(prescriptions, interactions, drug_data, diet)`: Uses Google OR-Tools' constraint programming to generate a feasible medication schedule.
+- `print_schedule(schedule, drug_data)`: Prints the schedule in a formatted table.
+- `save_schedule_to_file(schedule, drug_data, filename)`: Saves the schedule to a `.txt` file if requested.
 
-**readme.md**  
-- Provides instructions, directory structure, and workflow details.
+---
 
-**data/**  
-- Contains interaction and drug datasets.
-
-**inputs/**  
-- Contains default input files (like `input.txt`) for testing.
-
-**tests/**  
-- Directory for test files.
+### **`tests/eda.py`**
+This script provides exploratory data analysis (EDA) for understanding the dataset structure and validating its contents.
+- `basic_dataset_info(df_drug, df_interactions)`: Prints basic statistics of the drug and interaction datasets.
+- `analyze_interactions(df_interactions)`: Identifies unique types of interactions and their frequencies.
+- `interaction_description_stats(df_interactions)`: Displays length statistics of interaction descriptions.
+- `merged_drug_info(df_drug, df_interactions)`: Merges datasets to check overlaps and distributions of drug classes.
+- `build_subset_1(drugs_csv, interactions_csv, output_csv)`: Creates a small dataset subset with interactions involving the first three drugs for testing purposes.
 
 ## Database Information
 
@@ -129,48 +136,96 @@ Trioxsalen,Verteporfin,Trioxsalen may increase the photosensitizing activities o
 Aminolevulinic acid,Verteporfin,Aminolevulinic acid may increase the photosensitizing activities of Verteporfin.
 ```
 
+## Step-by-step
+
+The **Medication Schedule Optimizer** works in a step-by-step process to create a personalized medication schedule while considering drug interactions and dietary constraints. 
+
+1. **Starting the Program**:  
+   When you run the program (`python src/main.py`), it welcomes you with a menu. You can either:
+   - Use the default input file (`input.txt`) containing your prescriptions.
+   - Enter your prescriptions manually during the session.
+
+2. **Reading the Input**:  
+   The program reads the input file or manual input line by line. Each line contains details like the drug name, how many times a day it should be taken, and optional preferred times (e.g., morning, afternoon, evening). It also reads your meal times (e.g., breakfast at 8 am, lunch at 1 pm).
+
+3. **Validating the Input**:  
+   - The program checks that all drug names are valid by comparing them against the drug database.
+   - It makes sure that meal times are reasonable (e.g., breakfast should be in the morning).
+   - If any issues are found (e.g., unknown drug names or invalid times), the program provides clear feedback and exits to prevent errors.
+
+4. **Checking Drug Interactions**:  
+   The program cross-checks the drugs in your prescription for known interactions:
+   - **Risky combinations**: Pairs of drugs that can cause serious side effects when taken together.
+   - **Undesirable combinations**: Pairs of drugs that reduce each other’s effectiveness.
+
+   If interactions are found, the program lists them and highlights them for your awareness.
+
+5. **Creating the Schedule**:  
+   - The program uses a "constraint solver" (a smart algorithm) to figure out the best times to take each medication.
+   - It spaces out doses throughout the day, ensures medications are taken with or without food as needed, and avoids overlapping times for interacting drugs.
+   - If a feasible schedule can’t be found (due to too many conflicting constraints), it suggests reviewing the prescriptions or input data.
+
+6. **Displaying the Schedule**:  
+   Once the schedule is created:
+   - It prints a table showing what medications to take at specific times, along with warnings (e.g., "take with food").
+   - You can choose to save the schedule as a text file for later reference.
+
+7. **Saving the Schedule**:  
+   If you opt to save the schedule, the program will create a `.txt` file with the details neatly formatted.
+
+To sum it up, the program reads your prescription and meal details, checks for interactions, and optimizes your medication times to avoid conflicts and follow dietary rules. It then presents an easy-to-read schedule to help you take your medications safely and efficiently.
+
 ## Example Usage
 
-Below is an example of the application in action:
-```text
+Below is an  example of the application in action:
+
+```bash
 davidebeltrame@MB-Pro-di-Davide swe-project % python src/main.py
-Do you want to enter prescriptions now? (y/n/quit): n
+Welcome to the Medication Schedule Optimizer!
+Please choose:
+[1] Use input.txt
+[2] Enter prescriptions manually
+[q] Quit
 Using input from file:
-
-Prednisone: twice daily (morning)
-Metformin: twice daily (morning)
+Prednisone: once daily (morning)
+Metformin: twice daily
 Levofloxacin: thrice daily
-Ibuprofen: once daily (afternoon)
-Diet: breakfast 10 am; lunch 1 pm; dinner 8 pm
-
-Interactions between drugs are:
-
-Levofloxacin and Prednisone: The risk or severity of adverse effects can be increased when Prednisone is combined with Levofloxacin.
-Levofloxacin and Metformin: Metformin may increase the hypoglycemic activities of Levofloxacin.
-Ibuprofen and Levofloxacin: Ibuprofen may increase the neuroexcitatory activities of Levofloxacin.
-Ibuprofen and Prednisone: The risk or severity of adverse effects can be increased when Ibuprofen is combined with Prednisone.
-Metformin and Prednisone: The therapeutic efficacy of Metformin can be decreased when used in combination with Prednisone.
-
-Schedule optimized successfully.
-+-------+-----------------------+-------------------------------------------------------------+
-| Time  |         Drugs         |                          Warnings                           |
-+-------+-----------------------+-------------------------------------------------------------+
-| 06:00 | Levofloxacin          | Levofloxacin: Take 2 hours before or 6 hours after antacids |
-+-------+-----------------------+-------------------------------------------------------------+
-| 10:00 | Prednisone, Metformin | Prednisone: Take with food or milk                          |
-|       |                       |                                                             |
-|       |                       | Metformin: Take with meals                                  |
-+-------+-----------------------+-------------------------------------------------------------+
-| 17:00 | Levofloxacin          | Levofloxacin: Take 2 hours before or 6 hours after antacids |
-+-------+-----------------------+-------------------------------------------------------------+
-| 19:00 | Ibuprofen             | Ibuprofen: Anticoagulants: increased bleeding risk          |
-+-------+-----------------------+-------------------------------------------------------------+
-| 20:00 | Prednisone, Metformin | Prednisone: Take with food or milk                          |
-|       |                       |                                                             |
-|       |                       | Metformin: Take with meals                                  |
-+-------+-----------------------+-------------------------------------------------------------+
-| 22:00 | Levofloxacin          | Levofloxacin: Take 2 hours before or 6 hours after antacids |
-+-------+-----------------------+-------------------------------------------------------------+
+Ibuprofen: twice daily (afternoon)
+Enalapril: once daily (evening)
+Diet: breakfast 7 am; lunch 1 pm; dinner 8 pm
+Interactions between drugs:
+ - The risk or severity of adverse effects can be increased when Prednisone is combined with Levofloxacin.
+ - Metformin may increase the hypoglycemic activities of Levofloxacin.
+ - Ibuprofen may increase the neuroexcitatory activities of Levofloxacin.
+ - The risk or severity of adverse effects can be increased when Ibuprofen is combined with Prednisone.
+ - The risk or severity of adverse effects can be increased when Enalapril is combined with Ibuprofen.
+ - The therapeutic efficacy of Metformin can be decreased when used in combination with Prednisone.
+Risky drug combinations:
+ - Levofloxacin and Prednisone
+ - Ibuprofen and Prednisone
+ - Enalapril and Ibuprofen
+Undesirable drug combinations:
+ - Metformin and Prednisone
+Schedule optimized successfully:
++-------+-------------------------+-------------------------------------------------------------+
+| Time  |          Drugs           |                          Warnings                           |
++-------+-------------------------+-------------------------------------------------------------+
+| 07:00 | Prednisone               | Prednisone: Take with food or milk                          |
++-------+-------------------------+-------------------------------------------------------------+
+| 13:00 | Metformin, Ibuprofen     | Metformin: Take with meals                                  |
+|       |                          |                                                             |
+|       |                          | Ibuprofen: Anticoagulants: increased bleeding risk          |
++-------+-------------------------+-------------------------------------------------------------+
+| 14:00 | Levofloxacin             | Levofloxacin: Take 2 hours before or 6 hours after antacids |
++-------+-------------------------+-------------------------------------------------------------+
+| 17:00 | Ibuprofen                | Ibuprofen: Anticoagulants: increased bleeding risk          |
++-------+-------------------------+-------------------------------------------------------------+
+| 18:00 | Levofloxacin, Enalapril  | Levofloxacin: Take 2 hours before or 6 hours after antacids |
+|       |                          |                                                             |
+|       |                          | Enalapril: Take on an empty stomach                         |
++-------+-------------------------+-------------------------------------------------------------+
+| 19:00 | Levofloxacin             | Levofloxacin: Take 2 hours before or 6 hours after antacids |
++-------+-------------------------+-------------------------------------------------------------+
+| 20:00 | Metformin                | Metformin: Take with meals                                  |
++-------+-------------------------+-------------------------------------------------------------+
 ```
-
-As shown above, the application assists doctors or patients in scheduling medications correctly based on the prescription.

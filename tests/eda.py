@@ -135,7 +135,6 @@ def merged_drug_info(df_drug: pd.DataFrame, df_interactions: pd.DataFrame) -> No
         num_unique = df_drug['Interactions'].nunique()
         print(f"\nNumber of unique descriptions in 'Interactions' column (drug_data_1.csv): {num_unique}")
 
-
 def build_merged_csv(
     drug_data_path: str,
     interactions_path: str,
@@ -187,7 +186,6 @@ def build_merged_csv(
 
     print(f"Wrote merged drug data to '{output_drug_csv}'.")
     print(f"Wrote merged interaction data to '{output_interactions_csv}'.")
-
 
 def build_subset_1(drugs_csv, interactions_csv, output_csv="data/subset_1.csv"):
     df_d = pd.read_csv(drugs_csv).head(3)
