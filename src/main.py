@@ -1,8 +1,8 @@
-import sys
+import os, random, sys
 from parser import parse_prescriptions
 from utils import load_data, build_interaction_dict, create_schedule, print_schedule, save_schedule_to_file
 
-choices_enabled = 0
+release_mode = 1 # insert 1 for the normal functioning of the program, 0 to test the program with input.txt
 
 class MedicationScheduleOptimizer:
     def __init__(self, data_dir="data", input_dir="inputs"):
@@ -94,7 +94,7 @@ class MedicationScheduleOptimizer:
     def display_schedule(self):
      if self.schedule:
         print_schedule(self.schedule, self.drug_data)
-        if choices_enabled == 1:
+        if release_mode == 1:
             choice = input("Do you want the schedule to be saved in a .txt file? (y/n): ").strip().lower()
         else:
             choice = 'n'
@@ -115,16 +115,29 @@ class MedicationScheduleOptimizer:
         while True:
             print("\033[1mWelcome to the Medication Schedule Optimizer!\033[0m")
             print("Please choose:")
-            print("[1] Use input.txt")
-            print("[2] Enter prescriptions manually")
+            print("[1] Use a sample input file")
+            print("[2] Enter a prescription manually")
             print("[q] Quit\n")
-            if choices_enabled == 1:
+            if release_mode == 1:
                 choice = input("> ").strip().lower()
             else:
-                choice = '1'
+                choice = '3' # test mode
 
-            if choice == '2':
-                print("\nEnter prescriptions in the format:")
+            if choice == '1':
+                input_files = [f for f in os.listdir(self.input_dir) if f.endswith('.txt')]
+                if not input_files:
+                    print(f"No input files found in the '{self.input_dir}' folder.")
+                    sys.exit(1)
+                random_file = random.choice(input_files)
+                print(f"Using input from file: {random_file}")
+                self.load_and_prepare_data()
+                with open(os.path.join(self.input_dir, random_file), "r") as f:
+                    input_str = f.read()
+                    print(input_str)
+                self.parse_input_prescriptions(input_str=input_str)
+                break
+            elif choice == '2':
+                print("\nEnter prescription in the format:")
                 print('"DrugName: once/twice/thrice daily (optional_times)"')
                 print("Allowed optional_times are: morning, afternoon, evening ")
                 print("For example:")
@@ -133,6 +146,7 @@ class MedicationScheduleOptimizer:
                 print('  Metformin: twice daily (morning, evening)')
                 print("\nInclude a 'Diet:' line if desired, e.g.:")
                 print('  Diet: breakfast 8 am; lunch 1 pm; dinner 8 pm')
+                print('Note: Times should be discrete hours in 12-hour format (e.g., 8 am, 1 pm).')
                 print("Press Enter on an empty line to run.\n")
                 lines = []
                 while True:
@@ -147,12 +161,13 @@ class MedicationScheduleOptimizer:
                 self.load_and_prepare_data()
                 self.parse_input_prescriptions(input_str=input_str)
                 break
-            elif choice == '1':
-                self.load_and_prepare_data()
-                self.parse_input_prescriptions()
-                print("Using input from file:")
+            elif choice == '3':
+                print(f"Using input from file:")
+                self.load_and_prepare_data()    
                 with open(f"{self.input_dir}/input.txt", "r") as f:
-                    print(f.read())  # Print input file content if using file-based input
+                    input_str = f.read()
+                    print(input_str)
+                self.parse_input_prescriptions(input_str=input_str)
                 break
             elif choice in ['quit', 'q']:
                 print("Exiting.")
