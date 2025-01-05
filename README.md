@@ -142,7 +142,7 @@ The **Medication Schedule Optimizer** works in a step-by-step process to create 
 
 1. **Starting the Program**:  
    When you run the program (`python src/main.py`), it welcomes you with a menu. You can either:
-   - Use the default input file (`input.txt`) containing your prescriptions.
+   - Use a random input file  from the `inputs/` folder.
    - Enter your prescriptions manually during the session.
 
 2. **Reading the Input**:  
